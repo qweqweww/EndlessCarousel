@@ -25,6 +25,9 @@ public class LocationManager : MonoBehaviour
     [Header("기억 이벤트")]
     [SerializeField] private MemoryPanel memoryPanel;
 
+    [Header("엔딩")]
+    [SerializeField] private EndingManager endingManager;
+
     private readonly List<Button> spawnedButtons = new List<Button>();
     private readonly List<Button> hotspotButtons = new List<Button>();
 
@@ -151,7 +154,9 @@ public class LocationManager : MonoBehaviour
         button.onClick.AddListener(() =>
         {
             System.Action onComplete = () => GameFlags.Set(hotspot.setFlagOnComplete);
-            if (hotspot.memoryEvent != null)
+            if (hotspot.startsEnding)
+                endingManager.StartEnding();
+            else if (hotspot.memoryEvent != null)
                 memoryPanel.Play(hotspot.memoryEvent, onComplete);
             else if (hotspot.dialogue != null)
                 dialoguePanel.Play(hotspot.dialogue, onComplete);

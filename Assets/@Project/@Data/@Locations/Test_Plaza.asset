@@ -34,6 +34,7 @@ MonoBehaviour:
     size: {x: 260, y: 200}
     dialogue: {fileID: 0}
     memoryEvent: {fileID: 0}
+    startsEnding: 0
     requiredFlag: 
     minChapter: 0
     limitMaxChapter: 0
@@ -48,6 +49,7 @@ MonoBehaviour:
     size: {x: 300, y: 260}
     dialogue: {fileID: 0}
     memoryEvent: {fileID: 0}
+    startsEnding: 0
     requiredFlag: 
     minChapter: 0
     limitMaxChapter: 0
@@ -62,6 +64,7 @@ MonoBehaviour:
     size: {x: 200, y: 150}
     dialogue: {fileID: 0}
     memoryEvent: {fileID: 0}
+    startsEnding: 0
     requiredFlag: 
     minChapter: 0
     limitMaxChapter: 0
@@ -75,6 +78,7 @@ MonoBehaviour:
     size: {x: 160, y: 300}
     dialogue: {fileID: 11400000, guid: 61f45c2633629dd4fba4479da17faf77, type: 2}
     memoryEvent: {fileID: 0}
+    startsEnding: 0
     requiredFlag: 
     minChapter: 0
     limitMaxChapter: 0
@@ -88,6 +92,7 @@ MonoBehaviour:
     size: {x: 160, y: 300}
     dialogue: {fileID: 11400000, guid: 11d574c17b71e6145be119c049a44af6, type: 2}
     memoryEvent: {fileID: 0}
+    startsEnding: 0
     requiredFlag: 
     minChapter: 0
     limitMaxChapter: 0
@@ -102,6 +107,7 @@ MonoBehaviour:
     size: {x: 200, y: 160}
     dialogue: {fileID: 0}
     memoryEvent: {fileID: 0}
+    startsEnding: 0
     requiredFlag: test_secret_unlocked
     minChapter: 0
     limitMaxChapter: 0
@@ -115,6 +121,7 @@ MonoBehaviour:
     size: {x: 220, y: 160}
     dialogue: {fileID: 0}
     memoryEvent: {fileID: 11400000, guid: cea952442361d1046b6ca8ff15efc3b9, type: 2}
+    startsEnding: 0
     requiredFlag: 
     minChapter: 0
     limitMaxChapter: 0
@@ -128,6 +135,7 @@ MonoBehaviour:
     size: {x: 180, y: 120}
     dialogue: {fileID: 0}
     memoryEvent: {fileID: 0}
+    startsEnding: 0
     requiredFlag: 
     minChapter: 1
     limitMaxChapter: 1
@@ -142,6 +150,7 @@ MonoBehaviour:
     size: {x: 180, y: 120}
     dialogue: {fileID: 0}
     memoryEvent: {fileID: 0}
+    startsEnding: 0
     requiredFlag: 
     minChapter: 2
     limitMaxChapter: 0
@@ -156,8 +165,37 @@ MonoBehaviour:
     size: {x: 180, y: 120}
     dialogue: {fileID: 0}
     memoryEvent: {fileID: 0}
+    startsEnding: 0
     requiredFlag: test_secret_unlocked
     minChapter: 1
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 
+  - displayName: "\uC5D4\uB529 \uC870\uAC74 \uC124\uC815 (\uD14C\uC2A4\uD2B8)"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.62, y: 0.64}
+    size: {x: 180, y: 100}
+    dialogue: {fileID: 11400000, guid: dfb906d39714ac340aae9957bbcdb3f6, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: 
+    minChapter: 6
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 
+  - displayName: "\uC5D4\uB529 \uD14C\uC2A4\uD2B8"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.62, y: 0.17}
+    size: {x: 180, y: 100}
+    dialogue: {fileID: 0}
+    memoryEvent: {fileID: 0}
+    startsEnding: 1
+    requiredFlag: 
+    minChapter: 6
     limitMaxChapter: 0
     maxChapter: 6
     setFlagOnComplete: 

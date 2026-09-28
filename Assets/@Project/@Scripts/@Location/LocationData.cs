@@ -62,6 +62,9 @@ public class LocationHotspot
     [Tooltip("지정하면 조사창/대화 대신 이 기억 이벤트를 시작한다 (Dialogue보다 우선)")]
     public MemoryEventData memoryEvent;
 
+    [Tooltip("켜면 클릭 시 엔딩을 시작한다 (다른 동작보다 우선). Chapter6의 마지막 이벤트용")]
+    public bool startsEnding;
+
     [Tooltip("이 플래그가 켜져 있어야 화면에 나타난다. 비워두면 조건 없음")]
     public string requiredFlag;
 

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc071ebe0a84b574c87fb0437ace32b2, type: 3}
+  m_Name: EndingConfig
+  m_EditorClassIdentifier: Assembly-CSharp::EndingConfig
+  characters:
+  - characterId: A
+    displayName: A
+    requiredFlags:
+    - A_WantToPlay
+  - characterId: B
+    displayName: B
+    requiredFlags:
+    - B_Choice
+  - characterId: C
+    displayName: C
+    requiredFlags:
+    - C_Future
+  - characterId: D
+    displayName: D
+    requiredFlags:
+    - D_GuiltReleased
+    - D_NotAlone
+  realityLabel: "\uD604\uC2E4"
+  parkLabel: "\uB180\uC774\uACF5\uC6D0"
+  xDisplayName: X
+  xFinalChoiceDialogue: {fileID: 11400000, guid: f03a3e6f2bb8d314b98f0b089623bf11, type: 2}
+  xSearchFlag: X_Search
+  xStayLabel: "\uB180\uC774\uACF5\uC6D0\uC5D0 \uB0A8\uB294\uB2E4"
+  xSearchLabel: "\uB2E4\uB978 \uAC00\uB2A5\uC131\uC744 \uCC3E\uB294\uB2E4"
