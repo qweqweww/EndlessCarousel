@@ -22,6 +22,9 @@ public class LocationManager : MonoBehaviour
     [Header("대화")]
     [SerializeField] private DialoguePanel dialoguePanel;
 
+    [Header("기억 이벤트")]
+    [SerializeField] private MemoryPanel memoryPanel;
+
     private readonly List<Button> spawnedButtons = new List<Button>();
     private readonly List<Button> hotspotButtons = new List<Button>();
 
@@ -126,7 +129,9 @@ public class LocationManager : MonoBehaviour
         button.onClick.AddListener(() =>
         {
             System.Action onComplete = () => GameFlags.Set(hotspot.setFlagOnComplete);
-            if (hotspot.dialogue != null)
+            if (hotspot.memoryEvent != null)
+                memoryPanel.Play(hotspot.memoryEvent, onComplete);
+            else if (hotspot.dialogue != null)
                 dialoguePanel.Play(hotspot.dialogue, onComplete);
             else
                 inspectPanel.Show(hotspot, onComplete);

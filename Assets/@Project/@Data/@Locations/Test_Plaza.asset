@@ -26,6 +26,7 @@ MonoBehaviour:
     screenPosition: {x: 0.28, y: 0.55}
     size: {x: 260, y: 200}
     dialogue: {fileID: 0}
+    memoryEvent: {fileID: 0}
     requiredFlag: 
     setFlagOnComplete: 
   - displayName: "\uB9E4\uD45C\uC18C"
@@ -36,6 +37,7 @@ MonoBehaviour:
     screenPosition: {x: 0.62, y: 0.42}
     size: {x: 300, y: 260}
     dialogue: {fileID: 0}
+    memoryEvent: {fileID: 0}
     requiredFlag: 
     setFlagOnComplete: 
   - displayName: "\uC7A0\uAE34 \uBB38 (\uC228\uAE40 \uD14C\uC2A4\uD2B8)"
@@ -46,6 +48,7 @@ MonoBehaviour:
     screenPosition: {x: 0.5, y: 0.8}
     size: {x: 200, y: 150}
     dialogue: {fileID: 0}
+    memoryEvent: {fileID: 0}
     requiredFlag: 
     setFlagOnComplete: 
   - displayName: "\uD14C\uC2A4\uD2B8 \uCE90\uB9AD\uD130 A (\uB300\uD654)"
@@ -55,6 +58,7 @@ MonoBehaviour:
     screenPosition: {x: 0.45, y: 0.28}
     size: {x: 160, y: 300}
     dialogue: {fileID: 11400000, guid: 61f45c2633629dd4fba4479da17faf77, type: 2}
+    memoryEvent: {fileID: 0}
     requiredFlag: 
     setFlagOnComplete: test_talked_to_a
   - displayName: "\uD14C\uC2A4\uD2B8 \uCE90\uB9AD\uD130 A (\uC120\uD0DD\uC9C0)"
@@ -64,6 +68,7 @@ MonoBehaviour:
     screenPosition: {x: 0.12, y: 0.3}
     size: {x: 160, y: 300}
     dialogue: {fileID: 11400000, guid: 11d574c17b71e6145be119c049a44af6, type: 2}
+    memoryEvent: {fileID: 0}
     requiredFlag: 
     setFlagOnComplete: 
   - displayName: "\uC228\uACA8\uC9C4 \uCABD\uC9C0"
@@ -74,5 +79,16 @@ MonoBehaviour:
     screenPosition: {x: 0.8, y: 0.7}
     size: {x: 200, y: 160}
     dialogue: {fileID: 0}
+    memoryEvent: {fileID: 0}
     requiredFlag: test_secret_unlocked
     setFlagOnComplete: test_secret_inspected
+  - displayName: "\uD53C\uC544\uB178 (\uAE30\uC5B5)"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.28, y: 0.25}
+    size: {x: 220, y: 160}
+    dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: cea952442361d1046b6ca8ff15efc3b9, type: 2}
+    requiredFlag: 
+    setFlagOnComplete: 
