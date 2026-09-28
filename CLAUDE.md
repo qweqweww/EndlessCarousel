@@ -25,6 +25,9 @@
 - 작업 후 Console 오류가 발생하지 않도록 확인한다.
 - 기본 작업 브랜치는 `develop`이며 `main`은 안정본으로 유지한다.
 - 사용자의 명시적인 요청 없이 Git commit, push, merge를 수행하지 않는다.
+- Claude가 새로 만드는 폴더는 하위 폴더를 포함해 모두 이름 앞에 `@`를 붙인다. (예: `Assets/@Project/@Scripts/@Save`)
+  - 프로젝트 에셋 루트는 `Assets/@Project`이다.
+  - Unity/패키지 기본 폴더(`Assets/TextMesh Pro`, `Assets/Settings`, `Assets/Scenes` 등)는 이름을 바꾸지 않는다.
 
 ---
 

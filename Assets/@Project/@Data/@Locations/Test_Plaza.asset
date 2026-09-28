@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc153ff69840e446b86e1a97765f974, type: 3}
+  m_Name: Test_Plaza
+  m_EditorClassIdentifier: Assembly-CSharp::LocationData
+  displayName: "\uC911\uC559 \uAD11\uC7A5"
+  background: {fileID: 21300000, guid: aeed8a852dd5e7948a38b27b1425148b, type: 3}
+  exits:
+  - label: "\uD68C\uC804\uBAA9\uB9C8\uB85C \uAC00\uAE30 >"
+    target: {fileID: 11400000, guid: 3b6c06e37a5351a478e00fc5b45805b2, type: 2}
+    screenPosition: {x: 0.85, y: 0.15}
+  hotspots:
+  - displayName: "\uD68C\uC804\uBAA9\uB9C8 \uC548\uB0B4\uD310"
+    inspectText: "\uC774\uACF3\uC740 \uB180\uC774\uACF5\uC6D0\uC758 \uC548\uB0B4\uD310\uC774\uB2E4."
+    inspectImage: {fileID: 21300000, guid: 59b3ec19336365e4d904f4e87d0eb7a9, type: 3}
+    canInspect: 1
+    screenPosition: {x: 0.28, y: 0.55}
+    size: {x: 260, y: 200}
+  - displayName: "\uB9E4\uD45C\uC18C"
+    inspectText: "\uB9E4\uD45C\uC18C\uB294 \uBE44\uC5B4 \uC788\uB2E4. \uCE74\uC6B4\uD130
+      \uC704\uC5D0 \uD45C \uD55C \uC7A5\uC774 \uB0A8\uC544 \uC788\uB2E4."
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.62, y: 0.42}
+    size: {x: 300, y: 260}
+  - displayName: "\uC7A0\uAE34 \uBB38 (\uC228\uAE40 \uD14C\uC2A4\uD2B8)"
+    inspectText: "\uC870\uC0AC \uAC00\uB2A5 \uC5EC\uBD80\uAC00 \uAEBC\uC838 \uC788\uC73C\uBA74
+      \uC774 \uD56D\uBAA9\uC740 \uBCF4\uC774\uC9C0 \uC54A\uC544\uC57C \uD55C\uB2E4."
+    inspectImage: {fileID: 0}
+    canInspect: 0
+    screenPosition: {x: 0.5, y: 0.8}
+    size: {x: 200, y: 150}
