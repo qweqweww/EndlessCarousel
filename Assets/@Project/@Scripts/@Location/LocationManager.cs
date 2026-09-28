@@ -19,6 +19,9 @@ public class LocationManager : MonoBehaviour
     [SerializeField] private Button hotspotPrefab;
     [SerializeField] private InspectPanel inspectPanel;
 
+    [Header("대화")]
+    [SerializeField] private DialoguePanel dialoguePanel;
+
     private readonly List<Button> spawnedButtons = new List<Button>();
 
     public LocationData CurrentLocation { get; private set; }
@@ -86,7 +89,13 @@ public class LocationManager : MonoBehaviour
         rect.anchoredPosition = Vector2.zero;
         rect.sizeDelta = hotspot.size;
 
-        button.onClick.AddListener(() => inspectPanel.Show(hotspot));
+        button.onClick.AddListener(() =>
+        {
+            if (hotspot.dialogue != null)
+                dialoguePanel.Play(hotspot.dialogue);
+            else
+                inspectPanel.Show(hotspot);
+        });
         return button;
     }
 }

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
+  m_Name: Test_PlazaDialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: A
+    text: "\uC5EC\uAE30, \uCC98\uC74C \uBCF4\uB294 \uACF3\uC740 \uC544\uB2CC \uAC83
+      \uAC19\uC740\uB370."
+    portrait: {fileID: 21300000, guid: ca307e48813389c45be16bc208cb1a99, type: 3}
+  - speakerName: X
+    text: "\uAE30\uC5B5\uB098\uB294 \uAC8C \uC788\uC5B4?"
+    portrait: {fileID: 0}
+  - speakerName: A
+    text: "\uC544\uB2C8. \uADF8\uAC8C \uB354 \uC774\uC0C1\uD574."
+    portrait: {fileID: 21300000, guid: e739613c912b43b4f85192af746f5100, type: 3}

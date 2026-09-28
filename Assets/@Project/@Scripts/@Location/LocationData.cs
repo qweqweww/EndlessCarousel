@@ -50,4 +50,7 @@ public class LocationHotspot
 
     [Tooltip("클릭 영역 크기 (1920x1080 기준 픽셀)")]
     public Vector2 size = new Vector2(200f, 200f);
+
+    [Tooltip("지정하면 조사창 대신 이 대화를 시작한다 (캐릭터 등). 비워두면 조사창을 연다")]
+    public DialogueData dialogue;
 }

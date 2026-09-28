@@ -25,6 +25,7 @@ MonoBehaviour:
     canInspect: 1
     screenPosition: {x: 0.28, y: 0.55}
     size: {x: 260, y: 200}
+    dialogue: {fileID: 0}
   - displayName: "\uB9E4\uD45C\uC18C"
     inspectText: "\uB9E4\uD45C\uC18C\uB294 \uBE44\uC5B4 \uC788\uB2E4. \uCE74\uC6B4\uD130
       \uC704\uC5D0 \uD45C \uD55C \uC7A5\uC774 \uB0A8\uC544 \uC788\uB2E4."
@@ -32,6 +33,7 @@ MonoBehaviour:
     canInspect: 1
     screenPosition: {x: 0.62, y: 0.42}
     size: {x: 300, y: 260}
+    dialogue: {fileID: 0}
   - displayName: "\uC7A0\uAE34 \uBB38 (\uC228\uAE40 \uD14C\uC2A4\uD2B8)"
     inspectText: "\uC870\uC0AC \uAC00\uB2A5 \uC5EC\uBD80\uAC00 \uAEBC\uC838 \uC788\uC73C\uBA74
       \uC774 \uD56D\uBAA9\uC740 \uBCF4\uC774\uC9C0 \uC54A\uC544\uC57C \uD55C\uB2E4."
@@ -39,3 +41,11 @@ MonoBehaviour:
     canInspect: 0
     screenPosition: {x: 0.5, y: 0.8}
     size: {x: 200, y: 150}
+    dialogue: {fileID: 0}
+  - displayName: "\uD14C\uC2A4\uD2B8 \uCE90\uB9AD\uD130 A (\uB300\uD654)"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.45, y: 0.28}
+    size: {x: 160, y: 300}
+    dialogue: {fileID: 11400000, guid: 61f45c2633629dd4fba4479da17faf77, type: 2}
