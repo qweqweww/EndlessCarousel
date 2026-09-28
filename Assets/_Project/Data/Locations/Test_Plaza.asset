@@ -18,3 +18,25 @@ MonoBehaviour:
   - label: Go to Carousel >
     target: {fileID: 11400000, guid: 3b6c06e37a5351a478e00fc5b45805b2, type: 2}
     screenPosition: {x: 0.85, y: 0.15}
+  hotspots:
+  - displayName: Carousel Sign
+    inspectText: 'A faded sign hangs by the entrance.
+
+      "The Endless Carousel
+      - Open every night."'
+    inspectImage: {fileID: 21300000, guid: 59b3ec19336365e4d904f4e87d0eb7a9, type: 3}
+    canInspect: 1
+    screenPosition: {x: 0.28, y: 0.55}
+    size: {x: 260, y: 200}
+  - displayName: Ticket Booth
+    inspectText: The booth is empty. A single ticket is left on the counter.
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.62, y: 0.42}
+    size: {x: 300, y: 260}
+  - displayName: Locked Gate (hidden test)
+    inspectText: This should not appear while canInspect is off.
+    inspectImage: {fileID: 0}
+    canInspect: 0
+    screenPosition: {x: 0.5, y: 0.8}
+    size: {x: 200, y: 150}

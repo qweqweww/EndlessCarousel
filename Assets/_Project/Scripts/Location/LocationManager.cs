@@ -14,6 +14,11 @@ public class LocationManager : MonoBehaviour
     [SerializeField] private RectTransform exitButtonParent;
     [SerializeField] private Button exitButtonPrefab;
 
+    [Header("조사")]
+    [SerializeField] private RectTransform hotspotParent;
+    [SerializeField] private Button hotspotPrefab;
+    [SerializeField] private InspectPanel inspectPanel;
+
     private readonly List<Button> spawnedButtons = new List<Button>();
 
     public LocationData CurrentLocation { get; private set; }
@@ -42,6 +47,15 @@ public class LocationManager : MonoBehaviour
 
         foreach (LocationExit exit in location.Exits)
             spawnedButtons.Add(CreateExitButton(exit));
+
+        foreach (LocationHotspot hotspot in location.Hotspots)
+        {
+            if (hotspot.canInspect)
+                spawnedButtons.Add(CreateHotspotButton(hotspot));
+        }
+
+        if (inspectPanel != null)
+            inspectPanel.Hide();
     }
 
     private Button CreateExitButton(LocationExit exit)
@@ -59,6 +73,20 @@ public class LocationManager : MonoBehaviour
 
         LocationData target = exit.target;
         button.onClick.AddListener(() => MoveTo(target));
+        return button;
+    }
+
+    private Button CreateHotspotButton(LocationHotspot hotspot)
+    {
+        Button button = Instantiate(hotspotPrefab, hotspotParent);
+
+        RectTransform rect = (RectTransform)button.transform;
+        rect.anchorMin = hotspot.screenPosition;
+        rect.anchorMax = hotspot.screenPosition;
+        rect.anchoredPosition = Vector2.zero;
+        rect.sizeDelta = hotspot.size;
+
+        button.onClick.AddListener(() => inspectPanel.Show(hotspot));
         return button;
     }
 }
