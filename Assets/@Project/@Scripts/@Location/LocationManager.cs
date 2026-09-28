@@ -23,8 +23,19 @@ public class LocationManager : MonoBehaviour
     [SerializeField] private DialoguePanel dialoguePanel;
 
     private readonly List<Button> spawnedButtons = new List<Button>();
+    private readonly List<Button> hotspotButtons = new List<Button>();
 
     public LocationData CurrentLocation { get; private set; }
+
+    private void OnEnable()
+    {
+        GameFlags.Changed += OnFlagChanged;
+    }
+
+    private void OnDisable()
+    {
+        GameFlags.Changed -= OnFlagChanged;
+    }
 
     private void Start()
     {
@@ -51,14 +62,37 @@ public class LocationManager : MonoBehaviour
         foreach (LocationExit exit in location.Exits)
             spawnedButtons.Add(CreateExitButton(exit));
 
-        foreach (LocationHotspot hotspot in location.Hotspots)
-        {
-            if (hotspot.canInspect)
-                spawnedButtons.Add(CreateHotspotButton(hotspot));
-        }
+        RefreshHotspots();
 
         if (inspectPanel != null)
             inspectPanel.Hide();
+    }
+
+    // 현재 장소의 Hotspot을 조건(canInspect, requiredFlag)에 맞게 다시 만든다.
+    private void RefreshHotspots()
+    {
+        foreach (Button button in hotspotButtons)
+            Destroy(button.gameObject);
+        hotspotButtons.Clear();
+
+        foreach (LocationHotspot hotspot in CurrentLocation.Hotspots)
+        {
+            if (IsHotspotAvailable(hotspot))
+                hotspotButtons.Add(CreateHotspotButton(hotspot));
+        }
+    }
+
+    private static bool IsHotspotAvailable(LocationHotspot hotspot)
+    {
+        if (!hotspot.canInspect)
+            return false;
+        return string.IsNullOrWhiteSpace(hotspot.requiredFlag) || GameFlags.Has(hotspot.requiredFlag);
+    }
+
+    private void OnFlagChanged(string id, bool value)
+    {
+        if (CurrentLocation != null)
+            RefreshHotspots();
     }
 
     private Button CreateExitButton(LocationExit exit)
@@ -91,10 +125,11 @@ public class LocationManager : MonoBehaviour
 
         button.onClick.AddListener(() =>
         {
+            System.Action onComplete = () => GameFlags.Set(hotspot.setFlagOnComplete);
             if (hotspot.dialogue != null)
-                dialoguePanel.Play(hotspot.dialogue);
+                dialoguePanel.Play(hotspot.dialogue, onComplete);
             else
-                inspectPanel.Show(hotspot);
+                inspectPanel.Show(hotspot, onComplete);
         });
         return button;
     }

@@ -21,7 +21,9 @@ MonoBehaviour:
     - text: "\uAE30\uC5B5\uB098\uB294 \uAC8C \uC788\uC5B4?"
       next: {fileID: 11400000, guid: 17b395918e9446943a9f9e3bb94d6656, type: 2}
       choiceId: test_ask_memory
+      recordAsFlag: 0
     - text: "\uCC9C\uCC9C\uD788 \uC0DD\uAC01\uD574\uB3C4 \uB3FC."
       next: {fileID: 11400000, guid: 5f52b8d852d790f43b1199990f25c5d5, type: 2}
-      choiceId: test_be_patient
+      choiceId: test_secret_unlocked
+      recordAsFlag: 1
   nextDialogue: {fileID: 0}

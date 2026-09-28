@@ -38,6 +38,9 @@ public class DialogueChoice
     [Tooltip("선택 후 재생할 대화. 비워두면 현재 대화의 다음 줄로 계속한다")]
     public DialogueData next;
 
-    [Tooltip("선택 결과를 구분하는 ID (추후 플래그 시스템 연결용)")]
+    [Tooltip("선택 결과를 구분하는 ID")]
     public string choiceId;
+
+    [Tooltip("켜면 이 선택지를 골랐을 때 Choice Id를 플래그로 기록한다")]
+    public bool recordAsFlag;
 }

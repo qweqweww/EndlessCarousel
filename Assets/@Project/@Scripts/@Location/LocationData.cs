@@ -53,4 +53,10 @@ public class LocationHotspot
 
     [Tooltip("지정하면 조사창 대신 이 대화를 시작한다 (캐릭터 등). 비워두면 조사창을 연다")]
     public DialogueData dialogue;
+
+    [Tooltip("이 플래그가 켜져 있어야 화면에 나타난다. 비워두면 조건 없음")]
+    public string requiredFlag;
+
+    [Tooltip("조사창을 닫거나 대화가 끝까지 진행된 뒤 켤 플래그. 비워두면 설정하지 않음")]
+    public string setFlagOnComplete;
 }

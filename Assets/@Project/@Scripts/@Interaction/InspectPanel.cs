@@ -11,6 +11,8 @@ public class InspectPanel : MonoBehaviour
     [SerializeField] private Button closeButton;
     [SerializeField] private Button backgroundCloseButton;
 
+    private System.Action onClosed;
+
     public bool IsOpen => gameObject.activeSelf;
 
     private void Awake()
@@ -21,8 +23,11 @@ public class InspectPanel : MonoBehaviour
             backgroundCloseButton.onClick.AddListener(Hide);
     }
 
-    public void Show(LocationHotspot hotspot)
+    // onClosed: 플레이어가 창을 닫았을 때 한 번 호출 (조사 완료 처리용)
+    public void Show(LocationHotspot hotspot, System.Action onClosed = null)
     {
+        this.onClosed = onClosed;
+
         titleText.text = hotspot.displayName;
         bodyText.text = hotspot.inspectText;
 
@@ -34,6 +39,9 @@ public class InspectPanel : MonoBehaviour
 
     public void Hide()
     {
+        System.Action callback = onClosed;
+        onClosed = null;
         gameObject.SetActive(false);
+        callback?.Invoke();
     }
 }

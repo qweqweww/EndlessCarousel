@@ -27,6 +27,7 @@ public class DialoguePanel : MonoBehaviour
     private readonly List<Button> choiceButtons = new List<Button>();
     private DialogueData currentDialogue;
     private int lineIndex;
+    private System.Action onFinished;
 
     public bool IsPlaying => currentDialogue != null;
     private bool IsChoosing => choiceButtons.Count > 0;
@@ -36,7 +37,8 @@ public class DialoguePanel : MonoBehaviour
         advanceButton.onClick.AddListener(Next);
     }
 
-    public void Play(DialogueData dialogue)
+    // onFinished: 대화가 마지막 줄까지 진행되어 끝났을 때 한 번 호출 (Close로 중단하면 호출하지 않음)
+    public void Play(DialogueData dialogue, System.Action onFinished = null)
     {
         if (dialogue == null)
         {
@@ -44,6 +46,7 @@ public class DialoguePanel : MonoBehaviour
             return;
         }
 
+        this.onFinished = onFinished;
         gameObject.SetActive(true);
         ContinueFrom(dialogue, 0);
     }
@@ -60,6 +63,7 @@ public class DialoguePanel : MonoBehaviour
     {
         ClearChoices();
         currentDialogue = null;
+        onFinished = null;
         gameObject.SetActive(false);
     }
 
@@ -80,7 +84,9 @@ public class DialoguePanel : MonoBehaviour
 
         if (dialogue == null)
         {
+            System.Action callback = onFinished;
             Close();
+            callback?.Invoke();
             return;
         }
 
@@ -126,6 +132,8 @@ public class DialoguePanel : MonoBehaviour
             return;
 
         ClearChoices();
+        if (choice.recordAsFlag)
+            GameFlags.Set(choice.choiceId);
         ChoiceSelected?.Invoke(choice);
 
         if (choice.next != null)
