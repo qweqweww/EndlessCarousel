@@ -33,11 +33,13 @@ public class LocationManager : MonoBehaviour
     private void OnEnable()
     {
         GameFlags.Changed += OnFlagChanged;
+        ChapterManager.Changed += OnChapterChanged;
     }
 
     private void OnDisable()
     {
         GameFlags.Changed -= OnFlagChanged;
+        ChapterManager.Changed -= OnChapterChanged;
     }
 
     private void Start()
@@ -58,20 +60,28 @@ public class LocationManager : MonoBehaviour
         if (locationNameText != null)
             locationNameText.text = location.DisplayName;
 
-        foreach (Button button in spawnedButtons)
-            Destroy(button.gameObject);
-        spawnedButtons.Clear();
-
-        foreach (LocationExit exit in location.Exits)
-            spawnedButtons.Add(CreateExitButton(exit));
-
+        RefreshExits();
         RefreshHotspots();
 
         if (inspectPanel != null)
             inspectPanel.Hide();
     }
 
-    // 현재 장소의 Hotspot을 조건(canInspect, requiredFlag)에 맞게 다시 만든다.
+    // 현재 장소의 이동 버튼을 다시 만든다. 아직 해금되지 않은 장소로 가는 버튼은 만들지 않는다.
+    private void RefreshExits()
+    {
+        foreach (Button button in spawnedButtons)
+            Destroy(button.gameObject);
+        spawnedButtons.Clear();
+
+        foreach (LocationExit exit in CurrentLocation.Exits)
+        {
+            if (exit.target == null || ChapterManager.IsReached(exit.target.UnlockChapter))
+                spawnedButtons.Add(CreateExitButton(exit));
+        }
+    }
+
+    // 현재 장소의 Hotspot을 조건(canInspect, 챕터, requiredFlag)에 맞게 다시 만든다.
     private void RefreshHotspots()
     {
         foreach (Button button in hotspotButtons)
@@ -89,6 +99,10 @@ public class LocationManager : MonoBehaviour
     {
         if (!hotspot.canInspect)
             return false;
+        if (!ChapterManager.IsReached(hotspot.minChapter))
+            return false;
+        if (hotspot.limitMaxChapter && ChapterManager.Current > hotspot.maxChapter)
+            return false;
         return string.IsNullOrWhiteSpace(hotspot.requiredFlag) || GameFlags.Has(hotspot.requiredFlag);
     }
 
@@ -96,6 +110,14 @@ public class LocationManager : MonoBehaviour
     {
         if (CurrentLocation != null)
             RefreshHotspots();
+    }
+
+    private void OnChapterChanged(Chapter chapter)
+    {
+        if (CurrentLocation == null)
+            return;
+        RefreshExits();
+        RefreshHotspots();
     }
 
     private Button CreateExitButton(LocationExit exit)

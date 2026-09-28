@@ -7,11 +7,16 @@ public class LocationData : ScriptableObject
 {
     [SerializeField] private string displayName;
     [SerializeField] private Sprite background;
+
+    [Tooltip("이 장소가 처음 열리는 챕터. 이 챕터 이후로 계속 방문 가능하며, 그 전에는 이 장소로 가는 이동 버튼이 보이지 않는다")]
+    [SerializeField] private Chapter unlockChapter = Chapter.Prologue;
+
     [SerializeField] private List<LocationExit> exits = new List<LocationExit>();
     [SerializeField] private List<LocationHotspot> hotspots = new List<LocationHotspot>();
 
     public string DisplayName => displayName;
     public Sprite Background => background;
+    public Chapter UnlockChapter => unlockChapter;
     public IReadOnlyList<LocationExit> Exits => exits;
     public IReadOnlyList<LocationHotspot> Hotspots => hotspots;
 }
@@ -59,6 +64,15 @@ public class LocationHotspot
 
     [Tooltip("이 플래그가 켜져 있어야 화면에 나타난다. 비워두면 조건 없음")]
     public string requiredFlag;
+
+    [Tooltip("이 챕터부터 나타난다")]
+    public Chapter minChapter = Chapter.Prologue;
+
+    [Tooltip("켜면 Max Chapter 이후에는 사라진다")]
+    public bool limitMaxChapter;
+
+    [Tooltip("Limit Max Chapter가 켜져 있을 때, 이 챕터까지만 나타난다")]
+    public Chapter maxChapter = Chapter.Chapter6;
 
     [Tooltip("조사창을 닫거나 대화가 끝까지 진행된 뒤 켤 플래그. 비워두면 설정하지 않음")]
     public string setFlagOnComplete;
