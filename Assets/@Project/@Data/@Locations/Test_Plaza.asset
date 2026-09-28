@@ -49,3 +49,10 @@ MonoBehaviour:
     screenPosition: {x: 0.45, y: 0.28}
     size: {x: 160, y: 300}
     dialogue: {fileID: 11400000, guid: 61f45c2633629dd4fba4479da17faf77, type: 2}
+  - displayName: "\uD14C\uC2A4\uD2B8 \uCE90\uB9AD\uD130 A (\uC120\uD0DD\uC9C0)"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.12, y: 0.3}
+    size: {x: 160, y: 300}
+    dialogue: {fileID: 11400000, guid: 11d574c17b71e6145be119c049a44af6, type: 2}

@@ -7,7 +7,11 @@ public class DialogueData : ScriptableObject
 {
     [SerializeField] private List<DialogueLine> lines = new List<DialogueLine>();
 
+    [Tooltip("마지막 줄이 끝난 뒤 이어서 재생할 대화 (분기 후 공통 대사로 합류할 때 사용). 비워두면 대화 종료")]
+    [SerializeField] private DialogueData nextDialogue;
+
     public IReadOnlyList<DialogueLine> Lines => lines;
+    public DialogueData NextDialogue => nextDialogue;
 }
 
 [System.Serializable]
@@ -20,4 +24,20 @@ public class DialogueLine
 
     [Tooltip("이 대사에서 보여줄 캐릭터 이미지. 표정마다 다른 Sprite를 지정한다. 비워두면 이미지 없이 표시")]
     public Sprite portrait;
+
+    [Tooltip("비워두면 클릭으로 다음 줄 진행. 항목이 있으면 이 대사를 보여준 뒤 선택지를 띄운다")]
+    public List<DialogueChoice> choices = new List<DialogueChoice>();
+}
+
+[System.Serializable]
+public class DialogueChoice
+{
+    [Tooltip("선택지 버튼 문구")]
+    public string text;
+
+    [Tooltip("선택 후 재생할 대화. 비워두면 현재 대화의 다음 줄로 계속한다")]
+    public DialogueData next;
+
+    [Tooltip("선택 결과를 구분하는 ID (추후 플래그 시스템 연결용)")]
+    public string choiceId;
 }
