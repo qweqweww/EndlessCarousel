@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
+  m_Name: Main_Prologue_Choice_Act
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: X
+    text: "\uC77C\uB2E8 \uC9C1\uC811 \uB458\uB7EC\uBCF4\uC790."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: A
+    text: "\uADF8\uB798."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\uB098\uB3C4 \uCC2C\uC131."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\uC5EC\uAE30\uC11C \uBCF4\uACE0\uB9CC \uC788\uC5B4\uC120 \uBAA8\uB974\uB2C8\uAE4C."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: B
+    text: "\uC5B4... \uB124. \uADF8\uAC8C \uC88B\uC744 \uAC83 \uAC19\uC544\uC694."
+    portrait: {fileID: 0}
+    choices: []
+  nextDialogue: {fileID: 11400000, guid: 51ea81bfb47fd4841936dc2f2cc72507, type: 2}

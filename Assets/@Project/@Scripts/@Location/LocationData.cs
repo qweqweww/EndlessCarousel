@@ -32,6 +32,9 @@ public class LocationExit
 
     [Tooltip("버튼 위치 (화면 비율, 0~1). (0,0)=왼쪽 아래, (1,1)=오른쪽 위")]
     public Vector2 screenPosition = new Vector2(0.5f, 0.1f);
+
+    [Tooltip("이 플래그가 켜져 있어야 버튼이 나타난다 (이동할 장소의 Unlock Chapter 조건과 함께 적용). 비워두면 조건 없음")]
+    public string requiredFlag;
 }
 
 // 장소 화면 안의 조사 가능한 영역 하나. 피아노, 사진 등 모든 조사 대상이 이 형식을 공유한다.

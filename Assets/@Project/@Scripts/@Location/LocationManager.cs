@@ -70,7 +70,7 @@ public class LocationManager : MonoBehaviour
             inspectPanel.Hide();
     }
 
-    // 현재 장소의 이동 버튼을 다시 만든다. 아직 해금되지 않은 장소로 가는 버튼은 만들지 않는다.
+    // 현재 장소의 이동 버튼을 다시 만든다. 아직 해금되지 않은 장소나 플래그 조건이 안 된 버튼은 만들지 않는다.
     private void RefreshExits()
     {
         foreach (Button button in spawnedButtons)
@@ -79,9 +79,16 @@ public class LocationManager : MonoBehaviour
 
         foreach (LocationExit exit in CurrentLocation.Exits)
         {
-            if (exit.target == null || ChapterManager.IsReached(exit.target.UnlockChapter))
+            if (IsExitAvailable(exit))
                 spawnedButtons.Add(CreateExitButton(exit));
         }
+    }
+
+    private static bool IsExitAvailable(LocationExit exit)
+    {
+        if (exit.target != null && !ChapterManager.IsReached(exit.target.UnlockChapter))
+            return false;
+        return string.IsNullOrWhiteSpace(exit.requiredFlag) || GameFlags.Has(exit.requiredFlag);
     }
 
     // 현재 장소의 Hotspot을 조건(canInspect, 챕터, requiredFlag)에 맞게 다시 만든다.
@@ -111,8 +118,10 @@ public class LocationManager : MonoBehaviour
 
     private void OnFlagChanged(string id, bool value)
     {
-        if (CurrentLocation != null)
-            RefreshHotspots();
+        if (CurrentLocation == null)
+            return;
+        RefreshExits();
+        RefreshHotspots();
     }
 
     private void OnChapterChanged(Chapter chapter)
