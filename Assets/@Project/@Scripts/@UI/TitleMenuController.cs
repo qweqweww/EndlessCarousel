@@ -11,6 +11,9 @@ public class TitleMenuController : MonoBehaviour
     [Tooltip("시작하기를 눌렀을 때 열 씬 이름 (Build Settings에 등록되어 있어야 한다)")]
     [SerializeField] private string gameSceneName = "Main";
 
+    [Tooltip("지정하면 검정으로 페이드 아웃한 뒤 씬을 연다. 비워두면 바로 연다")]
+    [SerializeField] private ScreenFader screenFader;
+
     private void Awake()
     {
         startButton.onClick.AddListener(StartGame);
@@ -19,10 +22,17 @@ public class TitleMenuController : MonoBehaviour
 
     public void StartGame()
     {
-        // 씬이 로드되는 동안 중복 클릭 방지
+        if (!startButton.interactable)
+            return;
+
+        // 페이드/씬 로드 중 중복 클릭 방지
         startButton.interactable = false;
         quitButton.interactable = false;
-        SceneManager.LoadScene(gameSceneName);
+
+        if (screenFader != null)
+            screenFader.FadeToBlackAndLoad(gameSceneName);
+        else
+            SceneManager.LoadScene(gameSceneName);
     }
 
     public void QuitGame()
