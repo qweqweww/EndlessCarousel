@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Main_Plaza
   m_EditorClassIdentifier: Assembly-CSharp::LocationData
   displayName: "\uC911\uC559 \uAD11\uC7A5"
-  background: {fileID: 21300000, guid: 0982463a1838f9d4db2790c0bee41940, type: 3}
+  background: {fileID: 21300000, guid: db38415c3ddda8f498739d71bc7add8a, type: 3}
   unlockChapter: 0
   exits:
   - label: "\uD68C\uC804\uBAA9\uB9C8 \uAD11\uC7A5\uC73C\uB85C >"
@@ -25,8 +25,8 @@ MonoBehaviour:
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.18, y: 0.55}
-    size: {x: 220, y: 170}
+    screenPosition: {x: 0.165, y: 0.507}
+    size: {x: 240, y: 280}
     dialogue: {fileID: 11400000, guid: 8ff0695ffb147704d80f946f28a7b349, type: 2}
     memoryEvent: {fileID: 0}
     startsEnding: 0
@@ -111,3 +111,4 @@ MonoBehaviour:
     limitMaxChapter: 0
     maxChapter: 6
     setFlagOnComplete: 
+  autoEvents: []

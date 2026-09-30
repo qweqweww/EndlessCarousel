@@ -28,6 +28,17 @@ public class LocationManager : MonoBehaviour
     [Header("엔딩")]
     [SerializeField] private EndingManager endingManager;
 
+    [System.Serializable]
+    private class LocationObjectGroup
+    {
+        public LocationData location;
+        [Tooltip("이 장소에 있을 때만 켜지는 오브젝트 (조사 대상 그림 등)")]
+        public GameObject root;
+    }
+
+    [Header("장소별 오브젝트 이미지")]
+    [SerializeField] private List<LocationObjectGroup> locationObjects = new List<LocationObjectGroup>();
+
     private readonly List<Button> spawnedButtons = new List<Button>();
     private readonly List<Button> hotspotButtons = new List<Button>();
 
@@ -63,6 +74,12 @@ public class LocationManager : MonoBehaviour
         if (locationNameText != null)
             locationNameText.text = location.DisplayName;
 
+        foreach (LocationObjectGroup group in locationObjects)
+        {
+            if (group.root != null)
+                group.root.SetActive(group.location == location);
+        }
+
         RefreshExits();
         RefreshHotspots();
 
@@ -75,9 +92,7 @@ public class LocationManager : MonoBehaviour
     // 조건이 맞는 Auto Event를 하나 재생한다. 대화/조사/기억이 진행 중이면 건너뛰고, 그것이 끝날 때 다시 확인된다.
     private void TryRunAutoEvent()
     {
-        if (CurrentLocation == null || dialoguePanel == null || dialoguePanel.IsPlaying)
-            return;
-        if ((inspectPanel != null && inspectPanel.IsOpen) || (memoryPanel != null && memoryPanel.IsPlaying))
+        if (CurrentLocation == null || dialoguePanel == null || IsBusy())
             return;
 
         foreach (LocationAutoEvent autoEvent in CurrentLocation.AutoEvents)
@@ -128,7 +143,7 @@ public class LocationManager : MonoBehaviour
 
         foreach (LocationHotspot hotspot in CurrentLocation.Hotspots)
         {
-            if (IsHotspotAvailable(hotspot))
+            if (IsHotspotAvailable(hotspot) && !HasSceneObject(hotspot))
                 hotspotButtons.Add(CreateHotspotButton(hotspot));
         }
     }
@@ -191,23 +206,75 @@ public class LocationManager : MonoBehaviour
         rect.anchoredPosition = Vector2.zero;
         rect.sizeDelta = hotspot.size;
 
-        button.onClick.AddListener(() =>
-        {
-            // 대화 도중 켜진 플래그로 조건이 맞은 Auto Event도 여기서 이어서 실행된다
-            System.Action onComplete = () =>
-            {
-                GameFlags.Set(hotspot.setFlagOnComplete);
-                TryRunAutoEvent();
-            };
-            if (hotspot.startsEnding)
-                endingManager.StartEnding();
-            else if (hotspot.memoryEvent != null)
-                memoryPanel.Play(hotspot.memoryEvent, onComplete);
-            else if (hotspot.dialogue != null)
-                dialoguePanel.Play(hotspot.dialogue, onComplete);
-            else
-                inspectPanel.Show(hotspot, onComplete);
-        });
+        button.onClick.AddListener(() => Inspect(hotspot));
         return button;
+    }
+
+    private void Inspect(LocationHotspot hotspot)
+    {
+        // 대화 도중 켜진 플래그로 조건이 맞은 Auto Event도 여기서 이어서 실행된다
+        System.Action onComplete = () =>
+        {
+            GameFlags.Set(hotspot.setFlagOnComplete);
+            TryRunAutoEvent();
+        };
+        if (hotspot.startsEnding)
+            endingManager.StartEnding();
+        else if (hotspot.memoryEvent != null)
+            memoryPanel.Play(hotspot.memoryEvent, onComplete);
+        else if (hotspot.dialogue != null)
+            dialoguePanel.Play(hotspot.dialogue, onComplete);
+        else
+            inspectPanel.Show(hotspot, onComplete);
+    }
+
+    // ---- 장소 오브젝트(LocationObjectInteraction)에서 호출 ----
+
+    // 현재 장소의 Hotspot을 조사할 수 있는 상태인지 (조건 충족 + 다른 창이 열려 있지 않음)
+    public bool CanInspect(string hotspotName)
+    {
+        LocationHotspot hotspot = FindHotspot(hotspotName);
+        return hotspot != null && IsHotspotAvailable(hotspot) && !IsBusy();
+    }
+
+    public void InspectByName(string hotspotName)
+    {
+        if (CanInspect(hotspotName))
+            Inspect(FindHotspot(hotspotName));
+    }
+
+    private LocationHotspot FindHotspot(string hotspotName)
+    {
+        if (CurrentLocation == null || string.IsNullOrEmpty(hotspotName))
+            return null;
+        foreach (LocationHotspot hotspot in CurrentLocation.Hotspots)
+        {
+            if (hotspot.displayName == hotspotName)
+                return hotspot;
+        }
+        return null;
+    }
+
+    private bool IsBusy()
+    {
+        return (dialoguePanel != null && dialoguePanel.IsPlaying)
+            || (inspectPanel != null && inspectPanel.IsOpen)
+            || (memoryPanel != null && memoryPanel.IsPlaying);
+    }
+
+    // 현재 장소의 오브젝트 그림에 연결된 Hotspot인지 (그렇다면 사각형 클릭 영역을 만들지 않는다)
+    private bool HasSceneObject(LocationHotspot hotspot)
+    {
+        foreach (LocationObjectGroup group in locationObjects)
+        {
+            if (group.location != CurrentLocation || group.root == null)
+                continue;
+            foreach (LocationObjectInteraction obj in group.root.GetComponentsInChildren<LocationObjectInteraction>(true))
+            {
+                if (obj.HotspotName == hotspot.displayName)
+                    return true;
+            }
+        }
+        return false;
     }
 }
