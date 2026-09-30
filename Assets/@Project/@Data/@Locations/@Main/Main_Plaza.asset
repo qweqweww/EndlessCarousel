@@ -46,7 +46,7 @@ MonoBehaviour:
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Prologue_MapChecked
-    hiddenIfFlag: Prologue_PlazaComplete
+    hiddenIfFlag: 
     minChapter: 0
     limitMaxChapter: 0
     maxChapter: 6

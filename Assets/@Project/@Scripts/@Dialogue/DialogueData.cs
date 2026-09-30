@@ -10,8 +10,12 @@ public class DialogueData : ScriptableObject
     [Tooltip("마지막 줄이 끝난 뒤 이어서 재생할 대화 (분기 후 공통 대사로 합류할 때 사용). 비워두면 대화 종료")]
     [SerializeField] private DialogueData nextDialogue;
 
+    [Tooltip("이 플래그가 켜져 있으면 Next Dialogue로 이어가지 않는다 (처음 한 번만 이어지는 후속 대화용). 비워두면 항상 이어감")]
+    [SerializeField] private string skipNextIfFlag;
+
     public IReadOnlyList<DialogueLine> Lines => lines;
-    public DialogueData NextDialogue => nextDialogue;
+    public DialogueData NextDialogue =>
+        !string.IsNullOrWhiteSpace(skipNextIfFlag) && GameFlags.Has(skipNextIfFlag) ? null : nextDialogue;
 }
 
 [System.Serializable]
