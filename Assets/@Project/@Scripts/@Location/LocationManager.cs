@@ -68,6 +68,34 @@ public class LocationManager : MonoBehaviour
 
         if (inspectPanel != null)
             inspectPanel.Hide();
+
+        TryRunAutoEvent();
+    }
+
+    // 조건이 맞는 Auto Event를 하나 재생한다. 대화/조사/기억이 진행 중이면 건너뛰고, 그것이 끝날 때 다시 확인된다.
+    private void TryRunAutoEvent()
+    {
+        if (CurrentLocation == null || dialoguePanel == null || dialoguePanel.IsPlaying)
+            return;
+        if ((inspectPanel != null && inspectPanel.IsOpen) || (memoryPanel != null && memoryPanel.IsPlaying))
+            return;
+
+        foreach (LocationAutoEvent autoEvent in CurrentLocation.AutoEvents)
+        {
+            if (autoEvent.IsReady())
+            {
+                dialoguePanel.Play(autoEvent.dialogue, () => CompleteAutoEvent(autoEvent));
+                return;
+            }
+        }
+    }
+
+    private void CompleteAutoEvent(LocationAutoEvent autoEvent)
+    {
+        GameFlags.Set(autoEvent.completeFlag);
+        if (autoEvent.changeChapter)
+            ChapterManager.SetChapter(autoEvent.targetChapter);
+        TryRunAutoEvent();
     }
 
     // 현재 장소의 이동 버튼을 다시 만든다. 아직 해금되지 않은 장소나 플래그 조건이 안 된 버튼은 만들지 않는다.
@@ -124,6 +152,7 @@ public class LocationManager : MonoBehaviour
             return;
         RefreshExits();
         RefreshHotspots();
+        TryRunAutoEvent();
     }
 
     private void OnChapterChanged(Chapter chapter)
@@ -164,7 +193,12 @@ public class LocationManager : MonoBehaviour
 
         button.onClick.AddListener(() =>
         {
-            System.Action onComplete = () => GameFlags.Set(hotspot.setFlagOnComplete);
+            // 대화 도중 켜진 플래그로 조건이 맞은 Auto Event도 여기서 이어서 실행된다
+            System.Action onComplete = () =>
+            {
+                GameFlags.Set(hotspot.setFlagOnComplete);
+                TryRunAutoEvent();
+            };
             if (hotspot.startsEnding)
                 endingManager.StartEnding();
             else if (hotspot.memoryEvent != null)

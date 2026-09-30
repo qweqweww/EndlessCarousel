@@ -19,4 +19,78 @@ MonoBehaviour:
   - label: "< \uC911\uC559 \uAD11\uC7A5\uC73C\uB85C"
     target: {fileID: 11400000, guid: 0d9ec9556bf200d40986c60c7bd4fe9a, type: 2}
     screenPosition: {x: 0.15, y: 0.15}
-  hotspots: []
+    requiredFlag: 
+  hotspots:
+  - displayName: "\uD68C\uC804\uBAA9\uB9C8"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.5, y: 0.45}
+    size: {x: 360, y: 260}
+    dialogue: {fileID: 11400000, guid: c8afe8b934fb10b4cae3eaecbad2f805, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Prologue_CarouselEntered
+    hiddenIfFlag: 
+    minChapter: 0
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Prologue_CarouselChecked
+  - displayName: "\uC870\uC791\uC2E4"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.85, y: 0.5}
+    size: {x: 220, y: 200}
+    dialogue: {fileID: 11400000, guid: 26ffa40c8ee762842826a700d36d0de5, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Prologue_CarouselEntered
+    hiddenIfFlag: 
+    minChapter: 0
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Prologue_ControlRoomChecked
+  - displayName: "\uD0D1\uC2B9\uAD6C"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.25, y: 0.3}
+    size: {x: 240, y: 140}
+    dialogue: {fileID: 11400000, guid: 49d1501674a24ae4b880e6297f499ef8, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Prologue_CarouselEntered
+    hiddenIfFlag: 
+    minChapter: 0
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 
+  - displayName: "\uB5A8\uC5B4\uC9C4 \uC785\uC7A5\uAD8C"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.62, y: 0.15}
+    size: {x: 160, y: 90}
+    dialogue: {fileID: 11400000, guid: 36b6ddd19cb63bf43b81be7316068797, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Prologue_CarouselEntered
+    hiddenIfFlag: 
+    minChapter: 0
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 
+  autoEvents:
+  - dialogue: {fileID: 11400000, guid: b4ded3d84448d194c8ec8053beefb8a0, type: 2}
+    requiredFlags: []
+    completeFlag: Prologue_CarouselEntered
+    changeChapter: 0
+    targetChapter: 0
+  - dialogue: {fileID: 11400000, guid: 0ae6070acdad2624795191f91b666e90, type: 2}
+    requiredFlags:
+    - Prologue_CarouselChecked
+    - Prologue_ControlRoomChecked
+    completeFlag: Prologue_CForeshadowComplete
+    changeChapter: 1
+    targetChapter: 1

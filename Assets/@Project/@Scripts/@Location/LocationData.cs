@@ -14,11 +14,46 @@ public class LocationData : ScriptableObject
     [SerializeField] private List<LocationExit> exits = new List<LocationExit>();
     [SerializeField] private List<LocationHotspot> hotspots = new List<LocationHotspot>();
 
+    [Tooltip("이 장소에서 조건이 맞으면 클릭 없이 한 번 재생되는 대화 (위에서부터 확인)")]
+    [SerializeField] private List<LocationAutoEvent> autoEvents = new List<LocationAutoEvent>();
+
     public string DisplayName => displayName;
     public Sprite Background => background;
     public Chapter UnlockChapter => unlockChapter;
     public IReadOnlyList<LocationExit> Exits => exits;
     public IReadOnlyList<LocationHotspot> Hotspots => hotspots;
+    public IReadOnlyList<LocationAutoEvent> AutoEvents => autoEvents;
+}
+
+// 장소 진입 또는 플래그 변경 시 조건이 맞으면 자동으로 한 번 재생되는 대화.
+[System.Serializable]
+public class LocationAutoEvent
+{
+    public DialogueData dialogue;
+
+    [Tooltip("모두 켜져 있어야 실행된다. 비워두면 조건 없음 (장소에 들어오면 실행)")]
+    public List<string> requiredFlags = new List<string>();
+
+    [Tooltip("대화가 끝까지 진행되면 켜지는 플래그. 이 플래그가 켜져 있으면 다시 실행하지 않는다 (필수)")]
+    public string completeFlag;
+
+    [Tooltip("켜면 대화가 끝난 뒤 (Complete Flag 설정 다음에) 챕터를 바꾼다")]
+    public bool changeChapter;
+
+    public Chapter targetChapter = Chapter.Prologue;
+
+    public bool IsReady()
+    {
+        // Complete Flag가 없으면 매번 반복되므로 실행하지 않는다
+        if (dialogue == null || string.IsNullOrWhiteSpace(completeFlag) || GameFlags.Has(completeFlag))
+            return false;
+        foreach (string flag in requiredFlags)
+        {
+            if (!GameFlags.Has(flag))
+                return false;
+        }
+        return true;
+    }
 }
 
 [System.Serializable]

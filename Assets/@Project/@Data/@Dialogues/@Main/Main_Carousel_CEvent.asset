@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
+  m_Name: Main_Carousel_CEvent
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: X
+    text: "\uC65C \uADF8\uB798?"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\uC751?"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: X
+    text: "\uC544\uAE4C\uBD80\uD130 \uC800\uCABD \uBCF4\uACE0 \uC788\uC796\uC544."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\uC544."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\uADF8\uB0E5... \uC880 \uC774\uC0C1\uD574\uC11C."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: X
+    text: "\uBB50\uAC00?"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\uC5EC\uAE30 \uCC98\uC74C \uBCF4\uB294 \uACF3 \uB9DE\uB294\uB370."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\uC800 \uAE38 \uBCF4\uACE0 \uC788\uC73C\uB2C8\uAE4C \uAD1C\uD788 \uB6F0\uC5B4\uAC00\uACE0
+      \uC2F6\uB124."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: X
+    text: "\uB6F0\uC5B4\uAC00\uACE0 \uC2F6\uB2E4\uACE0?"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\uC751."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\uBB54 \uC18C\uB9B0\uC9C0 \uBAA8\uB974\uACA0\uC9C0?"
+    portrait: {fileID: 0}
+    choices:
+    - text: "\uC870\uAE08."
+      next: {fileID: 11400000, guid: 0d37bbb2687fa3d419dccfdb20b6856b, type: 2}
+      choiceId: Prologue_C_Response_Puzzled
+      recordAsFlag: 1
+    - text: "\uADF8\uB7F4 \uC218\uB3C4 \uC788\uC9C0."
+      next: {fileID: 11400000, guid: 614cd1c9f435d454fbfacdbf9cf3644d, type: 2}
+      choiceId: Prologue_C_Response_Accept
+      recordAsFlag: 1
+  nextDialogue: {fileID: 0}
+  skipNextIfFlag: 
