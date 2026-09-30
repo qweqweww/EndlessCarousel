@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
-  m_Name: Main_Prologue_Common
+  m_Name: Main_Prologue_Common_BeforeRecall
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - speakerName: D
@@ -105,103 +105,6 @@ MonoBehaviour:
     choices: []
   - speakerName: C
     text: "\uB098\uB3C4 \uBE44\uC2B7\uD558\uACE0."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: 
-    text: "\uC774\uACF3\uC5D0 \uC624\uAE30 \uC804\uC758 \uC77C\uC744 \uB5A0\uC62C\uB824\uBCF4\uB824
-      \uD588\uB2E4."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: 
-    text: "\uC5B4\uB514\uC5D0 \uC788\uC5C8\uB294\uC9C0."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: 
-    text: "\uB204\uAD6C\uC640 \uC788\uC5C8\uB294\uC9C0."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: 
-    text: "\uBB34\uC5C7\uC744 \uD558\uACE0 \uC788\uC5C8\uB294\uC9C0."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: 
-    text: "\u2026\u2026."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: 
-    text: "\uC120\uBA85\uD558\uAC8C \uB5A0\uC624\uB974\uB294 \uAC83\uC740 \uC5C6\uC5C8\uB2E4."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: X
-    text: "\u2026\u2026\uB098\uB3C4 \uC798 \uBAA8\uB974\uACA0\uC5B4."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: D
-    text: "\uADF8\uB7FC \uB2E4 \uBE44\uC2B7\uD55C \uAC70\uB124."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: A
-    text: "\uADF8\uB7F0 \uAC83 \uAC19\uC544."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: B
-    text: "\uADF8\uB7FC... \uC774\uC81C \uC5B4\uB5BB\uAC8C \uD560\uAE4C\uC694?"
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: C
-    text: "\uC8FC\uBCC0\uBD80\uD130 \uB458\uB7EC\uBCF4\uC790."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: C
-    text: "\uACC4\uC18D \uC5EC\uAE30 \uC788\uB2E4\uACE0 \uB2F5\uC774 \uB098\uC624\uC9C4
-      \uC54A\uC744 \uAC83 \uAC19\uACE0."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: A
-    text: "\uB3D9\uC758."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: D
-    text: "\uB098\uB3C4."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: C
-    text: "\uB2E4 \uAC19\uC774 \uC6C0\uC9C1\uC774\uBA74 \uC870\uAE08 \uB290\uB9AC\uAE34
-      \uD558\uACA0\uC9C0\uB9CC\u2014"
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: D
-    text: "\uC0C1\uAD00\uC5C6\uC796\uC544."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: C
-    text: "\uC751?"
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: D
-    text: "\uC5EC\uAE30\uAC00 \uC5B4\uB518\uC9C0\uB3C4 \uBAA8\uB974\uB294\uB370 \uAD73\uC774
-      \uD769\uC5B4\uC9C8 \uD544\uC694 \uC788\uC5B4?"
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: D
-    text: "\uC11C\uB85C \uCC3E\uB294 \uAC8C \uB354 \uADC0\uCC2E\uC796\uC544."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: C
-    text: "\uADF8\uAC83\uB3C4 \uADF8\uB807\uB124."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: B
-    text: "\uC5B4... \uC800\uB3C4 \uAC19\uC774 \uC788\uB294 \uAC8C \uC88B\uC744 \uAC83
-      \uAC19\uC544\uC694."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: A
-    text: "\uADF8\uB7FC \uAC19\uC774 \uAC00."
-    portrait: {fileID: 0}
-    choices: []
-  - speakerName: X
-    text: "\u2026\u2026\uADF8\uB798."
     portrait: {fileID: 0}
     choices: []
   nextDialogue: {fileID: 0}

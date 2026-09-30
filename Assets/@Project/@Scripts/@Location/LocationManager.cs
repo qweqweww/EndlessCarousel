@@ -113,6 +113,8 @@ public class LocationManager : MonoBehaviour
             return false;
         if (hotspot.limitMaxChapter && ChapterManager.Current > hotspot.maxChapter)
             return false;
+        if (!string.IsNullOrWhiteSpace(hotspot.hiddenIfFlag) && GameFlags.Has(hotspot.hiddenIfFlag))
+            return false;
         return string.IsNullOrWhiteSpace(hotspot.requiredFlag) || GameFlags.Has(hotspot.requiredFlag);
     }
 

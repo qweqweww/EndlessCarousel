@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
+  m_Name: Main_Plaza_NextPlace
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: B
+    text: "\uC5B4... \uC774\uC81C \uB2E4\uB978 \uACF3\uB3C4 \uAC00\uBCF4\uB294 \uAC8C
+      \uC88B\uACA0\uC8E0?"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\uADF8\uB807\uC9C0."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: B
+    text: "\uADF8\uB7FC... \uC5B4\uB514\uBD80\uD130 \uAC08\uAE4C\uC694?"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\uB10C \uC5B4\uB514 \uAC00\uACE0 \uC2F6\uC740\uB370?"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: B
+    text: "\uC800\uC694?"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\uC751."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\uB124\uAC00 \uBA3C\uC800 \uBB3C\uC5B4\uBD24\uC796\uC544."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: B
+    text: "\uC5B4... \uC800\uB294..."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: B
+    text: "\uB2E4 \uAD1C\uCC2E\uC740\uB370\uC694."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\uC9C4\uC9DC \uC544\uBB34 \uB370\uB098?"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: B
+    text: "\uB124... \uC544\uB9C8\uB3C4\uC694."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\uADF8\uB7FC \uAC00\uAE4C\uC6B4 \uB370\uBD80\uD130 \uAC00\uC790."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\uC800\uCABD \uD68C\uC804\uBAA9\uB9C8\uBD80\uD130 \uC5B4\uB54C?"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: B
+    text: "\uB124... \uC88B\uC544\uC694."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: A
+    text: "\uAC00\uC790."
+    portrait: {fileID: 0}
+    choices: []
+  nextDialogue: {fileID: 0}

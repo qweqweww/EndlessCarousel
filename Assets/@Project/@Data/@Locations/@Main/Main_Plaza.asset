@@ -19,5 +19,95 @@ MonoBehaviour:
   - label: "\uD68C\uC804\uBAA9\uB9C8 \uAD11\uC7A5\uC73C\uB85C >"
     target: {fileID: 11400000, guid: e68fe5a6fbae132468d7e4cb4892212a, type: 2}
     screenPosition: {x: 0.85, y: 0.15}
+    requiredFlag: Prologue_PlazaComplete
+  hotspots:
+  - displayName: "\uB180\uC774\uACF5\uC6D0 \uC548\uB0B4\uB3C4"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.18, y: 0.55}
+    size: {x: 220, y: 170}
+    dialogue: {fileID: 11400000, guid: 8ff0695ffb147704d80f946f28a7b349, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
     requiredFlag: Prologue_IntroComplete
-  hotspots: []
+    hiddenIfFlag: 
+    minChapter: 0
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Prologue_MapChecked
+  - displayName: "\uAC8C\uC784 \uBD80\uC2A4"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.72, y: 0.5}
+    size: {x: 220, y: 170}
+    dialogue: {fileID: 11400000, guid: ff549744dc8f16542b64da2c1997f979, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Prologue_MapChecked
+    hiddenIfFlag: Prologue_PlazaComplete
+    minChapter: 0
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Prologue_PlazaComplete
+  - displayName: "\uB9E4\uD45C\uC18C"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.4, y: 0.6}
+    size: {x: 220, y: 150}
+    dialogue: {fileID: 11400000, guid: 073e725941d693e44b2011606689da70, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Prologue_IntroComplete
+    hiddenIfFlag: 
+    minChapter: 0
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 
+  - displayName: "\uBC29\uC1A1 \uC2A4\uD53C\uCEE4"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.55, y: 0.8}
+    size: {x: 160, y: 120}
+    dialogue: {fileID: 11400000, guid: 23a5fe0f73f36014593f8d3ce7718279, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Prologue_IntroComplete
+    hiddenIfFlag: 
+    minChapter: 0
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 
+  - displayName: "\uD3EC\uD1A0\uC874"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.18, y: 0.28}
+    size: {x: 220, y: 150}
+    dialogue: {fileID: 11400000, guid: 5a1f4ebb769bd534097e474f230b3c40, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Prologue_IntroComplete
+    hiddenIfFlag: 
+    minChapter: 0
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 
+  - displayName: "\uBCA4\uCE58\uC640 \uD48D\uC120"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.5, y: 0.3}
+    size: {x: 240, y: 140}
+    dialogue: {fileID: 11400000, guid: 54b69a4bf7f8dd04b89b2aa56b8e69c5, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Prologue_IntroComplete
+    hiddenIfFlag: 
+    minChapter: 0
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 

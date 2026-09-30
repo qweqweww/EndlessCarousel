@@ -71,6 +71,9 @@ public class LocationHotspot
     [Tooltip("이 플래그가 켜져 있어야 화면에 나타난다. 비워두면 조건 없음")]
     public string requiredFlag;
 
+    [Tooltip("이 플래그가 켜지면 화면에서 사라진다 (한 번만 보는 이벤트용). 비워두면 조건 없음")]
+    public string hiddenIfFlag;
+
     [Tooltip("이 챕터부터 나타난다")]
     public Chapter minChapter = Chapter.Prologue;
 
