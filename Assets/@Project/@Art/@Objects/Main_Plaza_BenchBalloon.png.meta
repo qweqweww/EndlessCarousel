@@ -5,9 +5,6 @@ TextureImporter:
   - first:
       213: 1151579758911109911
     second: Main_Plaza_BenchBalloon_0
-  - first:
-      213: 4796224080863675348
-    second: Main_Plaza_BenchBalloon_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,10 +116,10 @@ TextureImporter:
       name: Main_Plaza_BenchBalloon_0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 31
-        width: 1459
-        height: 973
+        x: 36
+        y: 17
+        width: 1239
+        height: 1137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,28 +130,6 @@ TextureImporter:
       bones: []
       spriteID: 71b3d6c70bb3bff00800000000000000
       internalID: 1151579758911109911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Plaza_BenchBalloon_1
-      rect:
-        serializedVersion: 2
-        x: 1478
-        y: 457
-        width: 9
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d3cd0bd36c9f8240800000000000000
-      internalID: 4796224080863675348
       vertices: []
       indices: 
       edges: []
@@ -174,7 +149,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Main_Plaza_BenchBalloon_0: 1151579758911109911
-      Main_Plaza_BenchBalloon_1: 4796224080863675348
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

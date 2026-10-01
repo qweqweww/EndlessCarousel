@@ -49,7 +49,7 @@ MonoBehaviour:
     choices: []
   - speakerName: '?'
     text: "\uC6B0\uB9AC\uB3C4 \uBC29\uAE08 \uAE7C\uC5B4."
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: ad81d1cc2c769c94abb563a58eb4f8ab, type: 3}
     choices: []
   - speakerName: '?'
     text: "\uC751. \uC0C1\uD669\uC740 \uBE44\uC2B7\uD574."
@@ -74,7 +74,7 @@ MonoBehaviour:
     choices: []
   - speakerName: '?'
     text: "\uC5C6\uC5B4."
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: ad81d1cc2c769c94abb563a58eb4f8ab, type: 3}
     choices: []
   - speakerName: '?'
     text: "\uADF8\uAC74 \uB2E4\uD589\uC774\uB124."
@@ -90,7 +90,7 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: A.
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: ad81d1cc2c769c94abb563a58eb4f8ab, type: 3}
     choices: []
   - speakerName: B
     text: "\uC5B4... \uC800\uB294 B\uC608\uC694."
@@ -135,11 +135,11 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: "\uADF8\uB798\uC11C."
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: ad81d1cc2c769c94abb563a58eb4f8ab, type: 3}
     choices: []
   - speakerName: A
     text: "\uC5EC\uAE30\uAC00 \uC5B4\uB518\uC9C0\uB294?"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: ad81d1cc2c769c94abb563a58eb4f8ab, type: 3}
     choices: []
   - speakerName: C
     text: "\uBAB0\uB77C."
@@ -163,3 +163,4 @@ MonoBehaviour:
       choiceId: Prologue_Choice_Act
       recordAsFlag: 1
   nextDialogue: {fileID: 0}
+  skipNextIfFlag: 

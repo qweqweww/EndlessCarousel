@@ -337,6 +337,14 @@ PrefabInstance:
       propertyPath: m_text
       value: "\uAC8C\uC784 \uC885\uB8CC"
       objectReference: {fileID: 0}
+    - target: {fileID: 1430526735917215135, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4279902003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1430526735917215135, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
     - target: {fileID: 3146927029435491964, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
       propertyPath: m_Name
       value: QuitButton
@@ -351,27 +359,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6361036125592224597, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6361036125592224597, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6361036125592224597, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6361036125592224597, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6361036125592224597, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6361036125592224597, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6361036125592224597, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -499,7 +507,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9ed1da538bf2b3c41ae5d0aaf53ed90e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d7be269b48d2e594c8eed9980633080d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -608,6 +616,14 @@ PrefabInstance:
       propertyPath: m_text
       value: "\uC2DC\uC791\uD558\uAE30"
       objectReference: {fileID: 0}
+    - target: {fileID: 1430526735917215135, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4279902003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1430526735917215135, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
     - target: {fileID: 3146927029435491964, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
       propertyPath: m_Name
       value: StartButton
@@ -622,27 +638,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6361036125592224597, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6361036125592224597, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6361036125592224597, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6361036125592224597, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6361036125592224597, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6361036125592224597, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6361036125592224597, guid: 0e16547c18aa00a4ca13dfb6721a21fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -779,7 +795,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4291620351
   m_fontColor: {r: 1, g: 0.93, b: 0.8, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -792,7 +808,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -1173,7 +1189,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0

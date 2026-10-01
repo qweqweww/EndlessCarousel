@@ -19,7 +19,7 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: "\uADF8\uB798."
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: ad81d1cc2c769c94abb563a58eb4f8ab, type: 3}
     choices: []
   - speakerName: C
     text: "\uB098\uB3C4 \uCC2C\uC131."
@@ -34,3 +34,4 @@ MonoBehaviour:
     portrait: {fileID: 0}
     choices: []
   nextDialogue: {fileID: 11400000, guid: 51ea81bfb47fd4841936dc2f2cc72507, type: 2}
+  skipNextIfFlag: 

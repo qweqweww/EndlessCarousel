@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: -8126310360221750098
     second: Main_Plaza_MapBoard_1
+  - first:
+      213: 7624881720024874565
+    second: Main_Plaza_MapBoard_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,8 +124,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1086
-        height: 1448
+        width: 1097
+        height: 1384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +144,10 @@ TextureImporter:
       name: Main_Plaza_MapBoard_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 504
-        width: 5
-        height: 18
+        x: 885
+        y: 31
+        width: 12
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,6 +158,28 @@ TextureImporter:
       bones: []
       spriteID: eace76c48cb893f80800000000000000
       internalID: -8126310360221750098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Plaza_MapBoard_2
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 29
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54eb378a68501d960800000000000000
+      internalID: 7624881720024874565
       vertices: []
       indices: 
       edges: []
@@ -175,6 +200,7 @@ TextureImporter:
     nameFileIdTable:
       Main_Plaza_MapBoard_0: 3078212384594228511
       Main_Plaza_MapBoard_1: -8126310360221750098
+      Main_Plaza_MapBoard_2: 7624881720024874565
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

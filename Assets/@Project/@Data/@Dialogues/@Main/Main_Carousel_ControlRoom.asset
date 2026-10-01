@@ -32,7 +32,7 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: "\uB2E4\uC74C."
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: ad81d1cc2c769c94abb563a58eb4f8ab, type: 3}
     choices: []
   - speakerName: C
     text: "\uC9C4\uC9DC \uBE60\uB974\uB2E4."
@@ -40,7 +40,7 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: "\uC5C6\uC73C\uBA74 \uBCFC \uAC83\uB3C4 \uC5C6\uC796\uC544."
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: ad81d1cc2c769c94abb563a58eb4f8ab, type: 3}
     choices: []
   - speakerName: C
     text: "\uADF8\uAC74 \uB9DE\uB294\uB370."

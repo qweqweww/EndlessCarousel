@@ -32,6 +32,15 @@ public class LocationObjectInteraction : MonoBehaviour, IPointerEnterHandler, IP
 
     [SerializeField] private float fadeDuration = 0.2f;
 
+    [Header("유도 깜빡임 (선택, 한 번만 자동 재생)")]
+    [Tooltip("이 플래그가 켜지는 순간 Glow가 자동으로 몇 번 깜빡인다. 비워두면 사용하지 않음")]
+    [SerializeField] private string hintAfterFlag;
+    [Tooltip("깜빡임을 시작할 때 켜는 플래그. 이미 켜져 있으면 다시 재생하지 않는다")]
+    [SerializeField] private string hintShownFlag;
+    [SerializeField] private int hintPulses = 3;
+    [SerializeField] private float hintDuration = 1.8f;
+    [Range(0f, 1f)] [SerializeField] private float hintStrength = 0.8f;
+
     // 흐린 외곽 그림 생성: 원본 크기와 상관없이 가로 약 GlowTextureWidth 픽셀로 줄인 뒤 흐리게 한다.
     // 화면에 표시되는 크기 대비 흐림 폭이 일정해진다. (반경이 클수록 더 넓게 퍼짐)
     private const int GlowTextureWidth = 160;
@@ -40,6 +49,7 @@ public class LocationObjectInteraction : MonoBehaviour, IPointerEnterHandler, IP
 
     private float glowAmount;
     private float targetAmount;
+    private float hintTime = -1f; // 0 이상이면 유도 깜빡임 재생 중
 
     public string HotspotName => hotspotName;
 
@@ -56,18 +66,46 @@ public class LocationObjectInteraction : MonoBehaviour, IPointerEnterHandler, IP
         ApplyGlow(0f);
     }
 
+    private void OnEnable()
+    {
+        GameFlags.Changed += OnFlagChanged;
+    }
+
     private void OnDisable()
     {
+        GameFlags.Changed -= OnFlagChanged;
         targetAmount = 0f;
+        hintTime = -1f;
         ApplyGlow(0f);
+    }
+
+    private void OnFlagChanged(string id, bool value)
+    {
+        if (!value || string.IsNullOrWhiteSpace(hintAfterFlag) || id != hintAfterFlag.Trim() || GameFlags.Has(hintShownFlag))
+            return;
+        GameFlags.Set(hintShownFlag);
+        hintTime = 0f;
     }
 
     private void Update()
     {
-        if (Mathf.Approximately(glowAmount, targetAmount))
+        bool hinting = hintTime >= 0f;
+        if (Mathf.Approximately(glowAmount, targetAmount) && !hinting)
             return;
         float step = fadeDuration > 0f ? Time.unscaledDeltaTime / fadeDuration : 1f;
-        ApplyGlow(Mathf.MoveTowards(glowAmount, targetAmount, step));
+        glowAmount = Mathf.MoveTowards(glowAmount, targetAmount, step);
+
+        // 유도 깜빡임은 Hover 밝기와 겹치면 더 밝은 쪽을 보여준다 (Hover 상태 자체는 바꾸지 않음)
+        float shown = glowAmount;
+        if (hinting)
+        {
+            hintTime += Time.unscaledDeltaTime;
+            if (hintTime >= hintDuration)
+                hintTime = -1f;
+            else
+                shown = Mathf.Max(shown, hintStrength * Mathf.Abs(Mathf.Sin(hintTime / hintDuration * hintPulses * Mathf.PI)));
+        }
+        ShowGlow(shown);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -85,6 +123,7 @@ public class LocationObjectInteraction : MonoBehaviour, IPointerEnterHandler, IP
         if (!locationManager.CanInspect(hotspotName))
             return;
         targetAmount = 0f;
+        hintTime = -1f;
         ApplyGlow(0f);
         locationManager.InspectByName(hotspotName);
     }
@@ -108,6 +147,11 @@ public class LocationObjectInteraction : MonoBehaviour, IPointerEnterHandler, IP
     private void ApplyGlow(float amount)
     {
         glowAmount = amount;
+        ShowGlow(amount);
+    }
+
+    private void ShowGlow(float amount)
+    {
         SetGlowAlpha(glowInner, innerAlpha * amount);
         SetGlowAlpha(glowMiddle, middleAlpha * amount);
         SetGlowAlpha(glowOuter, outerAlpha * amount);
@@ -126,7 +170,8 @@ public class LocationObjectInteraction : MonoBehaviour, IPointerEnterHandler, IP
     // 흐림이 잘리지 않도록 가장자리에 여백을 두고, 그 비율을 padding으로 돌려준다.
     private static Sprite CreateSoftSilhouette(Sprite source, out Vector2 padding)
     {
-        Rect rect = source.textureRect;
+        // textureRect는 Tight 메시일 때 투명 여백이 잘린 영역이라 Image 전체 Rect와 어긋난다. 전체 Sprite 영역을 사용한다.
+        Rect rect = source.rect;
         Color32[] pixels = source.texture.GetPixels32();
         int texWidth = source.texture.width;
         int x0 = (int)rect.x, y0 = (int)rect.y, srcW = (int)rect.width, srcH = (int)rect.height;
