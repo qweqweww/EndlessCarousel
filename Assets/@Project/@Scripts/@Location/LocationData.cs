@@ -31,6 +31,9 @@ public class LocationAutoEvent
 {
     public DialogueData dialogue;
 
+    [Tooltip("지정하면 Dialogue 대신 이 기억 이벤트를 재생한다")]
+    public MemoryEventData memoryEvent;
+
     [Tooltip("모두 켜져 있어야 실행된다. 비워두면 조건 없음 (장소에 들어오면 실행)")]
     public List<string> requiredFlags = new List<string>();
 
@@ -42,10 +45,13 @@ public class LocationAutoEvent
 
     public Chapter targetChapter = Chapter.Prologue;
 
+    [Tooltip("켜면 대화가 끝난 뒤 화면을 검게 페이드하고, 그 사이에 완료 처리(플래그/챕터)를 한 뒤 다시 밝힌다 (챕터 마무리용)")]
+    public bool fadeOnComplete;
+
     public bool IsReady()
     {
         // Complete Flag가 없으면 매번 반복되므로 실행하지 않는다
-        if (dialogue == null || string.IsNullOrWhiteSpace(completeFlag) || GameFlags.Has(completeFlag))
+        if ((dialogue == null && memoryEvent == null) || string.IsNullOrWhiteSpace(completeFlag) || GameFlags.Has(completeFlag))
             return false;
         foreach (string flag in requiredFlags)
         {

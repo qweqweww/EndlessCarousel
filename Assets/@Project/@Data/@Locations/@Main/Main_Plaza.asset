@@ -20,6 +20,10 @@ MonoBehaviour:
     target: {fileID: 11400000, guid: e68fe5a6fbae132468d7e4cb4892212a, type: 2}
     screenPosition: {x: 0.85, y: 0.15}
     requiredFlag: Prologue_PlazaComplete
+  - label: "\uACF5\uC5F0\uC7A5\uC73C\uB85C >"
+    target: {fileID: 11400000, guid: 865955f28b5cac14bb5b2c31daf35fc0, type: 2}
+    screenPosition: {x: 0.5, y: 0.1}
+    requiredFlag: 
   hotspots:
   - displayName: "\uB180\uC774\uACF5\uC6D0 \uC548\uB0B4\uB3C4"
     inspectText: 

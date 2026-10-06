@@ -28,28 +28,28 @@ MonoBehaviour:
     choices: []
   - speakerName: D
     text: "\uC5EC\uAE30\uB3C4 \uC5C6\uB124."
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
     choices: []
   - speakerName: A
     text: "\uB2E4\uC74C."
-    portrait: {fileID: 21300000, guid: ad81d1cc2c769c94abb563a58eb4f8ab, type: 3}
+    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
     choices: []
   - speakerName: C
     text: "\uC9C4\uC9DC \uBE60\uB974\uB2E4."
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
     choices: []
   - speakerName: A
     text: "\uC5C6\uC73C\uBA74 \uBCFC \uAC83\uB3C4 \uC5C6\uC796\uC544."
-    portrait: {fileID: 21300000, guid: ad81d1cc2c769c94abb563a58eb4f8ab, type: 3}
+    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
     choices: []
   - speakerName: C
     text: "\uADF8\uAC74 \uB9DE\uB294\uB370."
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
     choices: []
   - speakerName: B
     text: "\uC5B4... \uAE30\uACC4\uB294 \uC804\uBD80 \uCF1C\uC838 \uC788\uB294 \uAC83
       \uAC19\uC544\uC694."
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
     choices: []
   - speakerName: X
     text: "\uADF8\uB7FC \uC774\uAC83\uB3C4 \uACC4\uC18D \uC791\uB3D9 \uC911\uC778

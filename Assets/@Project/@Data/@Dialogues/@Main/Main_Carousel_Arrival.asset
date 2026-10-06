@@ -15,19 +15,19 @@ MonoBehaviour:
   lines:
   - speakerName: D
     text: "\uC640."
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
     choices: []
   - speakerName: B
     text: "\uC5B4... \uC5EC\uAE30\uB3C4 \uBA40\uCA61\uD558\uB124\uC694."
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
     choices: []
   - speakerName: C
     text: "\uC0DD\uAC01\uBCF4\uB2E4 \uC81C\uB300\uB85C \uB3CC\uC544\uAC00\uACE0 \uC788\uB294\uB370?"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
     choices: []
   - speakerName: A
     text: "\uC0AC\uB78C\uC740 \uC5C6\uACE0."
-    portrait: {fileID: 21300000, guid: ad81d1cc2c769c94abb563a58eb4f8ab, type: 3}
+    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
     choices: []
   - speakerName: X
     text: "\uC5EC\uAE30\uB3C4 \uB611\uAC19\uB124."
@@ -35,24 +35,24 @@ MonoBehaviour:
     choices: []
   - speakerName: D
     text: "\uADFC\uB370 \uC880 \uC2E0\uAE30\uD558\uB2E4."
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
     choices: []
   - speakerName: C
     text: "\uBB50\uAC00?"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
     choices: []
   - speakerName: D
     text: "\uC544\uBB34\uB3C4 \uC5C6\uB294\uB370 \uACC4\uC18D \uB3CC\uC544\uAC00\uB294
       \uAC70."
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
     choices: []
   - speakerName: A
     text: "\uC790\uB3D9\uC77C \uC218\uB3C4 \uC788\uC9C0."
-    portrait: {fileID: 21300000, guid: ad81d1cc2c769c94abb563a58eb4f8ab, type: 3}
+    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
     choices: []
   - speakerName: D
     text: "\uADF8\uB7F0\uAC00."
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
     choices: []
   nextDialogue: {fileID: 0}
   skipNextIfFlag: 

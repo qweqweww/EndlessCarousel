@@ -858,6 +858,8 @@ MonoBehaviour:
   dialoguePanel: {fileID: 101626291}
   memoryPanel: {fileID: 998734302}
   endingManager: {fileID: 2026656487}
+  screenFader: {fileID: 1640339093}
+  fadeHoldDuration: 0.8
   locationObjects:
   - location: {fileID: 11400000, guid: 0d9ec9556bf200d40986c60c7bd4fe9a, type: 2}
     root: {fileID: 1345012465}

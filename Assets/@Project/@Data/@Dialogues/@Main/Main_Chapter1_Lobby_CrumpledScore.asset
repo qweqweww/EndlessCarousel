@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
+  m_Name: Main_Chapter1_Lobby_CrumpledScore
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: 
+    text: "\uD734\uC9C0\uD1B5 \uC606\uC5D0 \uAD6C\uACA8\uC9C4 \uC545\uBCF4\uAC00
+      \uB5A8\uC5B4\uC838 \uC788\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uD3B4\uBCF4\uB2C8 \uC74C\uD45C \uC704\uC5D0 \uBE68\uAC04 \uD39C \uC790\uAD6D\uC774
+      \uAC00\uB4DD\uD558\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "'\uC5EC\uAE30 \uB610 \uD2C0\uB9BC' '\uBC15\uC790' '\uB2E4\uC2DC' '\uB2E4\uC2DC'
+      '\uB2E4\uC2DC'"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: B
+    text: "\uB204\uAC00 \uC774\uB807\uAC8C\u2026"
+    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    choices: []
+  - speakerName: D
+    text: "\uC120\uC0DD\uC774 \uC37C\uACA0\uC9C0. \uC9C0\uB3C5\uD558\uB124."
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  - speakerName: C
+    text: "\uADF8\uB798\uB3C4 \uAF3C\uAF3C\uD558\uAC8C \uBD10\uC900 \uAC70 \uC544\uB0D0?"
+    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    choices: []
+  - speakerName: A
+    text: "\uC790\uAE30\uAC00 \uC4F4 \uAC70\uC57C."
+    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    choices: []
+  - speakerName: C
+    text: "\uC751?"
+    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    choices: []
+  - speakerName: A
+    text: "\u2026\u2026\uADF8\uB0E5 \uADF8\uB7F4 \uAC83 \uAC19\uB2E4\uACE0."
+    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    choices: []
+  nextDialogue: {fileID: 0}
+  skipNextIfFlag: 

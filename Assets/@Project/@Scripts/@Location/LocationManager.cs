@@ -28,6 +28,10 @@ public class LocationManager : MonoBehaviour
     [Header("엔딩")]
     [SerializeField] private EndingManager endingManager;
 
+    [Header("화면 전환 (Auto Event의 Fade On Complete용)")]
+    [SerializeField] private ScreenFader screenFader;
+    [SerializeField] private float fadeHoldDuration = 0.8f;
+
     [System.Serializable]
     private class LocationObjectGroup
     {
@@ -99,13 +103,30 @@ public class LocationManager : MonoBehaviour
         {
             if (autoEvent.IsReady())
             {
-                dialoguePanel.Play(autoEvent.dialogue, () => CompleteAutoEvent(autoEvent));
+                if (autoEvent.memoryEvent != null && memoryPanel != null)
+                    memoryPanel.Play(autoEvent.memoryEvent, () => CompleteAutoEvent(autoEvent));
+                else
+                    dialoguePanel.Play(autoEvent.dialogue, () => CompleteAutoEvent(autoEvent));
                 return;
             }
         }
     }
 
     private void CompleteAutoEvent(LocationAutoEvent autoEvent)
+    {
+        if (autoEvent.fadeOnComplete && screenFader != null)
+        {
+            screenFader.FadeToBlack(() =>
+            {
+                ApplyAutoEventResult(autoEvent);
+                screenFader.FadeFromBlack(fadeHoldDuration, false);
+            });
+            return;
+        }
+        ApplyAutoEventResult(autoEvent);
+    }
+
+    private void ApplyAutoEventResult(LocationAutoEvent autoEvent)
     {
         GameFlags.Set(autoEvent.completeFlag);
         if (autoEvent.changeChapter)

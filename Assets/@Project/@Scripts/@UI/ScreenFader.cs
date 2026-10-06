@@ -45,9 +45,10 @@ public class ScreenFader : MonoBehaviour
     }
 
     // holdDuration: 검정 상태를 유지한 뒤 페이드 인을 시작할 때까지의 시간
-    public void FadeFromBlack(float holdDuration = 0f)
+    // notify: 끄면 Fade In 완료 이벤트(프롤로그 시작 등)를 보내지 않는다 (게임 중간의 화면 전환용)
+    public void FadeFromBlack(float holdDuration = 0f, bool notify = true)
     {
-        Run(Fade(canvasGroup.alpha, 0f, holdDuration, fadeInDuration, NotifyFadeInComplete));
+        Run(Fade(canvasGroup.alpha, 0f, holdDuration, fadeInDuration, notify ? NotifyFadeInComplete : (System.Action)null));
     }
 
     public void FadeToBlackAndLoad(string sceneName)

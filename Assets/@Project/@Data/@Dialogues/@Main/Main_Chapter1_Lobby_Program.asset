@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
+  m_Name: Main_Chapter1_Lobby_Program
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: 
+    text: "\uC758\uC790 \uC704\uC5D0 \uD504\uB85C\uADF8\uB7A8 \uBD81\uC774 \uD3BC\uCCD0\uC838
+      \uC788\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uC5F0\uC8FC\uC790 \uC774\uB984 \uCE78\uC740 \uC804\uBD80 \uBE44\uC5B4
+      \uC788\uACE0, \uACE1\uBAA9\uB9CC \uB0A8\uC544 \uC788\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: B
+    text: "\uC774\uB984\uC774 \uC5C6\uB124\uC694."
+    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    choices: []
+  - speakerName: C
+    text: "\uB204\uAC00 \uCE60\uC9C0 \uC544\uC9C1 \uC548 \uC815\uD574\uC84C\uB098
+      \uBCF4\uB2E4."
+    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    choices: []
+  - speakerName: D
+    text: "\uC544\uB2C8\uBA74 \uB2E4 \uAE4C\uBA39\uC5C8\uAC70\uB098."
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  - speakerName: 
+    text: "\uC544\uBB34\uB3C4 \uC6C3\uC9C0 \uC54A\uC558\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: X
+    text: "\u2026\u2026\uC5EC\uAE30 \uC788\uB294 \uC6B0\uB9AC\uCC98\uB7FC."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\uADF8\uB7F0 \uC18C\uB9AC \uD558\uC9C0 \uB9C8. \uAE30\uBD84 \uC774\uC0C1\uD574\uC9C0\uC796\uC544."
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  nextDialogue: {fileID: 0}
+  skipNextIfFlag: 
