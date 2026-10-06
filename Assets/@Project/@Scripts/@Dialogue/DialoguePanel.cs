@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -19,15 +20,35 @@ public class DialoguePanel : MonoBehaviour
     [SerializeField] private RectTransform choiceParent;
     [SerializeField] private Button choiceButtonPrefab;
 
+    [Header("타자 효과 (초)")]
+    [Tooltip("한 글자가 나타나는 간격. 0이면 문장을 바로 전부 표시")]
+    [SerializeField] private float characterInterval = 0.035f;
+
+    [Header("▼ 연출 (px / 초)")]
+    [Tooltip("대기 중 위아래로 떠오르는 높이")]
+    [SerializeField] private float indicatorBobDistance = 6f;
+    [Tooltip("대기 중 한 번 왕복하는 시간")]
+    [SerializeField] private float indicatorBobDuration = 0.9f;
+    [Tooltip("클릭 시 아래로 내려가는 거리 (위로 살짝 올라가는 높이는 이 값의 30%)")]
+    [SerializeField] private float indicatorClickDropDistance = 12f;
+    [SerializeField] private float indicatorClickDuration = 0.14f;
+
     // 선택 결과를 받을 곳 (추후 플래그 시스템에서 구독)
     public event System.Action<DialogueChoice> ChoiceSelected;
 
     private const int MaxDialogueHops = 32;
+    private const int ShowAllCharacters = 99999; // TMP maxVisibleCharacters 기본값
 
     private readonly List<Button> choiceButtons = new List<Button>();
     private DialogueData currentDialogue;
     private int lineIndex;
     private System.Action onFinished;
+    private Coroutine typing;
+
+    private RectTransform indicatorRect;
+    private Vector2 indicatorBasePosition;
+    private float indicatorShownTime;
+    private bool indicatorClicking; // 클릭 연출 중에는 Update가 ▼를 건드리지 않는다
 
     public bool IsPlaying => currentDialogue != null;
     private bool IsChoosing => choiceButtons.Count > 0;
@@ -35,6 +56,77 @@ public class DialoguePanel : MonoBehaviour
     private void Awake()
     {
         advanceButton.onClick.AddListener(Next);
+        if (nextIndicator != null)
+        {
+            indicatorRect = (RectTransform)nextIndicator.transform;
+            indicatorBasePosition = indicatorRect.anchoredPosition;
+        }
+        SetIndicator(false);
+    }
+
+    private void OnDisable()
+    {
+        // 비활성화되면 코루틴이 멈추므로 상태를 초기화한다
+        typing = null;
+        indicatorClicking = false;
+        SetIndicator(false);
+    }
+
+    private void Update()
+    {
+        if (!indicatorClicking)
+            UpdateIndicator();
+    }
+
+    // 문장이 다 나왔고 선택지가 없을 때만 보이고, 보이는 동안 천천히 위아래로 떠 있는다 (cos 곡선 = Ease In/Out)
+    private void UpdateIndicator()
+    {
+        SetIndicator(IsPlaying && typing == null && !IsChoosing);
+        if (indicatorRect == null || !nextIndicator.activeSelf || indicatorBobDuration <= 0f)
+            return;
+        float phase = (Time.unscaledTime - indicatorShownTime) / indicatorBobDuration * 2f * Mathf.PI;
+        float offset = indicatorBobDistance * 0.5f * (1f - Mathf.Cos(phase));
+        indicatorRect.anchoredPosition = indicatorBasePosition + new Vector2(0f, offset);
+    }
+
+    // 켜질 때 Idle 시작 시각을 기록하고, 꺼질 때 항상 기본 위치로 되돌린다
+    private void SetIndicator(bool visible)
+    {
+        if (nextIndicator == null)
+            return;
+        if (!visible && indicatorRect != null)
+            indicatorRect.anchoredPosition = indicatorBasePosition;
+        if (nextIndicator.activeSelf == visible)
+            return;
+        nextIndicator.SetActive(visible);
+        indicatorShownTime = Time.unscaledTime;
+    }
+
+    // 현재 위치에서 살짝 위로(Ease Out) → 아래로(Ease In) 내려간 뒤 숨긴다. 다음 대사는 기다리지 않고 바로 시작된다.
+    private IEnumerator PlayIndicatorClick()
+    {
+        indicatorClicking = true;
+        Vector2 start = indicatorRect.anchoredPosition;
+        Vector2 top = start + new Vector2(0f, indicatorClickDropDistance * 0.3f);
+        Vector2 bottom = start - new Vector2(0f, indicatorClickDropDistance);
+        float upTime = indicatorClickDuration * 0.35f;
+        float downTime = indicatorClickDuration - upTime;
+
+        for (float t = 0f; t < upTime; t += Time.unscaledDeltaTime)
+        {
+            float k = t / upTime;
+            indicatorRect.anchoredPosition = Vector2.Lerp(start, top, 1f - (1f - k) * (1f - k));
+            yield return null;
+        }
+        for (float t = 0f; t < downTime; t += Time.unscaledDeltaTime)
+        {
+            float k = t / downTime;
+            indicatorRect.anchoredPosition = Vector2.Lerp(top, bottom, k * k);
+            yield return null;
+        }
+
+        indicatorClicking = false;
+        SetIndicator(false);
     }
 
     // onFinished: 대화가 마지막 줄까지 진행되어 끝났을 때 한 번 호출 (Close로 중단하면 호출하지 않음)
@@ -51,11 +143,24 @@ public class DialoguePanel : MonoBehaviour
         ContinueFrom(dialogue, 0);
     }
 
+    // 출력 중이면 문장을 즉시 완성하고, 다 나온 상태면 바로 다음 대사로 넘어간다 (강제 대기 없음)
     public void Next()
     {
-        if (currentDialogue == null || IsChoosing)
+        if (currentDialogue == null)
             return;
 
+        if (typing != null)
+        {
+            StopCoroutine(typing);
+            typing = null;
+            ShowFullLine();
+            return;
+        }
+        if (IsChoosing)
+            return;
+
+        if (indicatorRect != null && nextIndicator.activeSelf && !indicatorClicking)
+            StartCoroutine(PlayIndicatorClick());
         ContinueFrom(currentDialogue, lineIndex + 1);
     }
 
@@ -101,17 +206,47 @@ public class DialoguePanel : MonoBehaviour
         nameBox.SetActive(hasSpeaker);
         speakerNameText.text = line.speakerName;
 
-        dialogueText.text = line.text;
-
         portraitImage.sprite = line.portrait;
         portraitImage.gameObject.SetActive(line.portrait != null);
 
         ClearChoices();
-        foreach (DialogueChoice choice in line.choices)
-            choiceButtons.Add(CreateChoiceButton(choice));
 
-        if (nextIndicator != null)
-            nextIndicator.SetActive(!IsChoosing);
+        // 글자는 숨겨두고 한 글자씩 보인다. 선택지는 문장이 다 나온 뒤에 띄운다.
+        if (typing != null)
+            StopCoroutine(typing);
+        typing = null;
+        dialogueText.text = line.text;
+        dialogueText.maxVisibleCharacters = 0;
+        dialogueText.ForceMeshUpdate();
+        if (characterInterval > 0f && dialogueText.textInfo.characterCount > 0)
+            typing = StartCoroutine(Type(dialogueText.textInfo.characterCount));
+        else
+            ShowFullLine();
+    }
+
+    private IEnumerator Type(int total)
+    {
+        float elapsed = 0f;
+        int shown = 0;
+        while (shown < total)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            shown = Mathf.Min(total, 1 + (int)(elapsed / characterInterval));
+            dialogueText.maxVisibleCharacters = shown;
+            yield return null;
+        }
+        typing = null;
+        ShowFullLine();
+    }
+
+    // 현재 줄을 전부 표시하고, 선택지가 있으면 띄운다
+    private void ShowFullLine()
+    {
+        dialogueText.maxVisibleCharacters = ShowAllCharacters;
+        if (IsChoosing)
+            return;
+        foreach (DialogueChoice choice in currentDialogue.Lines[lineIndex].choices)
+            choiceButtons.Add(CreateChoiceButton(choice));
     }
 
     private Button CreateChoiceButton(DialogueChoice choice)
