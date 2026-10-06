@@ -33,5 +33,5 @@ MonoBehaviour:
     text: "A\uB294 \uD53C\uC544\uB178 \uCABD\uC73C\uB85C \uAC78\uC5B4\uAC14\uB2E4."
     portrait: {fileID: 0}
     choices: []
-  nextDialogue: {fileID: 11400000, guid: f5a9eb36e841a314abf5de7bc7c418a1, type: 2}
+  nextDialogue: {fileID: 0}
   skipNextIfFlag: 

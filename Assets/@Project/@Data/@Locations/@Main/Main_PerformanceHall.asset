@@ -87,6 +87,22 @@ MonoBehaviour:
     memoryEvent: {fileID: 0}
     requiredFlags:
     - Chapter1_MemoryComplete
+    completeFlag: Chapter1_PianoDecided
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: d0b22288692b4a5469604fc5e9d78d39, type: 2}
+    requiredFlags:
+    - Chapter1_PianoDecided
+    completeFlag: Chapter1_PerformanceSeen
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: e71efc3aa17510341b4bcc858fe82cda, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter1_PerformanceSeen
     completeFlag: Chapter1_Complete
     changeChapter: 1
     targetChapter: 2

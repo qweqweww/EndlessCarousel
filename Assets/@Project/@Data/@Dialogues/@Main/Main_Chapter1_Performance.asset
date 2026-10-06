@@ -83,5 +83,5 @@ MonoBehaviour:
       \uAC19\uC740 \uACE1\uC744 \uC2A4\uBB34 \uBC88 \uCE58\uB358 \uC544\uC774\uCC98\uB7FC."
     portrait: {fileID: 0}
     choices: []
-  nextDialogue: {fileID: 11400000, guid: e71efc3aa17510341b4bcc858fe82cda, type: 2}
+  nextDialogue: {fileID: 0}
   skipNextIfFlag: 
