@@ -28,6 +28,9 @@ public class ChapterTitleCard : MonoBehaviour
 
     public bool IsShowing { get; private set; }
 
+    // 제목이 Fade Out까지 끝나 완전히 사라졌을 때 (장소의 Auto Event가 이 시점까지 기다린다)
+    public event System.Action Hidden;
+
     private void Awake()
     {
         canvasGroup = GetComponent<CanvasGroup>();
@@ -57,6 +60,17 @@ public class ChapterTitleCard : MonoBehaviour
         }
     }
 
+    // 표시 중인 제목을 즉시 숨긴다 (테스트용 챕터 점프 등)
+    public void HideImmediate()
+    {
+        bool wasShowing = IsShowing;
+        StopAllCoroutines();
+        IsShowing = false;
+        SetAlpha(0f);
+        if (wasShowing)
+            Hidden?.Invoke();
+    }
+
     private IEnumerator Show(ChapterTitle title)
     {
         IsShowing = true;
@@ -68,6 +82,7 @@ public class ChapterTitleCard : MonoBehaviour
         yield return Fade(1f, 0f, fadeOutDuration);
 
         IsShowing = false;
+        Hidden?.Invoke();
     }
 
     private IEnumerator Fade(float from, float to, float duration)

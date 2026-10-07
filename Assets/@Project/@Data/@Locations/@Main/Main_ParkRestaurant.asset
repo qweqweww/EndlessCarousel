@@ -1,0 +1,286 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc153ff69840e446b86e1a97765f974, type: 3}
+  m_Name: Main_ParkRestaurant
+  m_EditorClassIdentifier: Assembly-CSharp::LocationData
+  displayName: "\uD30C\uD06C \uB808\uC2A4\uD1A0\uB791"
+  background: {fileID: 21300000, guid: 5597622ea2f9feb4f9407d608e0bfb7f, type: 3}
+  unlockChapter: 4
+  exits:
+  - label: "\uC911\uC559 \uAD11\uC7A5\uC73C\uB85C >"
+    target: {fileID: 11400000, guid: 0d9ec9556bf200d40986c60c7bd4fe9a, type: 2}
+    screenPosition: {x: 0.85, y: 0.15}
+    requiredFlag: 
+  hotspots:
+  - displayName: "\uB450 \uC0AC\uB78C\uC6A9 \uC2DD\uD0C1"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.3, y: 0.4}
+    size: {x: 320, y: 200}
+    dialogue: {fileID: 11400000, guid: a8bb0e53d3c84024a9b6cdf33230cf41, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter4_Entered
+    hiddenIfFlag: Chapter4_Phase1Complete
+    minChapter: 4
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter4_TableChecked
+  - displayName: "\uB0A1\uC740 \uC55E\uCE58\uB9C8"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.62, y: 0.6}
+    size: {x: 180, y: 240}
+    dialogue: {fileID: 11400000, guid: ad3537f8ce2346f4882b3bc1f82d6737, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter4_Entered
+    hiddenIfFlag: Chapter4_Phase1Complete
+    minChapter: 4
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter4_ApronChecked
+  - displayName: "\uC5B4\uB9B0\uC774\uC6A9 \uCEF5"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.84, y: 0.55}
+    size: {x: 160, y: 160}
+    dialogue: {fileID: 11400000, guid: 9c67915d8f6722441a4aad35d5e3e285, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter4_Entered
+    hiddenIfFlag: Chapter4_Phase1Complete
+    minChapter: 4
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 
+  - displayName: "\uC8FC\uBC29 \uC55E\uC758 \uC5B8\uB2C8"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.48, y: 0.5}
+    size: {x: 200, y: 300}
+    dialogue: {fileID: 11400000, guid: 903ccd522befe83438042d6d1916d141, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter4_Entered
+    hiddenIfFlag: Chapter4_Phase1Complete
+    minChapter: 4
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 
+  - displayName: "\uACC4\uC0B0\uB300\uC758 \uD734\uB300\uD3F0"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.75, y: 0.42}
+    size: {x: 180, y: 140}
+    dialogue: {fileID: 11400000, guid: 3bc56fedd939cee468f578ac355c14bd, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter4_Phase1Complete
+    hiddenIfFlag: Chapter4_Phase2Complete
+    minChapter: 4
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter4_PhoneChecked
+  - displayName: "\uC608\uC57D \uBCF4\uB4DC"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.2, y: 0.58}
+    size: {x: 220, y: 260}
+    dialogue: {fileID: 11400000, guid: 0a8dfc2c0cb1c344a874c9212f7fb3fe, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter4_Phase1Complete
+    hiddenIfFlag: Chapter4_Phase2Complete
+    minChapter: 4
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter4_ReservationChecked
+  - displayName: "\uCC3D\uAC00\uC758 \uCEF5 \uB450 \uAC1C"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.38, y: 0.36}
+    size: {x: 200, y: 140}
+    dialogue: {fileID: 11400000, guid: 702d9796b57716a488e387df9cfeeee5, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter4_Phase1Complete
+    hiddenIfFlag: Chapter4_Phase2Complete
+    minChapter: 4
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 
+  - displayName: "\uC2DD\uD0C1\uC744 \uB2E6\uB294 \uC5B8\uB2C8"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.55, y: 0.5}
+    size: {x: 200, y: 300}
+    dialogue: {fileID: 11400000, guid: 7ae3d0f6b1971b34c84c0238be3c7102, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter4_Phase1Complete
+    hiddenIfFlag: Chapter4_Phase2Complete
+    minChapter: 4
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 
+  - displayName: "\uB808\uC2DC\uD53C \uCE74\uB4DC"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.62, y: 0.62}
+    size: {x: 180, y: 180}
+    dialogue: {fileID: 11400000, guid: c4914cdefb0794f46860cf8bd2208151, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter4_Phase2Complete
+    hiddenIfFlag: Chapter4_Memory3Complete
+    minChapter: 4
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter4_RecipeChecked
+  - displayName: "\uBA48\uCD98 \uBCBD\uC2DC\uACC4"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.4, y: 0.72}
+    size: {x: 180, y: 180}
+    dialogue: {fileID: 11400000, guid: 771b2ef2e824e7c46a9ea621540bbf97, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter4_Phase2Complete
+    hiddenIfFlag: Chapter4_Memory3Complete
+    minChapter: 4
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter4_ClockChecked
+  - displayName: "\uC7A5\uBC14\uAD6C\uB2C8"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.8, y: 0.4}
+    size: {x: 200, y: 180}
+    dialogue: {fileID: 11400000, guid: c01ceff6b2035e643abdf042c1ad5c94, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter4_Phase2Complete
+    hiddenIfFlag: Chapter4_Memory3Complete
+    minChapter: 4
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 
+  - displayName: "\uC8FC\uBC29 \uB4A4 \uBCF5\uB3C4"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.88, y: 0.55}
+    size: {x: 180, y: 320}
+    dialogue: {fileID: 11400000, guid: c4470ade5a9456d4abd9c33695ece16a, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter4_D_LeftAlone
+    hiddenIfFlag: Chapter4_D_Explained
+    minChapter: 4
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter4_D_Explained
+  autoEvents:
+  - dialogue: {fileID: 11400000, guid: 125064479e1640b4fa023c72dd338eb3, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags: []
+    completeFlag: Chapter4_Entered
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: e2a1e676c1b37604caa1bdf8af1a992e, type: 2}
+    requiredFlags:
+    - Chapter4_TableChecked
+    - Chapter4_ApronChecked
+    completeFlag: Chapter4_Memory1Complete
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: 4d9aa3fce0812ca42ad799c30762936f, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter4_Memory1Complete
+    completeFlag: Chapter4_Phase1Complete
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 29bd7a1f29a9ae54ab0f4ca24b960013, type: 2}
+    requiredFlags:
+    - Chapter4_PhoneChecked
+    - Chapter4_ReservationChecked
+    completeFlag: Chapter4_Memory2Complete
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: 21748fff0e06e2849ba0d4704758e207, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter4_Memory2Complete
+    completeFlag: Chapter4_Phase2Complete
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 50c6618af4fd2474b9645bfbec221787, type: 2}
+    requiredFlags:
+    - Chapter4_RecipeChecked
+    - Chapter4_ClockChecked
+    completeFlag: Chapter4_Memory3Complete
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: 7a09b62e4dcbac74f890575f789b07d6, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter4_Memory3Complete
+    completeFlag: Chapter4_D_LeftAlone
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: 0acd11d89439d66458bf1bcd5a6f93ce, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter4_D_Explained
+    completeFlag: Chapter4_DinnerShared
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: 4bcbb6e990153394ba463e1fee99a44e, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter4_DinnerShared
+    completeFlag: Chapter4_XRealityQuestioned
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: b35c8b64533d502449537411cd1580da, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter4_XRealityQuestioned
+    completeFlag: Chapter4_Complete
+    changeChapter: 1
+    targetChapter: 5
+    fadeOnComplete: 1

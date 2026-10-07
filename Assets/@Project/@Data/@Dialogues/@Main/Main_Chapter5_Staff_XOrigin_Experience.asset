@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
+  m_Name: Main_Chapter5_Staff_XOrigin_Experience
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: X
+    text: "\uADF8\uB798\uB3C4 \uC5EC\uAE30\uC11C \uC788\uC5C8\uB358 \uC77C\uC740
+      \uAE30\uC5B5\uB098."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: X
+    text: "A\uAC00 \uCE5C \uD53C\uC544\uB178. B\uAC00 \uCC98\uC74C \uC6C3\uC740 \uAC70.
+      C\uAC00 \uB6F0\uB358 \uAC70. D\uB124 \uC5B8\uB2C8 \uBC25."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\u2026\u2026\uADF8\uB7FC \uADF8\uAC8C \uCCAB \uBC88\uC9F8 \uAE30\uC5B5\uC774\uB124."
+    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    choices: []
+  - speakerName: C
+    text: "\uC544, \uCCAB \uBC88\uC9F8\uB294 \uAE6C \uAC70\uAD6C\uB098. \uADF8\uB7FC
+      \uADF8\uB2E4\uC74C\uBD80\uD130 \uCB49."
+    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    choices: []
+  - speakerName: D
+    text: "\uC9DC\uB2E4\uACE0 \uD560 \uAC70\uBA74 \uAE30\uC5B5\uD558\uC9C0 \uB9C8."
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  - speakerName: X
+    text: "\uC9F0\uC5B4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\u2026\u2026\uAE30\uC5B5\uD558\uB124."
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  - speakerName: A
+    text: "\uADF8\uAC70\uBA74 \uB410\uB124."
+    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    choices: []
+  - speakerName: B
+    text: "\uC800\uB3C4 \uAE30\uC5B5\uB098\uC694. X \uC528\uB791 \uAC19\uC774 \uC788\uC5C8\uB358
+      \uAC70\uC694."
+    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    choices: []
+  nextDialogue: {fileID: 11400000, guid: b72f26b015f89f84a864df2d870f7d2f, type: 2}
+  skipNextIfFlag: 

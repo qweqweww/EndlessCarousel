@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
+  m_Name: Main_Chapter4_Restaurant_Corridor_Merge
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: 
+    text: "\uC8FC\uBC29 \uCABD\uC5D0\uC11C \uC5B8\uB2C8\uC758 \uBAA9\uC18C\uB9AC\uAC00
+      \uB4E4\uB824\uC654\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: "\uC5B8\uB2C8"
+    text: "D! \uAE40\uCE58 \uB2E4 \uC370\uC5C8\uB2E4! \uC548 \uC624\uBA74 \uB0B4
+      \uB9D8\uB300\uB85C \uD55C\uB2E4!"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\u2026\u2026\uC9C4\uC9DC \uC2DC\uB044\uB7EC\uC6CC."
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  - speakerName: 
+    text: "D\uAC00 \uBB34\uB98E\uC744 \uC9DA\uACE0 \uC77C\uC5B4\uB0AC\uB2E4. \uBC14\uC9C0\uB97C
+      \uD138\uC5C8\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uBCF5\uB3C4 \uB05D \uBB38 \uC55E\uC5D0\uC11C, D\uAC00 \uBA48\uCDC4\uB2E4.
+      \uB4A4\uB97C \uB3CC\uC544\uBCF4\uC9C0 \uC54A\uC740 \uCC44\uB85C \uB9D0\uD588\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\u2026\u2026\uAC19\uC774 \uAC00."
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  - speakerName: C
+    text: "\u2026\u2026\uAC19\uC774?"
+    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    choices: []
+  - speakerName: D
+    text: "\uB450 \uBC88 \uB9D0\uD558\uAC8C \uD558\uC9C0 \uB9C8."
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  - speakerName: 
+    text: "C\uAC00 \uC6C3\uC73C\uBA70 \uC77C\uC5B4\uB0AC\uB2E4. B\uB3C4, A\uB3C4
+      \uB530\uB77C \uC77C\uC5B4\uB0AC\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "X\uB294 D\uAC00 \uBB38\uC744 \uC5EC\uB294 \uAC83\uC744 \uBCF4\uC558\uB2E4.
+      \uC774\uBC88\uC5D0\uB294 \uD63C\uC790 \uB4E4\uC5B4\uAC00\uC9C0 \uC54A\uC558\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  nextDialogue: {fileID: 0}
+  skipNextIfFlag: 

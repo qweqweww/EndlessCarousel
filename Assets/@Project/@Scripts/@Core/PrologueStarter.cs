@@ -63,6 +63,19 @@ public class PrologueStarter : MonoBehaviour
             screenFader.FadeInCompleted -= OnFadeInCompleted;
     }
 
+    // 진행 중인 프롤로그 연출을 멈추고 다시 시작하지 않게 한다 (테스트용 챕터 점프 등)
+    public void Cancel()
+    {
+        StopAllCoroutines();
+        enabled = false; // OnDisable에서 Fade In 완료 이벤트 구독도 해제된다
+        if (introOverlay != null)
+        {
+            introOverlay.alpha = 0f;
+            introOverlay.blocksRaycasts = false;
+            introOverlay.gameObject.SetActive(false);
+        }
+    }
+
     private void OnFadeInCompleted()
     {
         if (prologueDialogue == null)

@@ -85,6 +85,21 @@ MonoBehaviour:
     limitMaxChapter: 0
     maxChapter: 6
     setFlagOnComplete: 
+  - displayName: "\uC870\uC791\uC2E4 \uC6B4\uD589 \uC77C\uC9C0"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.85, y: 0.78}
+    size: {x: 220, y: 120}
+    dialogue: {fileID: 11400000, guid: 4eed5ba6ed24f4547900dc842b0b87b7, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter5_Entered
+    hiddenIfFlag: Chapter5_NoMemoryConfirmed
+    minChapter: 5
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter5_CarouselRecordChecked
   autoEvents:
   - dialogue: {fileID: 11400000, guid: b4ded3d84448d194c8ec8053beefb8a0, type: 2}
     memoryEvent: {fileID: 0}
@@ -92,6 +107,7 @@ MonoBehaviour:
     completeFlag: Prologue_CarouselEntered
     changeChapter: 0
     targetChapter: 0
+    fadeOnComplete: 0
   - dialogue: {fileID: 11400000, guid: 0ae6070acdad2624795191f91b666e90, type: 2}
     memoryEvent: {fileID: 0}
     requiredFlags:
@@ -100,3 +116,14 @@ MonoBehaviour:
     completeFlag: Prologue_CForeshadowComplete
     changeChapter: 1
     targetChapter: 1
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: f97eff075b76872468d94defde241308, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter5_TicketRecordChecked
+    - Chapter5_PhotoArchiveChecked
+    - Chapter5_CarouselRecordChecked
+    completeFlag: Chapter5_NoMemoryConfirmed
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0

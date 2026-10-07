@@ -24,6 +24,22 @@ MonoBehaviour:
     target: {fileID: 11400000, guid: 865955f28b5cac14bb5b2c31daf35fc0, type: 2}
     screenPosition: {x: 0.5, y: 0.1}
     requiredFlag: 
+  - label: "< \uC544\uCF00\uC774\uB4DC\uB85C"
+    target: {fileID: 11400000, guid: e41d591788604ff42a8cbbfa29ef07d9, type: 2}
+    screenPosition: {x: 0.15, y: 0.15}
+    requiredFlag: 
+  - label: "\uD37C\uB808\uC774\uB4DC \uAC70\uB9AC\uB85C >"
+    target: {fileID: 11400000, guid: 24b4d88ab7a065744bd48e95266ae130, type: 2}
+    screenPosition: {x: 0.85, y: 0.27}
+    requiredFlag: 
+  - label: "< \uB808\uC2A4\uD1A0\uB791\uC73C\uB85C"
+    target: {fileID: 11400000, guid: 23b146c1ef9bc54489253410b0a48c5d, type: 2}
+    screenPosition: {x: 0.15, y: 0.27}
+    requiredFlag: 
+  - label: "\uC9C1\uC6D0 \uC804\uC6A9 \uAD6C\uC5ED >"
+    target: {fileID: 11400000, guid: 92ecd9073d7cccd41a0da099b8cc036b, type: 2}
+    screenPosition: {x: 0.5, y: 0.22}
+    requiredFlag: Chapter5_NoMemoryConfirmed
   hotspots:
   - displayName: "\uB180\uC774\uACF5\uC6D0 \uC548\uB0B4\uB3C4"
     inspectText: 
@@ -115,4 +131,45 @@ MonoBehaviour:
     limitMaxChapter: 0
     maxChapter: 6
     setFlagOnComplete: 
-  autoEvents: []
+  - displayName: "\uB9E4\uD45C\uC18C \uC785\uC7A5 \uC7A5\uBD80"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.56, y: 0.72}
+    size: {x: 220, y: 120}
+    dialogue: {fileID: 11400000, guid: db0a8878ebf51a34485ef8f31968b106, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter5_Entered
+    hiddenIfFlag: Chapter5_NoMemoryConfirmed
+    minChapter: 5
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter5_TicketRecordChecked
+  autoEvents:
+  - dialogue: {fileID: 11400000, guid: c037bcf56d7072e4bb1ae161b3400da9, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter4_Complete
+    completeFlag: Chapter5_Entered
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: f97eff075b76872468d94defde241308, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter5_TicketRecordChecked
+    - Chapter5_PhotoArchiveChecked
+    - Chapter5_CarouselRecordChecked
+    completeFlag: Chapter5_NoMemoryConfirmed
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: f18d63df083580543a016d957343e749, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter5_XCannotExitConfirmed
+    completeFlag: Chapter5_Complete
+    changeChapter: 1
+    targetChapter: 6
+    fadeOnComplete: 1

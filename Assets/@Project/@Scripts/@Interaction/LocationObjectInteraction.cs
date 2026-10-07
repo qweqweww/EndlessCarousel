@@ -89,6 +89,18 @@ public class LocationObjectInteraction : MonoBehaviour, IPointerEnterHandler, IP
 
     private void Update()
     {
+        // 챕터 제목이 떠 있는 동안에는 빛을 보이지 않는다. 그 사이 시작된 유도 깜빡임은 취소한다 (제목 뒤에서 깜빡이지 않도록)
+        if (locationManager.IsChapterTitleShowing)
+        {
+            if (glowAmount > 0f || targetAmount > 0f || hintTime >= 0f)
+            {
+                targetAmount = 0f;
+                hintTime = -1f;
+                ApplyGlow(0f);
+            }
+            return;
+        }
+
         bool hinting = hintTime >= 0f;
         if (Mathf.Approximately(glowAmount, targetAmount) && !hinting)
             return;

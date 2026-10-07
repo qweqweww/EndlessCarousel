@@ -628,6 +628,309 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &322436171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 322436173}
+  - component: {fileID: 322436172}
+  m_Layer: 0
+  m_Name: ChapterJumpDebug
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &322436172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322436171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c79546279299f548bff96f894120388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChapterJumpDebug
+  jumps:
+  - chapter: 1
+    key: 41
+    altKey: 85
+    startLocation: {fileID: 11400000, guid: e68fe5a6fbae132468d7e4cb4892212a, type: 2}
+    flags:
+    - Prologue_IntroComplete
+    - Tutorial_InspectShown
+    - Prologue_MapChecked
+    - Tutorial_GameBoothHintShown
+    - Prologue_PlazaComplete
+    - Prologue_CarouselEntered
+    - Prologue_CarouselChecked
+    - Prologue_ControlRoomChecked
+    - Prologue_CForeshadowComplete
+  - chapter: 2
+    key: 42
+    altKey: 86
+    startLocation: {fileID: 11400000, guid: e41d591788604ff42a8cbbfa29ef07d9, type: 2}
+    flags:
+    - Prologue_IntroComplete
+    - Tutorial_InspectShown
+    - Prologue_MapChecked
+    - Tutorial_GameBoothHintShown
+    - Prologue_PlazaComplete
+    - Prologue_CarouselEntered
+    - Prologue_CarouselChecked
+    - Prologue_ControlRoomChecked
+    - Prologue_CForeshadowComplete
+    - Chapter1_LobbyEntered
+    - Chapter1_PhotoChecked
+    - Chapter1_TrophyChecked
+    - Chapter1_Memory1Complete
+    - Chapter1_Phase1Complete
+    - Chapter1_RankBoardChecked
+    - Chapter1_ReceiptChecked
+    - Chapter1_Memory2Complete
+    - Chapter1_Phase2Complete
+    - Chapter1_Memory3Complete
+    - Chapter1_FamilyTalked
+    - Chapter1_XMemoryQuestioned
+    - Chapter1_HallEntered
+    - Chapter1_PianoChecked
+    - Chapter1_JudgeTableChecked
+    - Chapter1_MemoryComplete
+    - Chapter1_PianoDecided
+    - Chapter1_PerformanceSeen
+    - Chapter1_Complete
+  - chapter: 3
+    key: 43
+    altKey: 87
+    startLocation: {fileID: 11400000, guid: 24b4d88ab7a065744bd48e95266ae130, type: 2}
+    flags:
+    - Prologue_IntroComplete
+    - Tutorial_InspectShown
+    - Prologue_MapChecked
+    - Tutorial_GameBoothHintShown
+    - Prologue_PlazaComplete
+    - Prologue_CarouselEntered
+    - Prologue_CarouselChecked
+    - Prologue_ControlRoomChecked
+    - Prologue_CForeshadowComplete
+    - Chapter1_LobbyEntered
+    - Chapter1_PhotoChecked
+    - Chapter1_TrophyChecked
+    - Chapter1_Memory1Complete
+    - Chapter1_Phase1Complete
+    - Chapter1_RankBoardChecked
+    - Chapter1_ReceiptChecked
+    - Chapter1_Memory2Complete
+    - Chapter1_Phase2Complete
+    - Chapter1_Memory3Complete
+    - Chapter1_FamilyTalked
+    - Chapter1_XMemoryQuestioned
+    - Chapter1_HallEntered
+    - Chapter1_PianoChecked
+    - Chapter1_JudgeTableChecked
+    - Chapter1_MemoryComplete
+    - Chapter1_PianoDecided
+    - Chapter1_PerformanceSeen
+    - Chapter1_Complete
+    - Chapter2_Entered
+    - Chapter2_ClawChecked
+    - Chapter2_PhotoBoothChecked
+    - Chapter2_Memory1Complete
+    - Chapter2_Phase1Complete
+    - Chapter2_RhythmChecked
+    - Chapter2_PhoneChecked
+    - Chapter2_Memory2Complete
+    - Chapter2_Phase2Complete
+    - Chapter2_PrizeChecked
+    - Chapter2_MemoWallChecked
+    - Chapter2_Memory3Complete
+    - Chapter2_Phase3Complete
+    - Chapter2_Memory4Complete
+    - Chapter2_B_Withdrew
+    - Chapter2_B_Explained
+    - Chapter2_XMemoryQuestioned
+    - Chapter2_Complete
+  - chapter: 4
+    key: 44
+    altKey: 88
+    startLocation: {fileID: 11400000, guid: 23b146c1ef9bc54489253410b0a48c5d, type: 2}
+    flags:
+    - Prologue_IntroComplete
+    - Tutorial_InspectShown
+    - Prologue_MapChecked
+    - Tutorial_GameBoothHintShown
+    - Prologue_PlazaComplete
+    - Prologue_CarouselEntered
+    - Prologue_CarouselChecked
+    - Prologue_ControlRoomChecked
+    - Prologue_CForeshadowComplete
+    - Chapter1_LobbyEntered
+    - Chapter1_PhotoChecked
+    - Chapter1_TrophyChecked
+    - Chapter1_Memory1Complete
+    - Chapter1_Phase1Complete
+    - Chapter1_RankBoardChecked
+    - Chapter1_ReceiptChecked
+    - Chapter1_Memory2Complete
+    - Chapter1_Phase2Complete
+    - Chapter1_Memory3Complete
+    - Chapter1_FamilyTalked
+    - Chapter1_XMemoryQuestioned
+    - Chapter1_HallEntered
+    - Chapter1_PianoChecked
+    - Chapter1_JudgeTableChecked
+    - Chapter1_MemoryComplete
+    - Chapter1_PianoDecided
+    - Chapter1_PerformanceSeen
+    - Chapter1_Complete
+    - Chapter2_Entered
+    - Chapter2_ClawChecked
+    - Chapter2_PhotoBoothChecked
+    - Chapter2_Memory1Complete
+    - Chapter2_Phase1Complete
+    - Chapter2_RhythmChecked
+    - Chapter2_PhoneChecked
+    - Chapter2_Memory2Complete
+    - Chapter2_Phase2Complete
+    - Chapter2_PrizeChecked
+    - Chapter2_MemoWallChecked
+    - Chapter2_Memory3Complete
+    - Chapter2_Phase3Complete
+    - Chapter2_Memory4Complete
+    - Chapter2_B_Withdrew
+    - Chapter2_B_Explained
+    - Chapter2_XMemoryQuestioned
+    - Chapter2_Complete
+    - Chapter3_Entered
+    - Chapter3_StartLineChecked
+    - Chapter3_RunChecked
+    - Chapter3_Memory1Complete
+    - Chapter3_Phase1Complete
+    - Chapter3_BenchChecked
+    - Chapter3_RehabChecked
+    - Chapter3_Memory2Complete
+    - Chapter3_Phase2Complete
+    - Chapter3_FridgeChecked
+    - Chapter3_WorkChecked
+    - Chapter3_Memory3Complete
+    - Chapter3_Phase3Complete
+    - Chapter3_C_Realized
+    - Chapter3_C_Explained
+    - Chapter3_XMemoryQuestioned
+    - Chapter3_Complete
+  - chapter: 5
+    key: 45
+    altKey: 89
+    startLocation: {fileID: 11400000, guid: 0d9ec9556bf200d40986c60c7bd4fe9a, type: 2}
+    flags:
+    - Prologue_IntroComplete
+    - Tutorial_InspectShown
+    - Prologue_MapChecked
+    - Tutorial_GameBoothHintShown
+    - Prologue_PlazaComplete
+    - Prologue_CarouselEntered
+    - Prologue_CarouselChecked
+    - Prologue_ControlRoomChecked
+    - Prologue_CForeshadowComplete
+    - Chapter1_LobbyEntered
+    - Chapter1_PhotoChecked
+    - Chapter1_TrophyChecked
+    - Chapter1_Memory1Complete
+    - Chapter1_Phase1Complete
+    - Chapter1_RankBoardChecked
+    - Chapter1_ReceiptChecked
+    - Chapter1_Memory2Complete
+    - Chapter1_Phase2Complete
+    - Chapter1_Memory3Complete
+    - Chapter1_FamilyTalked
+    - Chapter1_XMemoryQuestioned
+    - Chapter1_HallEntered
+    - Chapter1_PianoChecked
+    - Chapter1_JudgeTableChecked
+    - Chapter1_MemoryComplete
+    - Chapter1_PianoDecided
+    - Chapter1_PerformanceSeen
+    - Chapter1_Complete
+    - Chapter2_Entered
+    - Chapter2_ClawChecked
+    - Chapter2_PhotoBoothChecked
+    - Chapter2_Memory1Complete
+    - Chapter2_Phase1Complete
+    - Chapter2_RhythmChecked
+    - Chapter2_PhoneChecked
+    - Chapter2_Memory2Complete
+    - Chapter2_Phase2Complete
+    - Chapter2_PrizeChecked
+    - Chapter2_MemoWallChecked
+    - Chapter2_Memory3Complete
+    - Chapter2_Phase3Complete
+    - Chapter2_Memory4Complete
+    - Chapter2_B_Withdrew
+    - Chapter2_B_Explained
+    - Chapter2_XMemoryQuestioned
+    - Chapter2_Complete
+    - Chapter3_Entered
+    - Chapter3_StartLineChecked
+    - Chapter3_RunChecked
+    - Chapter3_Memory1Complete
+    - Chapter3_Phase1Complete
+    - Chapter3_BenchChecked
+    - Chapter3_RehabChecked
+    - Chapter3_Memory2Complete
+    - Chapter3_Phase2Complete
+    - Chapter3_FridgeChecked
+    - Chapter3_WorkChecked
+    - Chapter3_Memory3Complete
+    - Chapter3_Phase3Complete
+    - Chapter3_C_Realized
+    - Chapter3_C_Explained
+    - Chapter3_XMemoryQuestioned
+    - Chapter3_Complete
+    - Chapter4_Entered
+    - Chapter4_TableChecked
+    - Chapter4_ApronChecked
+    - Chapter4_Memory1Complete
+    - Chapter4_Phase1Complete
+    - Chapter4_PhoneChecked
+    - Chapter4_ReservationChecked
+    - Chapter4_Memory2Complete
+    - Chapter4_Phase2Complete
+    - Chapter4_RecipeChecked
+    - Chapter4_ClockChecked
+    - Chapter4_Memory3Complete
+    - Chapter4_D_LeftAlone
+    - Chapter4_D_Explained
+    - Chapter4_DinnerShared
+    - Chapter4_XRealityQuestioned
+    - Chapter4_Complete
+  locationManager: {fileID: 476149811}
+  dialoguePanel: {fileID: 101626291}
+  memoryPanel: {fileID: 998734302}
+  inspectPanel: {fileID: 1416962328}
+  chapterTitleCard: {fileID: 1925653814}
+  screenFader: {fileID: 1640339093}
+  prologueStarter: {fileID: 1551994084}
+--- !u!4 &322436173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322436171}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &360983831
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,6 +1161,7 @@ MonoBehaviour:
   dialoguePanel: {fileID: 101626291}
   memoryPanel: {fileID: 998734302}
   endingManager: {fileID: 2026656487}
+  chapterTitleCard: {fileID: 1925653814}
   screenFader: {fileID: 1640339093}
   fadeHoldDuration: 0.8
   locationObjects:
@@ -3685,7 +3989,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 80029819475573007, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
       propertyPath: titles.Array.size
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 80029819475573007, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
       propertyPath: titles.Array.data[0].line1
@@ -3696,8 +4000,56 @@ PrefabInstance:
       value: "\u300C\uC810\uC218 \uC5C6\uB294 \uC5F0\uC8FC\u300D"
       objectReference: {fileID: 0}
     - target: {fileID: 80029819475573007, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
+      propertyPath: titles.Array.data[1].line1
+      value: Chapter 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 80029819475573007, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
+      propertyPath: titles.Array.data[1].line2
+      value: "\u300C\uD2B9\uBCC4\uD55C \uC0AC\uB78C\uC774 \uC0DD\uAE30\uB294 \uAC83\u300D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 80029819475573007, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
+      propertyPath: titles.Array.data[2].line1
+      value: Chapter 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 80029819475573007, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
+      propertyPath: titles.Array.data[2].line2
+      value: "\u300C\uB2E4\uC2DC, \uC55E\uC73C\uB85C\u300D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 80029819475573007, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
+      propertyPath: titles.Array.data[3].line1
+      value: Chapter 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 80029819475573007, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
+      propertyPath: titles.Array.data[3].line2
+      value: "\u300C\uADF8\uB0A0\uC758 \uC800\uB141\u300D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 80029819475573007, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
+      propertyPath: titles.Array.data[4].line1
+      value: Chapter 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 80029819475573007, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
+      propertyPath: titles.Array.data[4].line2
+      value: "\u300C\uB2E4\uC12F \uBC88\uC9F8 \uAE30\uC5B5\u300D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 80029819475573007, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
       propertyPath: titles.Array.data[0].chapter
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 80029819475573007, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
+      propertyPath: titles.Array.data[1].chapter
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 80029819475573007, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
+      propertyPath: titles.Array.data[2].chapter
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 80029819475573007, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
+      propertyPath: titles.Array.data[3].chapter
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 80029819475573007, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
+      propertyPath: titles.Array.data[4].chapter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1120879841493775185, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -3808,6 +4160,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
+--- !u!114 &1925653814 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 80029819475573007, guid: b57cdf13e96d98f45af2f11fa1e4b238, type: 3}
+  m_PrefabInstance: {fileID: 1925653813}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e55d5c2358e764c8b5859089c4862b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChapterTitleCard
 --- !u!1 &1961857429
 GameObject:
   m_ObjectHideFlags: 0
@@ -4108,3 +4471,4 @@ SceneRoots:
   - {fileID: 476149812}
   - {fileID: 1551994085}
   - {fileID: 1925653813}
+  - {fileID: 322436173}

@@ -51,6 +51,15 @@ public class ScreenFader : MonoBehaviour
         Run(Fade(canvasGroup.alpha, 0f, holdDuration, fadeInDuration, notify ? NotifyFadeInComplete : (System.Action)null));
     }
 
+    // 진행 중인 페이드를 콜백 없이 멈추고 화면을 바로 밝힌다 (테스트용 챕터 점프 등)
+    public void ClearImmediate()
+    {
+        if (running != null)
+            StopCoroutine(running);
+        running = null;
+        SetAlpha(0f);
+    }
+
     public void FadeToBlackAndLoad(string sceneName)
     {
         FadeToBlack(() => SceneManager.LoadScene(sceneName));

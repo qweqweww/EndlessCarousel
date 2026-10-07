@@ -45,13 +45,27 @@ public class DialoguePanel : MonoBehaviour
     private System.Action onFinished;
     private Coroutine typing;
 
+    // ▼ 상태. 위치를 움직이는 주체는 상태마다 하나뿐이다 (Idle = Update, ClickAnimation = 클릭 코루틴)
+    private enum IndicatorState { Hidden, Idle, ClickAnimation }
+
     private RectTransform indicatorRect;
     private Vector2 indicatorBasePosition;
-    private float indicatorShownTime;
-    private bool indicatorClicking; // 클릭 연출 중에는 Update가 ▼를 건드리지 않는다
+    private IndicatorState indicatorState;
+    private float indicatorIdleStartTime;
+    private Coroutine indicatorClick;
 
     public bool IsPlaying => currentDialogue != null;
     private bool IsChoosing => choiceButtons.Count > 0;
+
+    // 전체 화면 CG가 떠 있는 동안 초상화만 숨긴다 (대사 데이터의 Portrait는 그대로 둔다)
+    private bool portraitSuppressed;
+
+    public void SetPortraitSuppressed(bool suppressed)
+    {
+        portraitSuppressed = suppressed;
+        if (portraitImage != null)
+            portraitImage.gameObject.SetActive(!suppressed && portraitImage.sprite != null && IsPlaying);
+    }
 
     private void Awake()
     {
@@ -61,51 +75,61 @@ public class DialoguePanel : MonoBehaviour
             indicatorRect = (RectTransform)nextIndicator.transform;
             indicatorBasePosition = indicatorRect.anchoredPosition;
         }
-        SetIndicator(false);
+        SetIndicatorState(IndicatorState.Hidden);
     }
 
     private void OnDisable()
     {
-        // 비활성화되면 코루틴이 멈추므로 상태를 초기화한다
+        // 비활성화되면 코루틴이 멈추므로 상태를 처음으로 되돌린다
         typing = null;
-        indicatorClicking = false;
-        SetIndicator(false);
+        indicatorClick = null;
+        SetIndicatorState(IndicatorState.Hidden);
     }
 
+    // Idle일 때만 위아래로 떠 있는다 (TutorialPanel과 같은 계산: cos 곡선 = Ease In/Out)
     private void Update()
     {
-        if (!indicatorClicking)
-            UpdateIndicator();
-    }
-
-    // 문장이 다 나왔고 선택지가 없을 때만 보이고, 보이는 동안 천천히 위아래로 떠 있는다 (cos 곡선 = Ease In/Out)
-    private void UpdateIndicator()
-    {
-        SetIndicator(IsPlaying && typing == null && !IsChoosing);
-        if (indicatorRect == null || !nextIndicator.activeSelf || indicatorBobDuration <= 0f)
+        if (indicatorState != IndicatorState.Idle || indicatorBobDuration <= 0f)
             return;
-        float phase = (Time.unscaledTime - indicatorShownTime) / indicatorBobDuration * 2f * Mathf.PI;
+        float phase = (Time.unscaledTime - indicatorIdleStartTime) / indicatorBobDuration * 2f * Mathf.PI;
         float offset = indicatorBobDistance * 0.5f * (1f - Mathf.Cos(phase));
         indicatorRect.anchoredPosition = indicatorBasePosition + new Vector2(0f, offset);
     }
 
-    // 켜질 때 Idle 시작 시각을 기록하고, 꺼질 때 항상 기본 위치로 되돌린다
-    private void SetIndicator(bool visible)
+    // ▼ 상태는 여기서만 바꾼다. 진행 중인 클릭 연출은 다른 상태로 바뀔 때 항상 멈추고 기본 위치로 돌아간다.
+    private void SetIndicatorState(IndicatorState state)
     {
         if (nextIndicator == null)
             return;
-        if (!visible && indicatorRect != null)
-            indicatorRect.anchoredPosition = indicatorBasePosition;
-        if (nextIndicator.activeSelf == visible)
-            return;
-        nextIndicator.SetActive(visible);
-        indicatorShownTime = Time.unscaledTime;
+
+        if (indicatorClick != null && state != IndicatorState.ClickAnimation)
+        {
+            StopCoroutine(indicatorClick);
+            indicatorClick = null;
+        }
+
+        indicatorState = state;
+        switch (state)
+        {
+            case IndicatorState.Hidden:
+                indicatorRect.anchoredPosition = indicatorBasePosition;
+                nextIndicator.SetActive(false);
+                break;
+            case IndicatorState.Idle:
+                indicatorRect.anchoredPosition = indicatorBasePosition;
+                indicatorIdleStartTime = Time.unscaledTime;
+                nextIndicator.SetActive(true);
+                break;
+            case IndicatorState.ClickAnimation:
+                nextIndicator.SetActive(true);
+                indicatorClick = StartCoroutine(PlayIndicatorClick());
+                break;
+        }
     }
 
     // 현재 위치에서 살짝 위로(Ease Out) → 아래로(Ease In) 내려간 뒤 숨긴다. 다음 대사는 기다리지 않고 바로 시작된다.
     private IEnumerator PlayIndicatorClick()
     {
-        indicatorClicking = true;
         Vector2 start = indicatorRect.anchoredPosition;
         Vector2 top = start + new Vector2(0f, indicatorClickDropDistance * 0.3f);
         Vector2 bottom = start - new Vector2(0f, indicatorClickDropDistance);
@@ -125,8 +149,8 @@ public class DialoguePanel : MonoBehaviour
             yield return null;
         }
 
-        indicatorClicking = false;
-        SetIndicator(false);
+        indicatorClick = null;
+        SetIndicatorState(IndicatorState.Hidden);
     }
 
     // onFinished: 대화가 마지막 줄까지 진행되어 끝났을 때 한 번 호출 (Close로 중단하면 호출하지 않음)
@@ -151,16 +175,14 @@ public class DialoguePanel : MonoBehaviour
 
         if (typing != null)
         {
-            StopCoroutine(typing);
-            typing = null;
-            ShowFullLine();
+            FinishLineDisplay();
             return;
         }
         if (IsChoosing)
             return;
 
-        if (indicatorRect != null && nextIndicator.activeSelf && !indicatorClicking)
-            StartCoroutine(PlayIndicatorClick());
+        if (indicatorState == IndicatorState.Idle)
+            SetIndicatorState(IndicatorState.ClickAnimation);
         ContinueFrom(currentDialogue, lineIndex + 1);
     }
 
@@ -207,9 +229,13 @@ public class DialoguePanel : MonoBehaviour
         speakerNameText.text = line.speakerName;
 
         portraitImage.sprite = line.portrait;
-        portraitImage.gameObject.SetActive(line.portrait != null);
+        portraitImage.gameObject.SetActive(line.portrait != null && !portraitSuppressed);
 
         ClearChoices();
+
+        // 새 줄은 ▼를 숨긴 상태로 시작한다. 방금 시작된 클릭 연출은 그대로 내려가며 사라지게 둔다.
+        if (indicatorState != IndicatorState.ClickAnimation)
+            SetIndicatorState(IndicatorState.Hidden);
 
         // 글자는 숨겨두고 한 글자씩 보인다. 선택지는 문장이 다 나온 뒤에 띄운다.
         if (typing != null)
@@ -221,7 +247,7 @@ public class DialoguePanel : MonoBehaviour
         if (characterInterval > 0f && dialogueText.textInfo.characterCount > 0)
             typing = StartCoroutine(Type(dialogueText.textInfo.characterCount));
         else
-            ShowFullLine();
+            FinishLineDisplay();
     }
 
     private IEnumerator Type(int total)
@@ -236,17 +262,25 @@ public class DialoguePanel : MonoBehaviour
             yield return null;
         }
         typing = null;
-        ShowFullLine();
+        FinishLineDisplay();
     }
 
-    // 현재 줄을 전부 표시하고, 선택지가 있으면 띄운다
-    private void ShowFullLine()
+    // 현재 줄을 '전부 표시된 상태'로 만든다. 타이핑이 자연스럽게 끝났을 때와 클릭으로 완성했을 때 모두 여기를 거친다.
+    // 선택지가 있으면 선택지를, 없으면 ▼를 이 시점에 바로 띄운다.
+    private void FinishLineDisplay()
     {
+        if (typing != null)
+        {
+            StopCoroutine(typing);
+            typing = null;
+        }
         dialogueText.maxVisibleCharacters = ShowAllCharacters;
-        if (IsChoosing)
-            return;
-        foreach (DialogueChoice choice in currentDialogue.Lines[lineIndex].choices)
-            choiceButtons.Add(CreateChoiceButton(choice));
+        if (!IsChoosing)
+        {
+            foreach (DialogueChoice choice in currentDialogue.Lines[lineIndex].choices)
+                choiceButtons.Add(CreateChoiceButton(choice));
+        }
+        SetIndicatorState(IsChoosing ? IndicatorState.Hidden : IndicatorState.Idle);
     }
 
     private Button CreateChoiceButton(DialogueChoice choice)

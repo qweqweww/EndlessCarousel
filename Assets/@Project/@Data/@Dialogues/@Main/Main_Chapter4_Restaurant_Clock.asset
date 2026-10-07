@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
+  m_Name: Main_Chapter4_Restaurant_Clock
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: 
+    text: "\uC8FC\uBC29 \uBCBD\uC2DC\uACC4. \uCD08\uCE68\uC774 \uC6C0\uC9C1\uC774\uC9C0
+      \uC54A\uB294\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uC2DC\uACD7\uBC14\uB298\uC740 7\uC2DC 40\uBD84\uC5D0 \uBA48\uCDB0 \uC788\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: B
+    text: "\uC2DC\uACC4\uAC00 \uBA48\uCDC4\uB124\uC694."
+    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    choices: []
+  - speakerName: C
+    text: "\uBC30\uD130\uB9AC \uB098\uAC14\uB098."
+    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    choices: []
+  - speakerName: A
+    text: "7\uC2DC 40\uBD84."
+    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    choices: []
+  - speakerName: 
+    text: "D\uAC00 \uC2DC\uACC4\uB97C \uC62C\uB824\uB2E4\uBCF4\uC558\uB2E4. \uD45C\uC815\uC774
+      \uC0AC\uB77C\uC84C\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\u2026\u20267\uC2DC\uAE4C\uC9C0 \uC628\uB2E4\uACE0 \uD588\uC5B4."
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  - speakerName: X
+    text: "\uB204\uAC00?"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\u2026\u2026"
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  - speakerName: 
+    text: "D\uB294 \uB300\uB2F5\uD558\uC9C0 \uC54A\uC558\uB2E4. \uC2DC\uACC4 \uC544\uB798
+      \uC758\uC790\uB97C \uB04C\uC5B4\uB2E4 \uB193\uACE0 \uC549\uC558\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uADF8\uB9AC\uACE0 \uC2DC\uACC4\uB97C \uBCF4\uC558\uB2E4. \uAE30\uB2E4\uB9AC\uB294
+      \uC0AC\uB78C\uCC98\uB7FC."
+    portrait: {fileID: 0}
+    choices: []
+  nextDialogue: {fileID: 0}
+  skipNextIfFlag: 

@@ -51,10 +51,13 @@ public class MemoryPanel : MonoBehaviour
 
         if (currentEvent.Dialogue != null)
         {
+            // CG 이미지가 있는 기억 동안에만 초상화를 숨기고, 대화가 끝나면 바로 되돌린다
+            dialoguePanel.SetPortraitSuppressed(currentEvent.MemoryImage != null);
             bool dialogueDone = false;
             dialoguePanel.Play(currentEvent.Dialogue, () => dialogueDone = true);
             while (!dialogueDone)
                 yield return null;
+            dialoguePanel.SetPortraitSuppressed(false);
         }
         else
         {
@@ -71,6 +74,19 @@ public class MemoryPanel : MonoBehaviour
 
         GameFlags.Set(flag);
         callback?.Invoke();
+    }
+
+    // 진행 중인 기억을 완료 처리 없이 즉시 닫는다 (테스트용 챕터 점프 등)
+    public void StopImmediate()
+    {
+        StopAllCoroutines();
+        if (currentEvent != null && dialoguePanel != null)
+            dialoguePanel.SetPortraitSuppressed(false);
+        currentEvent = null;
+        onFinished = null;
+        if (canvasGroup != null)
+            canvasGroup.alpha = 0f;
+        gameObject.SetActive(false);
     }
 
     private IEnumerator Fade(float from, float to)

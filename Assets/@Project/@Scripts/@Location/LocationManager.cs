@@ -28,6 +28,9 @@ public class LocationManager : MonoBehaviour
     [Header("엔딩")]
     [SerializeField] private EndingManager endingManager;
 
+    [Header("챕터 제목 (표시 중에는 Auto Event를 시작하지 않고, 사라진 뒤 다시 확인한다)")]
+    [SerializeField] private ChapterTitleCard chapterTitleCard;
+
     [Header("화면 전환 (Auto Event의 Fade On Complete용)")]
     [SerializeField] private ScreenFader screenFader;
     [SerializeField] private float fadeHoldDuration = 0.8f;
@@ -45,24 +48,55 @@ public class LocationManager : MonoBehaviour
 
     private readonly List<Button> spawnedButtons = new List<Button>();
     private readonly List<Button> hotspotButtons = new List<Button>();
+    private bool exitsHidden; // 대화 중이거나 챕터 제목이 떠 있는 동안에는 이동 버튼을 만들지 않는다
 
     public LocationData CurrentLocation { get; private set; }
+
+    // 챕터 제목이 떠 있는 동안 (장소 오브젝트의 빛 효과를 끄는 데 사용)
+    public bool IsChapterTitleShowing => chapterTitleCard != null && chapterTitleCard.IsShowing;
 
     private void OnEnable()
     {
         GameFlags.Changed += OnFlagChanged;
         ChapterManager.Changed += OnChapterChanged;
+        if (chapterTitleCard != null)
+            chapterTitleCard.Hidden += OnTitleCardHidden;
     }
 
     private void OnDisable()
     {
         GameFlags.Changed -= OnFlagChanged;
         ChapterManager.Changed -= OnChapterChanged;
+        if (chapterTitleCard != null)
+            chapterTitleCard.Hidden -= OnTitleCardHidden;
+    }
+
+    private void OnTitleCardHidden()
+    {
+        if (CurrentLocation != null)
+            TryRunAutoEvent();
     }
 
     private void Start()
     {
         MoveTo(startLocation);
+    }
+
+    // 대화창이나 챕터 제목이 뜨면 이동 버튼을 없애고, 둘 다 사라지면 현재 조건으로 다시 만든다 (같은 프레임 렌더링 전에 반영)
+    private void LateUpdate()
+    {
+        bool hide = ShouldHideExits();
+        if (hide == exitsHidden)
+            return;
+        exitsHidden = hide;
+        if (CurrentLocation != null)
+            RefreshExits();
+    }
+
+    private bool ShouldHideExits()
+    {
+        return (dialoguePanel != null && dialoguePanel.IsPlaying)
+            || (chapterTitleCard != null && chapterTitleCard.IsShowing);
     }
 
     public void MoveTo(LocationData location)
@@ -93,10 +127,13 @@ public class LocationManager : MonoBehaviour
         TryRunAutoEvent();
     }
 
-    // 조건이 맞는 Auto Event를 하나 재생한다. 대화/조사/기억이 진행 중이면 건너뛰고, 그것이 끝날 때 다시 확인된다.
+    // 조건이 맞는 Auto Event를 하나 재생한다. 대화/조사/기억이 진행 중이거나 챕터 제목이 떠 있으면 건너뛰고,
+    // 그것이 끝날 때 다시 확인된다. (건너뛰어도 Auto Event는 소비되지 않는다)
     private void TryRunAutoEvent()
     {
         if (CurrentLocation == null || dialoguePanel == null || IsBusy())
+            return;
+        if (chapterTitleCard != null && chapterTitleCard.IsShowing)
             return;
 
         foreach (LocationAutoEvent autoEvent in CurrentLocation.AutoEvents)
@@ -138,8 +175,15 @@ public class LocationManager : MonoBehaviour
     private void RefreshExits()
     {
         foreach (Button button in spawnedButtons)
+        {
+            button.gameObject.SetActive(false); // Destroy는 프레임 끝에 처리되므로 바로 숨긴다
             Destroy(button.gameObject);
+        }
         spawnedButtons.Clear();
+
+        exitsHidden = ShouldHideExits();
+        if (exitsHidden)
+            return;
 
         foreach (LocationExit exit in CurrentLocation.Exits)
         {

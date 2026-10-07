@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
+  m_Name: Main_Chapter3_Street_RecordAgain
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: 
+    text: "\uC804\uAD11\uD310\uC758 \uC22B\uC790\uAC00 \uAE5C\uBE61\uC774\uBA70 \uBC14\uB00C\uC5C8\uB2E4.
+      C\uAC00 \uB610 \uD55C \uBC88 \uB2EC\uB9B0 \uBAA8\uC591\uC774\uC5C8\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: '''11.02'''
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uB2E4\uC2DC \uAE5C\uBE61\uC600\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: '''11.02'''
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: B
+    text: "\uC5B4\u2026 \uC544\uAE4C\uB791 \uB611\uAC19\uB124\uC694."
+    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    choices: []
+  - speakerName: D
+    text: "\uB611\uAC19\uC774 \uB6F0\uC5C8\uB098 \uBCF4\uC9C0."
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  - speakerName: X
+    text: "\uB9E4\uBC88?"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\u2026\u2026\uB9E4\uBC88 \uB611\uAC19\uC774 \uB6F8 \uC218\uB3C4 \uC788\uC9C0
+      \uC54A\uB098."
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  - speakerName: B
+    text: "\uC18C\uC218\uC810 \uB458\uC9F8 \uC790\uB9AC\uAE4C\uC9C0\uC694?"
+    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    choices: []
+  - speakerName: D
+    text: "\u2026\u2026"
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  - speakerName: 
+    text: "\uC804\uAD11\uD310\uC774 \uB2E4\uC2DC \uAE5C\uBE61\uC600\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: '''11.02'''
+    portrait: {fileID: 0}
+    choices: []
+  nextDialogue: {fileID: 0}
+  skipNextIfFlag: 

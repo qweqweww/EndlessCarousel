@@ -1,0 +1,271 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc153ff69840e446b86e1a97765f974, type: 3}
+  m_Name: Main_ParadeStreet
+  m_EditorClassIdentifier: Assembly-CSharp::LocationData
+  displayName: "\uD37C\uB808\uC774\uB4DC \uAC70\uB9AC"
+  background: {fileID: 21300000, guid: 08f6e2256dccf574eaf9eaacd3e55612, type: 3}
+  unlockChapter: 3
+  exits:
+  - label: "< \uC911\uC559 \uAD11\uC7A5\uC73C\uB85C"
+    target: {fileID: 11400000, guid: 0d9ec9556bf200d40986c60c7bd4fe9a, type: 2}
+    screenPosition: {x: 0.15, y: 0.15}
+    requiredFlag: 
+  hotspots:
+  - displayName: "\uCD9C\uBC1C\uC120"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.3, y: 0.3}
+    size: {x: 360, y: 140}
+    dialogue: {fileID: 11400000, guid: 96e05a30732b51245bb30d38537c81d2, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter3_Entered
+    hiddenIfFlag: Chapter3_Phase1Complete
+    minChapter: 3
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter3_StartLineChecked
+  - displayName: "\uAE30\uB85D \uC804\uAD11\uD310"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.7, y: 0.68}
+    size: {x: 340, y: 200}
+    dialogue: {fileID: 11400000, guid: 7fe17e90f56b7e14089159624e430041, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter3_Entered
+    hiddenIfFlag: Chapter3_Phase1Complete
+    minChapter: 3
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter3_RunChecked
+  - displayName: "\uACBD\uD488 \uC6B4\uB3D9\uD654"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.86, y: 0.42}
+    size: {x: 200, y: 200}
+    dialogue: {fileID: 11400000, guid: 0efe8be8dcdc6f943907baf5e2610563, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter3_Entered
+    hiddenIfFlag: Chapter3_Phase1Complete
+    minChapter: 3
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 
+  - displayName: "\uC190\uC7A1\uC774 \uB2EC\uB9B0 \uBCA4\uCE58"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.25, y: 0.42}
+    size: {x: 300, y: 160}
+    dialogue: {fileID: 11400000, guid: cc5b424d358869843a3b6df32e573cc1, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter3_Phase1Complete
+    hiddenIfFlag: Chapter3_Phase2Complete
+    minChapter: 3
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter3_BenchChecked
+  - displayName: "\uAD6C\uAE09\uD568"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.72, y: 0.56}
+    size: {x: 180, y: 180}
+    dialogue: {fileID: 11400000, guid: 7ea978a708539d6459763c50ee5c5581, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter3_Phase1Complete
+    hiddenIfFlag: Chapter3_Phase2Complete
+    minChapter: 3
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter3_RehabChecked
+  - displayName: "\uB09C\uAC04"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.5, y: 0.3}
+    size: {x: 420, y: 110}
+    dialogue: {fileID: 11400000, guid: 7f9415579bda7b9458ffaa436bd823cd, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter3_Phase1Complete
+    hiddenIfFlag: Chapter3_Phase2Complete
+    minChapter: 3
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 
+  - displayName: "\uC74C\uB8CC \uB0C9\uC7A5\uACE0"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.3, y: 0.5}
+    size: {x: 220, y: 300}
+    dialogue: {fileID: 11400000, guid: fc73babee34936343a0b5c865fc2e6c8, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter3_Phase2Complete
+    hiddenIfFlag: Chapter3_Phase3Complete
+    minChapter: 3
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter3_FridgeChecked
+  - displayName: "\uC9C1\uC6D0\uC6A9 \uC758\uC790"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.58, y: 0.42}
+    size: {x: 200, y: 240}
+    dialogue: {fileID: 11400000, guid: 2396156a6ff4b9944b299d4549da57f2, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter3_Phase2Complete
+    hiddenIfFlag: Chapter3_Phase3Complete
+    minChapter: 3
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter3_WorkChecked
+  - displayName: "\uC548\uB0B4 \uD45C\uC9C0\uD310"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.85, y: 0.6}
+    size: {x: 200, y: 240}
+    dialogue: {fileID: 11400000, guid: 615159b6e95f91a47814f90e2fb4ad64, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter3_Phase2Complete
+    hiddenIfFlag: Chapter3_Phase3Complete
+    minChapter: 3
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 
+  - displayName: "\uCD9C\uBC1C\uC120\uC5D0 \uC120 C"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.3, y: 0.38}
+    size: {x: 220, y: 300}
+    dialogue: {fileID: 11400000, guid: 20b1901cba7ad804883fe9246a638d2e, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter3_Phase3Complete
+    hiddenIfFlag: Chapter3_C_Realized
+    minChapter: 3
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter3_C_Realized
+  - displayName: "\uB2E4\uC2DC \uBCF8 \uC804\uAD11\uD310"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.7, y: 0.68}
+    size: {x: 340, y: 200}
+    dialogue: {fileID: 11400000, guid: 46bc426b671f6344cab8a10fa2192aaf, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter3_Phase3Complete
+    hiddenIfFlag: Chapter3_C_Realized
+    minChapter: 3
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: 
+  autoEvents:
+  - dialogue: {fileID: 11400000, guid: 7bfdb89eba08cee40bc08aee5c5ed2b4, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags: []
+    completeFlag: Chapter3_Entered
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 536eea6fa7c30db4c95f46fc75590852, type: 2}
+    requiredFlags:
+    - Chapter3_StartLineChecked
+    - Chapter3_RunChecked
+    completeFlag: Chapter3_Memory1Complete
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: cdb9e97d8cd69cd4e892906a4d574ecd, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter3_Memory1Complete
+    completeFlag: Chapter3_Phase1Complete
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 3ee4d8b7583e02a42917d1ecb6f256e6, type: 2}
+    requiredFlags:
+    - Chapter3_BenchChecked
+    - Chapter3_RehabChecked
+    completeFlag: Chapter3_Memory2Complete
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: 2f66e00c568af4542bbfd6f382aa85f2, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter3_Memory2Complete
+    completeFlag: Chapter3_Phase2Complete
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: f59355f79c0e287419d2875332a45299, type: 2}
+    requiredFlags:
+    - Chapter3_FridgeChecked
+    - Chapter3_WorkChecked
+    completeFlag: Chapter3_Memory3Complete
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: 1f1edff56dd07f7469ffe451b5dd2951, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter3_Memory3Complete
+    completeFlag: Chapter3_Phase3Complete
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: 98ec7bbe9b1c4224ea2d5cff2ba847c2, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter3_C_Realized
+    completeFlag: Chapter3_C_Explained
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: ce195c99f8cc885438669408f2f17fa9, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter3_C_Explained
+    completeFlag: Chapter3_XMemoryQuestioned
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: a51c673bee1e7d241b7759a44fa0300d, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter3_XMemoryQuestioned
+    completeFlag: Chapter3_Complete
+    changeChapter: 1
+    targetChapter: 4
+    fadeOnComplete: 1

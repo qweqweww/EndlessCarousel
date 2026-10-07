@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
+  m_Name: Main_Chapter2_Arcade_MemoWall
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: 
+    text: "\uBCBD \uD55C \uBA74\uC774 \uC54C\uB85D\uB2EC\uB85D\uD55C \uBA54\uBAA8\uC9C0\uB85C
+      \uB36E\uC5EC \uC788\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "'\uB2E4\uC74C\uC5D0 \uB610 \uC624\uC790!' '1\uB4F1 \uBA39\uC5C8\uB2E4'
+      '\uC6B0\uB9AC \uC878\uC5C5\uD574\uB3C4 \uAC19\uC774 \uC624\uAE30'"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: B
+    text: "\uB2E4\uB4E4\u2026 \uC774\uB807\uAC8C \uC368 \uB193\uACE0 \uAC00\uC694?"
+    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    choices: []
+  - speakerName: C
+    text: "\uC751. \uB2E4\uC74C\uC5D0 \uB610 \uC624\uC790\uACE0. \uC57D\uC18D \uAC19\uC740
+      \uAC70\uC9C0."
+    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    choices: []
+  - speakerName: B
+    text: "\uC57D\uC18D\u2026."
+    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    choices: []
+  - speakerName: 
+    text: "B\uB294 \uBE48 \uBA54\uBAA8\uC9C0 \uD55C \uC7A5\uC744 \uC9D1\uC5B4 \uB4E4\uACE0
+      \uC5F0\uD544\uC744 \uC950\uC5C8\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uC190\uC774 \uC800\uC808\uB85C \uC6C0\uC9C1\uC600\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "'\uC800\uB294 \uC798\uBABB'"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uAC70\uAE30\uAE4C\uC9C0 \uC4F0\uACE0, B\uC758 \uC190\uC774 \uBA48\uCDC4\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "B? \uBB50 \uC368?"
+    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    choices: []
+  - speakerName: B
+    text: "\uC544, \uC544\uB2C8\uC5D0\uC694. \uADF8\uB0E5\u2026 \uC190\uC774 \uBA3C\uC800
+      \uB098\uAC00\uC11C\uC694."
+    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    choices: []
+  - speakerName: 
+    text: "B\uB294 \uBA54\uBAA8\uC9C0\uB97C \uAD6C\uACA8 \uC8FC\uBA38\uB2C8\uC5D0
+      \uB123\uC5C8\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  nextDialogue: {fileID: 0}
+  skipNextIfFlag: 
