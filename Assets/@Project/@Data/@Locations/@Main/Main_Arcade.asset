@@ -25,8 +25,8 @@ MonoBehaviour:
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.25, y: 0.52}
-    size: {x: 260, y: 260}
+    screenPosition: {x: 0.09, y: 0.56}
+    size: {x: 380, y: 660}
     dialogue: {fileID: 11400000, guid: 9044e78dad71c4c408fb276794b5068a, type: 2}
     memoryEvent: {fileID: 11400000, guid: 5fb2e8f308623f349b44989530314afb, type: 2}
     startsEnding: 0
@@ -40,8 +40,8 @@ MonoBehaviour:
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.55, y: 0.55}
-    size: {x: 240, y: 300}
+    screenPosition: {x: 0.273, y: 0.546}
+    size: {x: 360, y: 610}
     dialogue: {fileID: 11400000, guid: 127e1910ac90bbb47b795ca533646329, type: 2}
     memoryEvent: {fileID: 11400000, guid: 19833b001c6048540b5a24fd3364b71b, type: 2}
     startsEnding: 0
@@ -54,9 +54,9 @@ MonoBehaviour:
   - displayName: "\uAC04\uC2DD \uC790\uD310\uAE30"
     inspectText: 
     inspectImage: {fileID: 0}
-    canInspect: 1
-    screenPosition: {x: 0.8, y: 0.42}
-    size: {x: 200, y: 220}
+    canInspect: 0
+    screenPosition: {x: 0.9, y: 0.28}
+    size: {x: 200, y: 160}
     dialogue: {fileID: 11400000, guid: e2797e35656354240a97d5e2e5a1d4b1, type: 2}
     memoryEvent: {fileID: 0}
     startsEnding: 0
@@ -70,8 +70,8 @@ MonoBehaviour:
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.5, y: 0.35}
-    size: {x: 240, y: 170}
+    screenPosition: {x: 0.468, y: 0.585}
+    size: {x: 390, y: 510}
     dialogue: {fileID: 11400000, guid: 4bfdf8c552343c84a82873bcb3525693, type: 2}
     memoryEvent: {fileID: 0}
     startsEnding: 0
@@ -85,8 +85,8 @@ MonoBehaviour:
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.78, y: 0.5}
-    size: {x: 200, y: 160}
+    screenPosition: {x: 0.681, y: 0.288}
+    size: {x: 270, y: 170}
     dialogue: {fileID: 11400000, guid: c4202c03f30ea4040a22f61b1e2333f5, type: 2}
     memoryEvent: {fileID: 0}
     startsEnding: 0
@@ -100,8 +100,8 @@ MonoBehaviour:
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.22, y: 0.55}
-    size: {x: 240, y: 260}
+    screenPosition: {x: 0.651, y: 0.583}
+    size: {x: 380, y: 560}
     dialogue: {fileID: 11400000, guid: 28915af0f30194946aec3584b82930ae, type: 2}
     memoryEvent: {fileID: 0}
     startsEnding: 0
@@ -115,8 +115,8 @@ MonoBehaviour:
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.3, y: 0.55}
-    size: {x: 300, y: 200}
+    screenPosition: {x: 0.811, y: 0.487}
+    size: {x: 280, y: 460}
     dialogue: {fileID: 11400000, guid: 4b1fdf4b8197fdc47a5a28448ebd2f12, type: 2}
     memoryEvent: {fileID: 0}
     startsEnding: 0
@@ -130,8 +130,8 @@ MonoBehaviour:
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.7, y: 0.62}
-    size: {x: 320, y: 200}
+    screenPosition: {x: 0.944, y: 0.599}
+    size: {x: 220, y: 470}
     dialogue: {fileID: 11400000, guid: e156a02b227f4ce41b1a0bb3b1f170fe, type: 2}
     memoryEvent: {fileID: 0}
     startsEnding: 0
@@ -145,8 +145,8 @@ MonoBehaviour:
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.55, y: 0.45}
-    size: {x: 180, y: 140}
+    screenPosition: {x: 0.242, y: 0.442}
+    size: {x: 140, y: 160}
     dialogue: {fileID: 0}
     memoryEvent: {fileID: 11400000, guid: db618787a8ba1514b89f86dead3c562a, type: 2}
     startsEnding: 0
@@ -160,8 +160,8 @@ MonoBehaviour:
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.8, y: 0.48}
-    size: {x: 220, y: 260}
+    screenPosition: {x: 0.807, y: 0.32}
+    size: {x: 200, y: 240}
     dialogue: {fileID: 11400000, guid: 6536cf3918987944589a8543a992cffc, type: 2}
     memoryEvent: {fileID: 0}
     startsEnding: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.25, y: 0.48}
+    screenPosition: {x: 0.114, y: 0.405}
     size: {x: 200, y: 260}
     dialogue: {fileID: 11400000, guid: 775ed33134396d148ba1509d58a01e56, type: 2}
     memoryEvent: {fileID: 0}
@@ -190,8 +190,8 @@ MonoBehaviour:
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.55, y: 0.55}
-    size: {x: 240, y: 220}
+    screenPosition: {x: 0.199, y: 0.607}
+    size: {x: 130, y: 260}
     dialogue: {fileID: 0}
     memoryEvent: {fileID: 11400000, guid: df4e6480b8be7444a9a59ffb1c748fa4, type: 2}
     startsEnding: 0

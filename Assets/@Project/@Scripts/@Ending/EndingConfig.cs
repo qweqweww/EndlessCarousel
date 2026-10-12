@@ -33,6 +33,26 @@ public class EndingConfig : ScriptableObject
     public string XDisplayName => xDisplayName;
     public string XSearchFlag => xSearchFlag;
 
+    [Header("결과 플래그 (Final Chapter 대화 분기용)")]
+    [Tooltip("{0}=캐릭터 ID. 예: Final_A_Return / Final_A_Stay")]
+    [SerializeField] private string returnFlagFormat = "Final_{0}_Return";
+    [SerializeField] private string stayFlagFormat = "Final_{0}_Stay";
+    [Tooltip("{0}=AllReturn / Mixed / AllStay. 예: Final_AllReturn")]
+    [SerializeField] private string groupFlagFormat = "Final_{0}";
+
+    // 판정 결과를 플래그로 기록한다. 이전 결과 플래그는 지우고 이번 결과만 켠다.
+    public void ApplyResultFlags(EndingResult result)
+    {
+        foreach (CharacterResult c in result.Characters)
+        {
+            bool reality = c.Outcome == CharacterOutcome.Reality;
+            GameFlags.Set(string.Format(returnFlagFormat, c.CharacterId), reality);
+            GameFlags.Set(string.Format(stayFlagFormat, c.CharacterId), !reality);
+        }
+        foreach (EndingGroup group in System.Enum.GetValues(typeof(EndingGroup)))
+            GameFlags.Set(string.Format(groupFlagFormat, group), group == result.Group);
+    }
+
     public string GetLabel(CharacterOutcome outcome) => outcome == CharacterOutcome.Reality ? realityLabel : parkLabel;
     public string GetLabel(XOutcome outcome) => outcome == XOutcome.Search ? xSearchLabel : xStayLabel;
 

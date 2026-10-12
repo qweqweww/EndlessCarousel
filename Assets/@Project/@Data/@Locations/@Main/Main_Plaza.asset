@@ -146,6 +146,126 @@ MonoBehaviour:
     limitMaxChapter: 0
     maxChapter: 6
     setFlagOnComplete: Chapter5_TicketRecordChecked
+  - displayName: "A\uC640 \uC774\uC57C\uAE30\uD55C\uB2E4"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.2, y: 0.8}
+    size: {x: 200, y: 150}
+    dialogue: {fileID: 11400000, guid: 72c902263f103bf41b0b8d734c2d687c, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Final_A_Return
+    hiddenIfFlag: Final_A_Talked
+    minChapter: 6
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Final_A_Talked
+  - displayName: "A\uC640 \uC774\uC57C\uAE30\uD55C\uB2E4"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.2, y: 0.8}
+    size: {x: 200, y: 150}
+    dialogue: {fileID: 11400000, guid: 2ed032717080edb4f9f3c53445eef4bd, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Final_A_Stay
+    hiddenIfFlag: Final_A_Talked
+    minChapter: 6
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Final_A_Talked
+  - displayName: "B\uC640 \uC774\uC57C\uAE30\uD55C\uB2E4"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.4, y: 0.8}
+    size: {x: 200, y: 150}
+    dialogue: {fileID: 11400000, guid: e1165442fb396634eaebbfd8e567375f, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Final_B_Return
+    hiddenIfFlag: Final_B_Talked
+    minChapter: 6
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Final_B_Talked
+  - displayName: "B\uC640 \uC774\uC57C\uAE30\uD55C\uB2E4"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.4, y: 0.8}
+    size: {x: 200, y: 150}
+    dialogue: {fileID: 11400000, guid: 9944ded822820c046afd2404bd226ce2, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Final_B_Stay
+    hiddenIfFlag: Final_B_Talked
+    minChapter: 6
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Final_B_Talked
+  - displayName: "C\uC640 \uC774\uC57C\uAE30\uD55C\uB2E4"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.6, y: 0.8}
+    size: {x: 200, y: 150}
+    dialogue: {fileID: 11400000, guid: 4ca25dddbeb870047b0de8983771cf28, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Final_C_Return
+    hiddenIfFlag: Final_C_Talked
+    minChapter: 6
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Final_C_Talked
+  - displayName: "C\uC640 \uC774\uC57C\uAE30\uD55C\uB2E4"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.6, y: 0.8}
+    size: {x: 200, y: 150}
+    dialogue: {fileID: 11400000, guid: 34425ddf402b91b4eadf0b768f6e0b2b, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Final_C_Stay
+    hiddenIfFlag: Final_C_Talked
+    minChapter: 6
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Final_C_Talked
+  - displayName: "D\uC640 \uC774\uC57C\uAE30\uD55C\uB2E4"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.8, y: 0.8}
+    size: {x: 200, y: 150}
+    dialogue: {fileID: 11400000, guid: c375e4039b451f04283201d446502b76, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Final_D_Return
+    hiddenIfFlag: Final_D_Talked
+    minChapter: 6
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Final_D_Talked
+  - displayName: "D\uC640 \uC774\uC57C\uAE30\uD55C\uB2E4"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.8, y: 0.8}
+    size: {x: 200, y: 150}
+    dialogue: {fileID: 11400000, guid: 89de261676c0cf547976010690792b56, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Final_D_Stay
+    hiddenIfFlag: Final_D_Talked
+    minChapter: 6
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Final_D_Talked
   autoEvents:
   - dialogue: {fileID: 11400000, guid: c037bcf56d7072e4bb1ae161b3400da9, type: 2}
     memoryEvent: {fileID: 0}
@@ -173,3 +293,280 @@ MonoBehaviour:
     changeChapter: 1
     targetChapter: 6
     fadeOnComplete: 1
+  - dialogue: {fileID: 11400000, guid: fb831c4caa14465448fb70350e8061c1, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Final_Started
+    completeFlag: Final_Entered
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: 6f9d730164f43d24ca1f4dc138c8d8ff, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Final_A_Talked
+    - Final_B_Talked
+    - Final_C_Talked
+    - Final_D_Talked
+    completeFlag: Final_XDecided
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: 8749c3024aacb3e488175343357efa5a, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Final_XDecided
+    - Final_AllReturn
+    completeFlag: Final_GateOpened
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: 8749c3024aacb3e488175343357efa5a, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Final_XDecided
+    - Final_Mixed
+    completeFlag: Final_GateOpened
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: eaf080072403dc74dab1e686f9464687, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Final_XDecided
+    - Final_AllStay
+    completeFlag: Final_GateOpened
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: b55042bcb4c985146a8a349c97f5a46a, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Final_GateOpened
+    - Final_A_Return
+    completeFlag: Final_A_Gate
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: e1b6daa13c0c5174c939b8e602710cbb, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Final_GateOpened
+    - Final_A_Stay
+    completeFlag: Final_A_Gate
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: 127cc342629c1ea41acf78e9783c11e8, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Final_A_Gate
+    - Final_B_Return
+    completeFlag: Final_B_Gate
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: 1f22215c9a2b71945ac79fd54449c5ee, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Final_A_Gate
+    - Final_B_Stay
+    completeFlag: Final_B_Gate
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: d867eb4253249404b901543e3bdd6c06, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Final_B_Gate
+    - Final_C_Return
+    completeFlag: Final_C_Gate
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: f67fc0715cfa66f4b88feaff83a5ebae, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Final_B_Gate
+    - Final_C_Stay
+    completeFlag: Final_C_Gate
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: 53a2647b03a87b94bb494cdbd5122a0c, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Final_C_Gate
+    - Final_D_Return
+    completeFlag: Final_D_Gate
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 1
+  - dialogue: {fileID: 11400000, guid: d88496671482a6d4cbfcfdf03a288d90, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Final_C_Gate
+    - Final_D_Stay
+    completeFlag: Final_D_Gate
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 1
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 1fe2d6141312af34397d9f2f20ea95ea, type: 2}
+    requiredFlags:
+    - Final_D_Gate
+    - Final_A_Return
+    completeFlag: Final_A_Epilogue
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 2caedbd806035b948bd0fdcffcd5df97, type: 2}
+    requiredFlags:
+    - Final_D_Gate
+    - Final_A_Stay
+    completeFlag: Final_A_Epilogue
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 15da2ea75d1eaa644bc3b472fbfecfa0, type: 2}
+    requiredFlags:
+    - Final_A_Epilogue
+    - Final_B_Return
+    completeFlag: Final_B_Epilogue
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 3a2198e17b034014da09c0126f339792, type: 2}
+    requiredFlags:
+    - Final_A_Epilogue
+    - Final_B_Stay
+    completeFlag: Final_B_Epilogue
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 7c853c295e11d9c48929d4356f302bac, type: 2}
+    requiredFlags:
+    - Final_B_Epilogue
+    - Final_C_Return
+    completeFlag: Final_C_Epilogue
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 242bba0742fbe144392b6002a7894b4b, type: 2}
+    requiredFlags:
+    - Final_B_Epilogue
+    - Final_C_Stay
+    completeFlag: Final_C_Epilogue
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 850e81f6e14436f43b95bd65383458ad, type: 2}
+    requiredFlags:
+    - Final_C_Epilogue
+    - Final_D_Return
+    completeFlag: Final_D_Epilogue
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 8979be64429f3eb43866a6d24ea3d887, type: 2}
+    requiredFlags:
+    - Final_C_Epilogue
+    - Final_D_Stay
+    completeFlag: Final_D_Epilogue
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 802c9b2611f8a8d469ce6bf8a43e30f8, type: 2}
+    requiredFlags:
+    - Final_D_Epilogue
+    - Final_X_Stay
+    - Final_AllReturn
+    completeFlag: Final_X_Epilogue
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 6912deb4fafc22f4b967c2a3dd927ac6, type: 2}
+    requiredFlags:
+    - Final_D_Epilogue
+    - Final_X_Stay
+    - Final_Mixed
+    completeFlag: Final_X_Epilogue
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 6912deb4fafc22f4b967c2a3dd927ac6, type: 2}
+    requiredFlags:
+    - Final_D_Epilogue
+    - Final_X_Stay
+    - Final_AllStay
+    completeFlag: Final_X_Epilogue
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 80ebd8079e1696f4c9d9b4aa284a6b10, type: 2}
+    requiredFlags:
+    - Final_D_Epilogue
+    - Final_X_Search
+    - Final_AllReturn
+    completeFlag: Final_X_Epilogue
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 8b45cc1661604054d8b8e61e5641439e, type: 2}
+    requiredFlags:
+    - Final_D_Epilogue
+    - Final_X_Search
+    - Final_Mixed
+    completeFlag: Final_X_Epilogue
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 8b45cc1661604054d8b8e61e5641439e, type: 2}
+    requiredFlags:
+    - Final_D_Epilogue
+    - Final_X_Search
+    - Final_AllStay
+    completeFlag: Final_X_Epilogue
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 0777e14a74a985f4791be812a9819f1d, type: 2}
+    requiredFlags:
+    - Final_X_Epilogue
+    - Final_AllReturn
+    completeFlag: Final_Complete
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 76506d69448f64f4ba0cfe8a472e974a, type: 2}
+    requiredFlags:
+    - Final_X_Epilogue
+    - Final_Mixed
+    completeFlag: Final_Complete
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 0}
+    memoryEvent: {fileID: 11400000, guid: 775bb92254d1bd04893e4f9a6f13832e, type: 2}
+    requiredFlags:
+    - Final_X_Epilogue
+    - Final_AllStay
+    completeFlag: Final_Complete
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0

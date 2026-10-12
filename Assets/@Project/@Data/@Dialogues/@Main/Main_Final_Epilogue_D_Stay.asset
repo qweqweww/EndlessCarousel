@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
+  m_Name: Main_Final_Epilogue_D_Stay
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: 
+    text: "\uB808\uC2A4\uD1A0\uB791 \uCC3D\uC5D0\uB294 \uC624\uB298\uB3C4 \uBD88\uC774
+      \uCF1C\uC838 \uC788\uC5C8\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: "\uC5B8\uB2C8"
+    text: "\uC190 \uC53B\uACE0 \uC640."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\uC54C\uC544."
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  - speakerName: "\uC5B8\uB2C8"
+    text: "\uC624\uB298 \uBB50 \uBA39\uC744\uB798?"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\uAE40\uBCF6. \uACC4\uB780 \uB450 \uAC1C."
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  - speakerName: "\uC5B8\uB2C8"
+    text: "\uB610?"
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\u2026\u2026\uB610."
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  - speakerName: 
+    text: "\uC5B8\uB2C8\uAC00 \uC6C3\uC5C8\uB2E4. D\uB3C4 \uC6C3\uC5C8\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uADF8\uB0A0\uC758 \uC800\uB141\uC740, \uB9E4\uC77C \uB2E4\uC2DC \uCC28\uB824\uC84C\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  nextDialogue: {fileID: 0}
+  skipNextIfFlag: 

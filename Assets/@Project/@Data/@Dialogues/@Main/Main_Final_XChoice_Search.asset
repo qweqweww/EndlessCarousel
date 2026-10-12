@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
+  m_Name: Main_Final_XChoice_Search
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: X
+    text: "\uB2E4\uB978 \uBC29\uBC95\uC744 \uCC3E\uC544\uBCFC\uB798."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: X
+    text: "\uC815\uBB38\uC740 \uB098\uD55C\uD14C \uC548 \uC5F4\uB824. \uC9C0\uAE08\uC740."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: X
+    text: "\uADFC\uB370 \uC9C0\uAE08 \uBC29\uBC95\uC774 \uC5C6\uB2E4\uB294 \uAC70\uB791,
+      \uC601\uC6D0\uD788 \uC5C6\uB2E4\uB294 \uAC74 \uB2E4\uB974\uC796\uC544."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\uC5B4? \uADF8\uAC70 \uB0B4 \uB9D0 \uAC19\uC740\uB370."
+    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    choices: []
+  - speakerName: X
+    text: "\uC751. \uBE4C\uB838\uC5B4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: A
+    text: "\uC544\uC9C1 \uC548 \uBCF8 \uB370 \uB9CE\uC9C0. \uC5EC\uAE30."
+    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    choices: []
+  - speakerName: B
+    text: "\uC800 \uC548\uCABD \uAE38\uC740\u2026 \uC800\uD76C\uB3C4 \uD55C \uBC88\uB3C4
+      \uC548 \uAC00 \uBD24\uC5B4\uC694."
+    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    choices: []
+  - speakerName: D
+    text: "\uCC3E\uC73C\uBA74 \uC54C\uB824 \uC8FC\uB4E0\uAC00. \uC5B4\uB5BB\uAC8C\uB4E0."
+    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    choices: []
+  - speakerName: X
+    text: "\uC751."
+    portrait: {fileID: 0}
+    choices: []
+  nextDialogue: {fileID: 0}
+  skipNextIfFlag: 

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
+  m_Name: Main_Final_Epilogue_B_Return
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: 
+    text: "\uCC98\uC74C \uBCF4\uB294 \uB3C4\uC2DC\uC758 \uAC70\uB9AC. B\uB294 \uD3B8\uC758\uC810
+      \uC55E\uC5D0 \uC11C \uC788\uC5C8\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uBAA8\uC784\uC744 \uB098\uC628 \uC9C0 \uD55C \uB2EC. \uBD80\uBAA8\uB2D8\uC758
+      \uC804\uD654\uB294 \uB9E4\uC77C \uC654\uB2E4. B\uB294 \uC544\uC9C1 \uBC1B\uC744
+      \uC6A9\uAE30\uAC00 \uC5C6\uC5C8\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uD574\uC57C \uD560 \uC77C\uC774 \uC801\uD78C \uC885\uC774\uB294 \uAE38\uC5C8\uB2E4.
+      \uC77C\uC790\uB9AC, \uC11C\uB958, \uC9C0\uB0BC \uACF3."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uD3B8\uC758\uC810 \uC548, \uC74C\uB8CC \uB0C9\uC7A5\uACE0 \uC55E\uC5D0\uC11C
+      B\uB294 \uC624\uB798 \uC11C \uC788\uC5C8\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uB204\uAC00 \uACE8\uB77C \uC8FC\uC9C0 \uC54A\uC558\uB2E4. \uAC10\uC0AC
+      \uAE30\uB3C4\uB97C \uD558\uACE0 \uB9C8\uC2DC\uB77C\uACE0 \uD558\uB294 \uC0AC\uB78C\uB3C4
+      \uC5C6\uC5C8\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: B
+    text: "\u2026\u2026\uC774\uAC70\uC694."
+    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    choices: []
+  - speakerName: 
+    text: "B\uB294 \uB538\uAE30 \uC6B0\uC720\uB97C \uACE8\uB790\uB2E4. \uBCC4\uB85C
+      \uC88B\uC544\uD558\uC9C0 \uC54A\uB294 \uB9DB\uC77C\uC9C0\uB3C4 \uBAB0\uB790\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uADF8\uB798\uB3C4 B\uAC00 \uACE0\uB978 \uAC83\uC774\uC5C8\uB2E4."
+    portrait: {fileID: 0}
+    choices: []
+  nextDialogue: {fileID: 0}
+  skipNextIfFlag: 

@@ -132,6 +132,10 @@ public class TitleMenuController : MonoBehaviour
             optionButton.interactable = false;
         SetMenuInput(false);
 
+        // 엔딩 후 타이틀로 돌아와 다시 시작할 때 이전 진행이 남지 않도록 처음 상태로 되돌린다
+        GameFlags.ClearAll();
+        ChapterManager.SetChapter(Chapter.Prologue);
+
         StopAllCoroutines();
         StartCoroutine(PlayOutroAndLoad());
     }

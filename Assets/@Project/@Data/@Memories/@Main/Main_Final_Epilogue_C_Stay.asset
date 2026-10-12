@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d74c54d1ae032e64b9b446bfec0b2ffe, type: 3}
+  m_Name: Main_Final_Epilogue_C_Stay
+  m_EditorClassIdentifier: Assembly-CSharp::MemoryEventData
+  eventName: "\uADF8 \uD6C4 \u2014 C"
+  memoryImage: {fileID: 21300000, guid: 5b580c1662e07404182da061f8aedfc1, type: 3}
+  dialogue: {fileID: 11400000, guid: 33fa6ab10e4b444468fa071ef3443254, type: 2}
+  setFlagOnComplete: 
