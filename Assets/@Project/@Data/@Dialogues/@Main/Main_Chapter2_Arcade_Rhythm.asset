@@ -51,7 +51,7 @@ MonoBehaviour:
     choices: []
   - speakerName: B
     text: "\uC5B4\u2026 \uC774\uACBC\uC5B4\uC694?"
-    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
+    portrait: {fileID: 21300000, guid: 09c7d92bb325cdd4f973bcb83e751243, type: 3}
     choices: []
   - speakerName: B
     text: "C \uC528, \uC624\uB77D\uC2E4 \uBC15\uC0AC\uB77C\uBA74\uC11C\uC694."
@@ -86,11 +86,11 @@ MonoBehaviour:
   - speakerName: B
     text: "\uC774 \uB178\uB798\u2026 \uC5B4\uB514\uC11C \uB4E4\uC5B4 \uBCF8 \uAC83
       \uAC19\uC544\uC694."
-    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
+    portrait: {fileID: 21300000, guid: 09c7d92bb325cdd4f973bcb83e751243, type: 3}
     choices: []
   - speakerName: B
     text: "\uC544\uC8FC \uC791\uC740 \uD654\uBA74\uC5D0\uC11C\uC694."
-    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
+    portrait: {fileID: 21300000, guid: 09c7d92bb325cdd4f973bcb83e751243, type: 3}
     choices: []
   nextDialogue: {fileID: 0}
   skipNextIfFlag: 

@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 2403748984686251292
     second: Main_Arcade_ClawMachine_0
+  - first:
+      213: -7323084158489477259
+    second: Main_Arcade_ClawMachine
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +49,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -113,23 +116,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main_Arcade_ClawMachine_0
+      name: Main_Arcade_ClawMachine
       rect:
         serializedVersion: 2
         x: 0
-        y: 174
-        width: 276
-        height: 608
+        y: 175
+        width: 275
+        height: 606
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c1d0e6947f4db5120800000000000000
-      internalID: 2403748984686251292
+      spriteID: 57fb1f8d1cd2f5a90800000000000000
+      internalID: -7323084158489477259
       vertices: []
       indices: 
       edges: []
@@ -148,6 +151,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      Main_Arcade_ClawMachine: -7323084158489477259
       Main_Arcade_ClawMachine_0: 2403748984686251292
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

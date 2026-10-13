@@ -30,7 +30,7 @@ MonoBehaviour:
   - speakerName: B
     text: "\uADF8\uB7FC \uC9C0\uAE08 \uC800\uD76C\uAC00 \uB531 \uC911\uAC04\uC778
       \uAC70\uB124\uC694."
-    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
+    portrait: {fileID: 21300000, guid: 09c7d92bb325cdd4f973bcb83e751243, type: 3}
     choices: []
   - speakerName: X
     text: "\uC544\uAE4C\uBD80\uD130 \uAF64 \uAC78\uC5C8\uB294\uB370."

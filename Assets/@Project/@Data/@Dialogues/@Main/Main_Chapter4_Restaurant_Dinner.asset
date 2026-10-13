@@ -71,7 +71,7 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: "\u2026\u2026\uC798 \uBA39\uACA0\uC2B5\uB2C8\uB2E4."
-    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
+    portrait: {fileID: 21300000, guid: 3829046e21eb2014aac420be0e636761, type: 3}
     choices: []
   - speakerName: "\uC5B8\uB2C8"
     text: "\uC624, \uB2E4\uB4E4 \uC778\uC0AC \uC798\uD558\uB124. D, \uB108\uB3C4

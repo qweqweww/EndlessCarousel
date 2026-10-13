@@ -25,11 +25,11 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: "\uC9C1\uC6D0\uC744 \uCC3E\uC73C\uBA74 \uC54C\uACA0\uC9C0."
-    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
+    portrait: {fileID: 21300000, guid: 3829046e21eb2014aac420be0e636761, type: 3}
     choices: []
   - speakerName: B
     text: "\uADF8... \uC544\uC9C1\uC740 \uD55C \uBA85\uB3C4 \uBABB \uBD24\uC5B4\uC694."
-    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
+    portrait: {fileID: 21300000, guid: 09c7d92bb325cdd4f973bcb83e751243, type: 3}
     choices: []
   nextDialogue: {fileID: 11400000, guid: 51ea81bfb47fd4841936dc2f2cc72507, type: 2}
   skipNextIfFlag: 

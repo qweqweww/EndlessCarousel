@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - speakerName: 
-    text: "C\uB294 \uAD6C\uAE09\uD568 \uC55E\uC5D0 \uD55C\uCC38 \uC11C \uC788\uC5C8\uB2E4."
+    text: "C\uB294 \uC544\uCE58 \uAE30\uB465\uC5D0 \uC190\uC744 \uC9DA\uC740 \uCC44
+      \uD55C\uCC38 \uC11C \uC788\uC5C8\uB2E4."
     portrait: {fileID: 0}
     choices: []
   - speakerName: C
@@ -86,7 +87,7 @@ MonoBehaviour:
     choices: []
   - speakerName: C
     text: "\uADF8\uB798\uC11C \uBCA4\uCE58 \uBCF4\uBA74 \uC549\uC544 \uB450\uACE0
-      \uC2F6\uC5C8\uB098 \uBD10. \uB09C\uAC04\uB3C4 \uADF8\uB807\uACE0."
+      \uC2F6\uC5C8\uB098 \uBD10."
     portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: D
@@ -105,7 +106,7 @@ MonoBehaviour:
     choices: []
   - speakerName: B
     text: "\uC800\uAE30, C \uC528."
-    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
+    portrait: {fileID: 21300000, guid: 09c7d92bb325cdd4f973bcb83e751243, type: 3}
     choices: []
   - speakerName: B
     text: "\uADF8\uB7FC\u2026 \uC9C0\uAE08 \uB6F0\uB294 \uAC74 \uC88B\uC544\uC694?"

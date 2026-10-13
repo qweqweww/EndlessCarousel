@@ -27,7 +27,7 @@ MonoBehaviour:
   - speakerName: B
     text: "\uADF8\uB9AC\uACE0 \uC800\uD76C\uAC00 \uB4E4\uC5B4\uC62C \uB54C\uB9C8\uB2E4,
       \uC7A5\uC18C\uAC00 \uD558\uB098\uC529 \uC0DD\uACBC\uACE0\uC694."
-    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
+    portrait: {fileID: 21300000, guid: 09c7d92bb325cdd4f973bcb83e751243, type: 3}
     choices: []
   - speakerName: D
     text: "\uB3CC\uC544\uAC00\uACE0 \uC2F6\uC9C0 \uC54A\uC740 \uB9C8\uC74C\uC774
@@ -36,11 +36,11 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: "\u2026\u2026\uACF5\uC5F0\uC7A5\uC5D4 \uC810\uC218\uAC00 \uC5C6\uC5C8\uC5B4."
-    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
+    portrait: {fileID: 21300000, guid: 3829046e21eb2014aac420be0e636761, type: 3}
     choices: []
   - speakerName: A
     text: "\uD2C0\uB824\uB3C4 \uC544\uBB34\uB3C4 \uC548 \uC801\uC5C8\uC5B4."
-    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
+    portrait: {fileID: 21300000, guid: 3829046e21eb2014aac420be0e636761, type: 3}
     choices: []
   - speakerName: 
     text: "A\uC758 \uBAA9\uC18C\uB9AC\uB294 \uD3C9\uC18C\uCC98\uB7FC \uC9E7\uC558\uB2E4.
@@ -74,7 +74,7 @@ MonoBehaviour:
   - speakerName: B
     text: "\uAE30\uC5B5\uC774\uB791, \uB9C8\uC74C\uC774\uB791\u2026 \uBC14\uB77C\uB358
       \uAC70\uB85C\uC694."
-    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
+    portrait: {fileID: 21300000, guid: 09c7d92bb325cdd4f973bcb83e751243, type: 3}
     choices: []
   - speakerName: D
     text: "\uADF8\uB7FC \uB2E4 \uAC00\uC9DC\uC600\uB2E4\uB294 \uAC70\uC57C?"
@@ -127,7 +127,7 @@ MonoBehaviour:
     choices: []
   - speakerName: B
     text: "\uC6D0\uD558\uC2DC\uB294 \uB9CC\uD07C, \uC774\uB77C\uACE0 \uC368 \uC788\uC5C8\uC73C\uB2C8\uAE4C\uC694."
-    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
+    portrait: {fileID: 21300000, guid: 09c7d92bb325cdd4f973bcb83e751243, type: 3}
     choices: []
   - speakerName: 
     text: "X\uB294 \uC7A5\uBD80\uB97C \uB2E4\uC2DC \uBCF4\uC558\uB2E4. \uBC14\uAE65\uC5D0\uC11C

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Main_ParadeStreet
   m_EditorClassIdentifier: Assembly-CSharp::LocationData
   displayName: "\uD37C\uB808\uC774\uB4DC \uAC70\uB9AC"
-  background: {fileID: 21300000, guid: 08f6e2256dccf574eaf9eaacd3e55612, type: 3}
+  background: {fileID: 21300000, guid: cc50f387f5ffa4b478d6db919c11a369, type: 3}
   unlockChapter: 3
   exits:
   - label: "< \uC911\uC559 \uAD11\uC7A5\uC73C\uB85C"
@@ -21,13 +21,28 @@ MonoBehaviour:
     screenPosition: {x: 0.15, y: 0.15}
     requiredFlag: 
   hotspots:
-  - displayName: "\uCD9C\uBC1C\uC120"
+  - displayName: "\uC9C4\uD589 \uBC29\uD5A5 \uD45C\uC2DC"
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.3, y: 0.3}
-    size: {x: 360, y: 140}
-    dialogue: {fileID: 11400000, guid: 96e05a30732b51245bb30d38537c81d2, type: 2}
+    screenPosition: {x: 0.565, y: 0.2}
+    size: {x: 1160, y: 430}
+    dialogue: {fileID: 11400000, guid: fc2771d870da4b644ac191b63dacb6bc, type: 2}
+    memoryEvent: {fileID: 0}
+    startsEnding: 0
+    requiredFlag: Chapter3_Entered
+    hiddenIfFlag: Chapter3_Phase1Complete
+    minChapter: 3
+    limitMaxChapter: 0
+    maxChapter: 6
+    setFlagOnComplete: Chapter3_DirectionChecked
+  - displayName: "\uC548\uB0B4 \uBC29\uC1A1 \uAC00\uB85C\uB4F1"
+    inspectText: 
+    inspectImage: {fileID: 0}
+    canInspect: 1
+    screenPosition: {x: 0.855, y: 0.62}
+    size: {x: 190, y: 740}
+    dialogue: {fileID: 11400000, guid: 3d498c53f33a4094881412acbb0afa92, type: 2}
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Chapter3_Entered
@@ -36,13 +51,13 @@ MonoBehaviour:
     limitMaxChapter: 0
     maxChapter: 6
     setFlagOnComplete: Chapter3_StartLineChecked
-  - displayName: "\uAE30\uB85D \uC804\uAD11\uD310"
+  - displayName: "\uD3EC\uD1A0 \uC2A4\uD31F"
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.7, y: 0.68}
-    size: {x: 340, y: 200}
-    dialogue: {fileID: 11400000, guid: 7fe17e90f56b7e14089159624e430041, type: 2}
+    screenPosition: {x: 0.94, y: 0.39}
+    size: {x: 225, y: 415}
+    dialogue: {fileID: 11400000, guid: 352794be57d699c4cb7fbeaeca7217c3, type: 2}
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Chapter3_Entered
@@ -51,28 +66,13 @@ MonoBehaviour:
     limitMaxChapter: 0
     maxChapter: 6
     setFlagOnComplete: Chapter3_RunChecked
-  - displayName: "\uACBD\uD488 \uC6B4\uB3D9\uD654"
+  - displayName: "\uBCA4\uCE58\uC640 \uC74C\uB8CC \uAC00\uD310\uB300"
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.86, y: 0.42}
-    size: {x: 200, y: 200}
-    dialogue: {fileID: 11400000, guid: 0efe8be8dcdc6f943907baf5e2610563, type: 2}
-    memoryEvent: {fileID: 0}
-    startsEnding: 0
-    requiredFlag: Chapter3_Entered
-    hiddenIfFlag: Chapter3_Phase1Complete
-    minChapter: 3
-    limitMaxChapter: 0
-    maxChapter: 6
-    setFlagOnComplete: 
-  - displayName: "\uC190\uC7A1\uC774 \uB2EC\uB9B0 \uBCA4\uCE58"
-    inspectText: 
-    inspectImage: {fileID: 0}
-    canInspect: 1
-    screenPosition: {x: 0.25, y: 0.42}
-    size: {x: 300, y: 160}
-    dialogue: {fileID: 11400000, guid: cc5b424d358869843a3b6df32e573cc1, type: 2}
+    screenPosition: {x: 0.13, y: 0.37}
+    size: {x: 480, y: 330}
+    dialogue: {fileID: 11400000, guid: 82f570ffcca8c1b4a8fa7b245d0ee112, type: 2}
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Chapter3_Phase1Complete
@@ -81,13 +81,13 @@ MonoBehaviour:
     limitMaxChapter: 0
     maxChapter: 6
     setFlagOnComplete: Chapter3_BenchChecked
-  - displayName: "\uAD6C\uAE09\uD568"
+  - displayName: "\uD37C\uB808\uC774\uB4DC \uC885\uB8CC \uC544\uCE58"
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.72, y: 0.56}
-    size: {x: 180, y: 180}
-    dialogue: {fileID: 11400000, guid: 7ea978a708539d6459763c50ee5c5581, type: 2}
+    screenPosition: {x: 0.43, y: 0.5}
+    size: {x: 390, y: 260}
+    dialogue: {fileID: 11400000, guid: f79f6deb3c3bb144aaf85ea707fec7e2, type: 2}
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Chapter3_Phase1Complete
@@ -96,43 +96,13 @@ MonoBehaviour:
     limitMaxChapter: 0
     maxChapter: 6
     setFlagOnComplete: Chapter3_RehabChecked
-  - displayName: "\uB09C\uAC04"
+  - displayName: "\uD37C\uB808\uC774\uB4DC \uC77C\uC815 \uAC8C\uC2DC\uD310"
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.5, y: 0.3}
-    size: {x: 420, y: 110}
-    dialogue: {fileID: 11400000, guid: 7f9415579bda7b9458ffaa436bd823cd, type: 2}
-    memoryEvent: {fileID: 0}
-    startsEnding: 0
-    requiredFlag: Chapter3_Phase1Complete
-    hiddenIfFlag: Chapter3_Phase2Complete
-    minChapter: 3
-    limitMaxChapter: 0
-    maxChapter: 6
-    setFlagOnComplete: 
-  - displayName: "\uC74C\uB8CC \uB0C9\uC7A5\uACE0"
-    inspectText: 
-    inspectImage: {fileID: 0}
-    canInspect: 1
-    screenPosition: {x: 0.3, y: 0.5}
-    size: {x: 220, y: 300}
-    dialogue: {fileID: 11400000, guid: fc73babee34936343a0b5c865fc2e6c8, type: 2}
-    memoryEvent: {fileID: 0}
-    startsEnding: 0
-    requiredFlag: Chapter3_Phase2Complete
-    hiddenIfFlag: Chapter3_Phase3Complete
-    minChapter: 3
-    limitMaxChapter: 0
-    maxChapter: 6
-    setFlagOnComplete: Chapter3_FridgeChecked
-  - displayName: "\uC9C1\uC6D0\uC6A9 \uC758\uC790"
-    inspectText: 
-    inspectImage: {fileID: 0}
-    canInspect: 1
-    screenPosition: {x: 0.58, y: 0.42}
-    size: {x: 200, y: 240}
-    dialogue: {fileID: 11400000, guid: 2396156a6ff4b9944b299d4549da57f2, type: 2}
+    screenPosition: {x: 0.805, y: 0.46}
+    size: {x: 260, y: 420}
+    dialogue: {fileID: 11400000, guid: 2910828988612f34fb8e04efa174aa1e, type: 2}
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Chapter3_Phase2Complete
@@ -141,13 +111,13 @@ MonoBehaviour:
     limitMaxChapter: 0
     maxChapter: 6
     setFlagOnComplete: Chapter3_WorkChecked
-  - displayName: "\uC548\uB0B4 \uD45C\uC9C0\uD310"
+  - displayName: "\uBA48\uCDB0 \uC788\uB294 \uD37C\uB808\uC774\uB4DC \uD50C\uB85C\uD2B8"
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
-    screenPosition: {x: 0.85, y: 0.6}
-    size: {x: 200, y: 240}
-    dialogue: {fileID: 11400000, guid: 615159b6e95f91a47814f90e2fb4ad64, type: 2}
+    screenPosition: {x: 0.67, y: 0.49}
+    size: {x: 400, y: 320}
+    dialogue: {fileID: 11400000, guid: 3816953a53518a84fa85920de2bec360, type: 2}
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Chapter3_Phase2Complete
@@ -155,37 +125,7 @@ MonoBehaviour:
     minChapter: 3
     limitMaxChapter: 0
     maxChapter: 6
-    setFlagOnComplete: 
-  - displayName: "\uCD9C\uBC1C\uC120\uC5D0 \uC120 C"
-    inspectText: 
-    inspectImage: {fileID: 0}
-    canInspect: 1
-    screenPosition: {x: 0.3, y: 0.38}
-    size: {x: 220, y: 300}
-    dialogue: {fileID: 11400000, guid: 20b1901cba7ad804883fe9246a638d2e, type: 2}
-    memoryEvent: {fileID: 0}
-    startsEnding: 0
-    requiredFlag: Chapter3_Phase3Complete
-    hiddenIfFlag: Chapter3_C_Realized
-    minChapter: 3
-    limitMaxChapter: 0
-    maxChapter: 6
-    setFlagOnComplete: Chapter3_C_Realized
-  - displayName: "\uB2E4\uC2DC \uBCF8 \uC804\uAD11\uD310"
-    inspectText: 
-    inspectImage: {fileID: 0}
-    canInspect: 1
-    screenPosition: {x: 0.7, y: 0.68}
-    size: {x: 340, y: 200}
-    dialogue: {fileID: 11400000, guid: 46bc426b671f6344cab8a10fa2192aaf, type: 2}
-    memoryEvent: {fileID: 0}
-    startsEnding: 0
-    requiredFlag: Chapter3_Phase3Complete
-    hiddenIfFlag: Chapter3_C_Realized
-    minChapter: 3
-    limitMaxChapter: 0
-    maxChapter: 6
-    setFlagOnComplete: 
+    setFlagOnComplete: Chapter3_FloatChecked
   autoEvents:
   - dialogue: {fileID: 11400000, guid: 7bfdb89eba08cee40bc08aee5c5ed2b4, type: 2}
     memoryEvent: {fileID: 0}
@@ -197,6 +137,7 @@ MonoBehaviour:
   - dialogue: {fileID: 0}
     memoryEvent: {fileID: 11400000, guid: 536eea6fa7c30db4c95f46fc75590852, type: 2}
     requiredFlags:
+    - Chapter3_DirectionChecked
     - Chapter3_StartLineChecked
     - Chapter3_RunChecked
     completeFlag: Chapter3_Memory1Complete
@@ -231,8 +172,8 @@ MonoBehaviour:
   - dialogue: {fileID: 0}
     memoryEvent: {fileID: 11400000, guid: f59355f79c0e287419d2875332a45299, type: 2}
     requiredFlags:
-    - Chapter3_FridgeChecked
     - Chapter3_WorkChecked
+    - Chapter3_FloatChecked
     completeFlag: Chapter3_Memory3Complete
     changeChapter: 0
     targetChapter: 0
@@ -242,6 +183,14 @@ MonoBehaviour:
     requiredFlags:
     - Chapter3_Memory3Complete
     completeFlag: Chapter3_Phase3Complete
+    changeChapter: 0
+    targetChapter: 0
+    fadeOnComplete: 0
+  - dialogue: {fileID: 11400000, guid: 20b1901cba7ad804883fe9246a638d2e, type: 2}
+    memoryEvent: {fileID: 0}
+    requiredFlags:
+    - Chapter3_Phase3Complete
+    completeFlag: Chapter3_C_Realized
     changeChapter: 0
     targetChapter: 0
     fadeOnComplete: 0

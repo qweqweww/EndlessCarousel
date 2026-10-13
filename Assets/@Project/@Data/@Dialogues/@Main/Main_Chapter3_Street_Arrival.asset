@@ -36,11 +36,11 @@ MonoBehaviour:
   - speakerName: B
     text: "\uD37C\uB808\uC774\uB4DC \uD558\uB294 \uAE38\uC778\uAC00 \uBD10\uC694.
       \uD45C\uC9C0\uD310\uC5D0 \uADF8\uB807\uAC8C \uC801\uD600 \uC788\uC5B4\uC694."
-    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
+    portrait: {fileID: 21300000, guid: 09c7d92bb325cdd4f973bcb83e751243, type: 3}
     choices: []
   - speakerName: A
     text: "\uC544\uBB34\uB3C4 \uC5C6\uB294\uB370."
-    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
+    portrait: {fileID: 21300000, guid: 3829046e21eb2014aac420be0e636761, type: 3}
     choices: []
   - speakerName: C
     text: "\u2026\u2026"
@@ -133,7 +133,7 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: "\u2026\u2026\uAE30\uB2E4\uB824."
-    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
+    portrait: {fileID: 21300000, guid: 3829046e21eb2014aac420be0e636761, type: 3}
     choices: []
   - speakerName: C
     text: "\uC751?"
@@ -141,7 +141,7 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: "\uB2E4 \uAC19\uC774 \uAC00. \uC5EC\uAE30 \uAE38\uC5B4."
-    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
+    portrait: {fileID: 21300000, guid: 3829046e21eb2014aac420be0e636761, type: 3}
     choices: []
   - speakerName: C
     text: "\uC624\uCF00\uC774. \uB300\uC2E0 \uB2E4\uC74C\uC5D4 \uAC19\uC774 \uB6F0\uC790."
@@ -201,14 +201,15 @@ MonoBehaviour:
     portrait: {fileID: 0}
     choices: []
   - speakerName: 
-    text: "X\uAC00 \uAC00\uB9AC\uD0A8 \uACF3, \uAC70\uB9AC \uCD08\uC785\uC758 \uBC14\uB2E5\uC5D0
-      \uD558\uC580 \uC120\uC774 \uC5EC\uB7EC \uC904 \uB098\uB780\uD788 \uADF8\uC5B4\uC838
-      \uC788\uC5C8\uB2E4."
+    text: "X\uAC00 \uAC00\uB9AC\uD0A8 \uACF3, \uAC70\uB9AC \uBC14\uB2E5\uC5D0 \uCEE4\uB2E4\uB780
+      \uD654\uC0B4\uD45C\uAC00 \uADF8\uB824\uC838 \uC788\uC5C8\uB2E4. \uBCC4\uC774
+      \uADF8\uB824\uC9C4 \uC6D0\uC5D0\uC11C \uC2DC\uC791\uD574, \uAC70\uB9AC \uB05D
+      \uC544\uCE58\uB97C \uAC00\uB9AC\uD0A4\uACE0 \uC788\uC5C8\uB2E4."
     portrait: {fileID: 0}
     choices: []
   - speakerName: 
-    text: "\uADF8 \uC606\uC5D0\uB294 \uCEE4\uB2E4\uB780 \uC804\uAD11\uD310\uC774
-      \uC11C \uC788\uC5C8\uB2E4."
+    text: "\uAE38\uAC00\uC758 \uD3EC\uD1A0 \uC2A4\uD31F \uC704\uC5D0\uC11C\uB294
+      \uC791\uC740 \uC804\uAD11\uD310\uC774 \uAE5C\uBE61\uC774\uACE0 \uC788\uC5C8\uB2E4."
     portrait: {fileID: 0}
     choices: []
   - speakerName: C

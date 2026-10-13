@@ -42,7 +42,7 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: "\uB204\uAC00 \uC815\uD558\uB77C\uACE0 \uD55C \uAC74 \uC544\uB2C8\uC9C0."
-    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
+    portrait: {fileID: 21300000, guid: 3829046e21eb2014aac420be0e636761, type: 3}
     choices: []
   - speakerName: C
     text: "\uC751. \uADFC\uB370 \uC774\uB300\uB85C \uACC4\uC18D \uBBF8\uB8E8\uBA74,
@@ -60,11 +60,11 @@ MonoBehaviour:
     choices: []
   - speakerName: B
     text: "\u2026\u2026\uB124."
-    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
+    portrait: {fileID: 21300000, guid: 09c7d92bb325cdd4f973bcb83e751243, type: 3}
     choices: []
   - speakerName: A
     text: "\uC815\uD558\uBA74 \uB9D0\uD574."
-    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
+    portrait: {fileID: 21300000, guid: 3829046e21eb2014aac420be0e636761, type: 3}
     choices: []
   - speakerName: D
     text: "X\uB294?"
