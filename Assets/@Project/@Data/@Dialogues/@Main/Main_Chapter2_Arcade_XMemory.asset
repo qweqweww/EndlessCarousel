@@ -79,7 +79,7 @@ MonoBehaviour:
     choices: []
   - speakerName: C
     text: "X? \uBB50\uAC00?"
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: X
     text: "\u2026\u2026\uC544\uB2C8\uC57C."

@@ -34,11 +34,11 @@ MonoBehaviour:
     choices: []
   - speakerName: C
     text: "\u2026\u20264."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: D
     text: "4\uBA85\uC774\uB77C\uACE0?"
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: 
     text: "\uC544\uB798\uB85C \uB124 \uC904\uC774 \uC774\uC5B4\uC84C\uB2E4. \uC774\uB984
@@ -68,19 +68,19 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: "\u2026\u2026\uC5F0\uC8FC."
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
     choices: []
   - speakerName: B
     text: "\uACE0\uB974\uC9C0 \uBABB\uD55C\u2026 \uC0AC\uB78C\uB4E4."
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
     choices: []
   - speakerName: C
     text: "\uB2E4\uB9AC. \uC774\uAC74 \uB098\uB124. \uD655\uC2E4\uD788."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: D
     text: "\u2026\u2026\uC800\uB141."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: 
     text: "\uC544\uBB34\uB3C4 \uC6C3\uC9C0 \uC54A\uC558\uB2E4. \uB9E4\uD45C\uC18C
@@ -90,11 +90,11 @@ MonoBehaviour:
   - speakerName: C
     text: "\uC678\uBD80\uC5D0\uC11C \uB4E4\uC5B4\uC628 \uC0AC\uB78C\uC774 \uB124
       \uBA85\uC774\uB77C\uB294 \uAC70\uC9C0. \uC6B0\uB9AC \uB137."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: D
     text: "\uADFC\uB370 \uC6B0\uB9B0 \uB2E4\uC12F\uC774\uC796\uC544."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: 
     text: "D\uAC00 \uC190\uAC00\uB77D\uC73C\uB85C \uC0AC\uB78C \uC218\uB97C \uC14C\uB2E4.
@@ -103,20 +103,20 @@ MonoBehaviour:
     choices: []
   - speakerName: D
     text: "\uD558\uB098, \uB458, \uC14B, \uB137, \uB2E4\uC12F."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: B
     text: "\uB2E4\uC12F \uBC88\uC9F8 \uC904\uC740\u2026 \uC5C6\uC5B4\uC694."
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
     choices: []
   - speakerName: A
     text: "\uB9E4\uD45C\uC18C\uB3C4. \uC0AC\uC9C4\uB3C4. \uC77C\uC9C0\uB3C4."
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
     choices: []
   - speakerName: C
     text: "\u2026\u2026\uC774\uBC88\uC5D4 \uB300\uCDA9 \uC368\uC11C \uADF8\uB7F0
       \uAC78\uB85C \uD558\uAE30\uC5D4, \uC880 \uB9CE\uB2E4."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: X
     text: "\u2026\u2026"
@@ -137,7 +137,7 @@ MonoBehaviour:
     choices: []
   - speakerName: D
     text: "\uC544\uC9C1 \uBAB0\uB77C. \uB354 \uBD10."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   nextDialogue: {fileID: 0}
   skipNextIfFlag: 

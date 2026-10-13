@@ -30,11 +30,11 @@ MonoBehaviour:
     choices: []
   - speakerName: C
     text: "\uC640, 14\uAC1C. \uB204\uAC00 \uC774\uB807\uAC8C \uBCF4\uB0C8\uB300."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: B
     text: "\uAE09\uD55C \uC77C\uC774\uC5C8\uC744\uAE4C\uC694?"
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
     choices: []
   - speakerName: 
     text: "D\uAC00 \uD734\uB300\uD3F0\uC744 \uC9D1\uC5B4 \uB4E4\uC5C8\uB2E4. \uC190\uAC00\uB77D\uC774
@@ -44,15 +44,15 @@ MonoBehaviour:
   - speakerName: D
     text: "\u2026\u2026\uC5B4\uB514\uC57C. \uB204\uAD6C\uB791 \uC788\uC5B4. \uC65C
       \uB2F5 \uC548 \uD574."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 256f72b9db763414f835c1f7e1cbd70c, type: 3}
     choices: []
   - speakerName: C
     text: "\uC751?"
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: D
     text: "\uC774\uB7F0 \uAC70 \uBCF4\uB0C8\uC744\uAC78. \uB2E4."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 256f72b9db763414f835c1f7e1cbd70c, type: 3}
     choices: []
   - speakerName: 
     text: "D\uB294 \uD734\uB300\uD3F0\uC744 \uB2E4\uC2DC \uC5CE\uC5C8\uB2E4. \uCF85,
@@ -61,11 +61,11 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: "\uC544\uB294 \uBC88\uD638\uC57C?"
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
     choices: []
   - speakerName: D
     text: "\u2026\u2026\uBAA8\uB974\uB294 \uAC8C \uB098\uC544."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 256f72b9db763414f835c1f7e1cbd70c, type: 3}
     choices: []
   nextDialogue: {fileID: 0}
   skipNextIfFlag: 

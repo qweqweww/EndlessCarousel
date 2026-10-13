@@ -24,17 +24,17 @@ MonoBehaviour:
     choices: []
   - speakerName: D
     text: "\u2026\u2026\uBB50."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: D
     text: "\uB098 \uC2EB\uC5B4\uC9C4 \uAC70\uBA74 \uADF8\uB0E5 \uB9D0\uD558\uBA74
       \uB418\uB294\uB370."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 256f72b9db763414f835c1f7e1cbd70c, type: 3}
     choices: []
   - speakerName: D
     text: "\uC800\uB807\uAC8C \uACF5\uC190\uD558\uAC8C \uD53C\uD558\uB294 \uAC8C
       \uB354 \uAE30\uBD84 \uB098\uBE60."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 450c4bef8511b444b8094cf7719cd3eb, type: 3}
     choices: []
   - speakerName: X
     text: "\uC2EB\uC5B4\uC9C4 \uAC83 \uAC19\uC9C4 \uC54A\uC544."
@@ -42,7 +42,7 @@ MonoBehaviour:
     choices: []
   - speakerName: D
     text: "\uADF8\uAC78 \uB124\uAC00 \uC5B4\uB5BB\uAC8C \uC54C\uC544."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: X
     text: "\uC544\uAE4C\uBD80\uD130 \uACC4\uC18D \uC774\uCABD \uBCF4\uACE0 \uC788\uC5B4."
@@ -50,11 +50,11 @@ MonoBehaviour:
     choices: []
   - speakerName: D
     text: "\u2026\u2026"
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 573c992b11a9e1a4e85e8bf6c16595d2, type: 3}
     choices: []
   - speakerName: D
     text: "\uB410\uC5B4. \uC2E0\uACBD \uC548 \uC368."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 450c4bef8511b444b8094cf7719cd3eb, type: 3}
     choices: []
   - speakerName: 
     text: "D\uB294 \uADF8\uB807\uAC8C \uB9D0\uD558\uACE0, \uC624\uB77D\uC2E4 \uC548\uCABD\uC744

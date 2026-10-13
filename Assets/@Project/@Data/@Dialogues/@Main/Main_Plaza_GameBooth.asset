@@ -25,35 +25,35 @@ MonoBehaviour:
     choices: []
   - speakerName: D
     text: "\uC774\uB7F0 \uAC83\uB3C4 \uC788\uB124."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: C
     text: "\uD574\uBCFC\uB798?"
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: D
     text: "\uC65C \uB098\uD55C\uD14C \uBB3C\uC5B4."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 450c4bef8511b444b8094cf7719cd3eb, type: 3}
     choices: []
   - speakerName: C
     text: "\uC81C\uC77C \uBA3C\uC800 \uBCF4\uACE0 \uC788\uC5C8\uC796\uC544."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: D
     text: "\uBD24\uB2E4\uACE0 \uD558\uACE0 \uC2F6\uC740 \uAC74 \uC544\uB2C8\uAC70\uB4E0."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 450c4bef8511b444b8094cf7719cd3eb, type: 3}
     choices: []
   - speakerName: D
     text: "\uB10C \uD560\uB798?"
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: A
     text: "\uC548 \uD574."
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
     choices: []
   - speakerName: D
     text: "\u2026\u2026\uADF8\uB798? \uC2EB\uC73C\uBA74 \uB9D0\uACE0."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: 
     text: "A\uB294 \uC810\uC218\uD310\uC744 \uC7A0\uC2DC \uBC14\uB77C\uBCF4\uB2E4\uAC00

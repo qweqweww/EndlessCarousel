@@ -24,7 +24,7 @@ MonoBehaviour:
     choices: []
   - speakerName: D
     text: "\uC54C\uC544."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: "\uC5B8\uB2C8"
     text: "\uC624\uB298 \uBB50 \uBA39\uC744\uB798?"
@@ -32,7 +32,7 @@ MonoBehaviour:
     choices: []
   - speakerName: D
     text: "\uAE40\uBCF6. \uACC4\uB780 \uB450 \uAC1C."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: "\uC5B8\uB2C8"
     text: "\uB610?"
@@ -40,7 +40,7 @@ MonoBehaviour:
     choices: []
   - speakerName: D
     text: "\u2026\u2026\uB610."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 87236f2975df09c46a26e7bb24f15f01, type: 3}
     choices: []
   - speakerName: 
     text: "\uC5B8\uB2C8\uAC00 \uC6C3\uC5C8\uB2E4. D\uB3C4 \uC6C3\uC5C8\uB2E4."

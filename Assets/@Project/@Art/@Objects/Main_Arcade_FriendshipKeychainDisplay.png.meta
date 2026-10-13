@@ -26,72 +26,6 @@ TextureImporter:
   - first:
       213: -6025245135016794231
     second: Main_Arcade_FriendshipKeychainDisplay_7
-  - first:
-      213: -3659974532896805279
-    second: Main_Arcade_FriendshipKeychainDisplay_8
-  - first:
-      213: -576094076049007677
-    second: Main_Arcade_FriendshipKeychainDisplay_9
-  - first:
-      213: 1749629687000498281
-    second: Main_Arcade_FriendshipKeychainDisplay_10
-  - first:
-      213: -4530433683820523507
-    second: Main_Arcade_FriendshipKeychainDisplay_11
-  - first:
-      213: -5200783582781233176
-    second: Main_Arcade_FriendshipKeychainDisplay_12
-  - first:
-      213: -6860417583325356193
-    second: Main_Arcade_FriendshipKeychainDisplay_13
-  - first:
-      213: -2168223926830499906
-    second: Main_Arcade_FriendshipKeychainDisplay_14
-  - first:
-      213: 8223892335502870141
-    second: Main_Arcade_FriendshipKeychainDisplay_15
-  - first:
-      213: -8694536094839364517
-    second: Main_Arcade_FriendshipKeychainDisplay_16
-  - first:
-      213: -6422811345350590139
-    second: Main_Arcade_FriendshipKeychainDisplay_17
-  - first:
-      213: -5143034211298261183
-    second: Main_Arcade_FriendshipKeychainDisplay_18
-  - first:
-      213: -1262660424808913821
-    second: Main_Arcade_FriendshipKeychainDisplay_19
-  - first:
-      213: -2019387336958113595
-    second: Main_Arcade_FriendshipKeychainDisplay_20
-  - first:
-      213: -5595986629155496732
-    second: Main_Arcade_FriendshipKeychainDisplay_21
-  - first:
-      213: -7577299818754347677
-    second: Main_Arcade_FriendshipKeychainDisplay_22
-  - first:
-      213: 947836592866120109
-    second: Main_Arcade_FriendshipKeychainDisplay_23
-  - first:
-      213: -1191621973316226679
-    second: Main_Arcade_FriendshipKeychainDisplay_24
-  - first:
-      213: 2162474336512628154
-    second: Main_Arcade_FriendshipKeychainDisplay_25
-  - first:
-      213: 1625421499853857041
-    second: Main_Arcade_FriendshipKeychainDisplay_26
-  - first:
-      213: -5980522703563422678
-    second: Main_Arcade_FriendshipKeychainDisplay_27
-  - first:
-      213: 6856607158582306815
-    second: Main_Arcade_FriendshipKeychainDisplay_28
-  - first:
-      213: -1012062876889029838
-    second: Main_Arcade_FriendshipKeychainDisplay_29
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -203,10 +137,10 @@ TextureImporter:
       name: Main_Arcade_FriendshipKeychainDisplay_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1056
-        height: 1448
+        x: 1170
+        y: 183
+        width: 407
+        height: 545
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,10 +159,10 @@ TextureImporter:
       name: Main_Arcade_FriendshipKeychainDisplay_1
       rect:
         serializedVersion: 2
-        x: 955
-        y: 1101
-        width: 8
-        height: 12
+        x: 1534
+        y: 313
+        width: 13
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +181,10 @@ TextureImporter:
       name: Main_Arcade_FriendshipKeychainDisplay_2
       rect:
         serializedVersion: 2
-        x: 962
-        y: 1099
-        width: 8
-        height: 13
+        x: 1536
+        y: 336
+        width: 6
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,10 +203,10 @@ TextureImporter:
       name: Main_Arcade_FriendshipKeychainDisplay_3
       rect:
         serializedVersion: 2
-        x: 979
-        y: 520
-        width: 7
-        height: 9
+        x: 1536
+        y: 303
+        width: 8
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,8 +225,8 @@ TextureImporter:
       name: Main_Arcade_FriendshipKeychainDisplay_4
       rect:
         serializedVersion: 2
-        x: 997
-        y: 442
+        x: 1266
+        y: 196
         width: 7
         height: 9
       alignment: 0
@@ -313,10 +247,10 @@ TextureImporter:
       name: Main_Arcade_FriendshipKeychainDisplay_5
       rect:
         serializedVersion: 2
-        x: 960
-        y: 421
+        x: 1273
+        y: 205
         width: 8
-        height: 7
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,10 +269,10 @@ TextureImporter:
       name: Main_Arcade_FriendshipKeychainDisplay_6
       rect:
         serializedVersion: 2
-        x: 958
-        y: 385
-        width: 10
-        height: 16
+        x: 1353
+        y: 195
+        width: 14
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,10 +291,10 @@ TextureImporter:
       name: Main_Arcade_FriendshipKeychainDisplay_7
       rect:
         serializedVersion: 2
-        x: 960
-        y: 397
-        width: 8
-        height: 8
+        x: 1379
+        y: 183
+        width: 10
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -371,490 +305,6 @@ TextureImporter:
       bones: []
       spriteID: 9876caa0977026ca0800000000000000
       internalID: -6025245135016794231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_8
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 359
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 16ea5bfbd88253dc0800000000000000
-      internalID: -3659974532896805279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_9
-      rect:
-        serializedVersion: 2
-        x: 949
-        y: 327
-        width: 33
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3cb54e77d7d4108f0800000000000000
-      internalID: -576094076049007677
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_10
-      rect:
-        serializedVersion: 2
-        x: 954
-        y: 305
-        width: 20
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 960842e2eeee74810800000000000000
-      internalID: 1749629687000498281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_11
-      rect:
-        serializedVersion: 2
-        x: 972
-        y: 144
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d00d96d519aa021c0800000000000000
-      internalID: -4530433683820523507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_12
-      rect:
-        serializedVersion: 2
-        x: 290
-        y: 53
-        width: 17
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8e724aae2ea13d7b0800000000000000
-      internalID: -5200783582781233176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_13
-      rect:
-        serializedVersion: 2
-        x: 490
-        y: 43
-        width: 11
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f5f5c075e86eac0a0800000000000000
-      internalID: -6860417583325356193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_14
-      rect:
-        serializedVersion: 2
-        x: 500
-        y: 45
-        width: 6
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eb7f3c783dbe8e1e0800000000000000
-      internalID: -2168223926830499906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_15
-      rect:
-        serializedVersion: 2
-        x: 271
-        y: 31
-        width: 17
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d76c4b0d182212270800000000000000
-      internalID: 8223892335502870141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_16
-      rect:
-        serializedVersion: 2
-        x: 371
-        y: 27
-        width: 11
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b54a944cc7dc65780800000000000000
-      internalID: -8694536094839364517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_17
-      rect:
-        serializedVersion: 2
-        x: 500
-        y: 27
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 54187056c179dd6a0800000000000000
-      internalID: -6422811345350590139
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_18
-      rect:
-        serializedVersion: 2
-        x: 567
-        y: 42
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 147c2ef32a540a8b0800000000000000
-      internalID: -5143034211298261183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_19
-      rect:
-        serializedVersion: 2
-        x: 526
-        y: 31
-        width: 10
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 364225398012a7ee0800000000000000
-      internalID: -1262660424808913821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_20
-      rect:
-        serializedVersion: 2
-        x: 543
-        y: 31
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c880bc8ae1b9f3e0800000000000000
-      internalID: -2019387336958113595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_21
-      rect:
-        serializedVersion: 2
-        x: 554
-        y: 0
-        width: 93
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4ecd9514fcf0752b0800000000000000
-      internalID: -5595986629155496732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_22
-      rect:
-        serializedVersion: 2
-        x: 241
-        y: 17
-        width: 11
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 36de38a06f508d690800000000000000
-      internalID: -7577299818754347677
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_23
-      rect:
-        serializedVersion: 2
-        x: 338
-        y: 7
-        width: 15
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: da1d6eefb54672d00800000000000000
-      internalID: 947836592866120109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_24
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 12
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 981bfe5f022867fe0800000000000000
-      internalID: -1191621973316226679
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_25
-      rect:
-        serializedVersion: 2
-        x: 357
-        y: 15
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ab5dbb7a3f6a20e10800000000000000
-      internalID: 2162474336512628154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_26
-      rect:
-        serializedVersion: 2
-        x: 364
-        y: 14
-        width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 11162150e38ae8610800000000000000
-      internalID: 1625421499853857041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_27
-      rect:
-        serializedVersion: 2
-        x: 381
-        y: 15
-        width: 17
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a2481fa894ae00da0800000000000000
-      internalID: -5980522703563422678
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_28
-      rect:
-        serializedVersion: 2
-        x: 663
-        y: 14
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ff7e2b302ef872f50800000000000000
-      internalID: 6856607158582306815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Arcade_FriendshipKeychainDisplay_29
-      rect:
-        serializedVersion: 2
-        x: 500
-        y: 7
-        width: 17
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2336ba4fc2e64f1f0800000000000000
-      internalID: -1012062876889029838
       vertices: []
       indices: 
       edges: []
@@ -875,34 +325,12 @@ TextureImporter:
     nameFileIdTable:
       Main_Arcade_FriendshipKeychainDisplay_0: 1029210367804064879
       Main_Arcade_FriendshipKeychainDisplay_1: 8183724735601937174
-      Main_Arcade_FriendshipKeychainDisplay_10: 1749629687000498281
-      Main_Arcade_FriendshipKeychainDisplay_11: -4530433683820523507
-      Main_Arcade_FriendshipKeychainDisplay_12: -5200783582781233176
-      Main_Arcade_FriendshipKeychainDisplay_13: -6860417583325356193
-      Main_Arcade_FriendshipKeychainDisplay_14: -2168223926830499906
-      Main_Arcade_FriendshipKeychainDisplay_15: 8223892335502870141
-      Main_Arcade_FriendshipKeychainDisplay_16: -8694536094839364517
-      Main_Arcade_FriendshipKeychainDisplay_17: -6422811345350590139
-      Main_Arcade_FriendshipKeychainDisplay_18: -5143034211298261183
-      Main_Arcade_FriendshipKeychainDisplay_19: -1262660424808913821
       Main_Arcade_FriendshipKeychainDisplay_2: 4332048924087756508
-      Main_Arcade_FriendshipKeychainDisplay_20: -2019387336958113595
-      Main_Arcade_FriendshipKeychainDisplay_21: -5595986629155496732
-      Main_Arcade_FriendshipKeychainDisplay_22: -7577299818754347677
-      Main_Arcade_FriendshipKeychainDisplay_23: 947836592866120109
-      Main_Arcade_FriendshipKeychainDisplay_24: -1191621973316226679
-      Main_Arcade_FriendshipKeychainDisplay_25: 2162474336512628154
-      Main_Arcade_FriendshipKeychainDisplay_26: 1625421499853857041
-      Main_Arcade_FriendshipKeychainDisplay_27: -5980522703563422678
-      Main_Arcade_FriendshipKeychainDisplay_28: 6856607158582306815
-      Main_Arcade_FriendshipKeychainDisplay_29: -1012062876889029838
       Main_Arcade_FriendshipKeychainDisplay_3: 1966104316948247127
       Main_Arcade_FriendshipKeychainDisplay_4: -3462433430740615190
       Main_Arcade_FriendshipKeychainDisplay_5: 5534356688764944613
       Main_Arcade_FriendshipKeychainDisplay_6: -2541664832846462203
       Main_Arcade_FriendshipKeychainDisplay_7: -6025245135016794231
-      Main_Arcade_FriendshipKeychainDisplay_8: -3659974532896805279
-      Main_Arcade_FriendshipKeychainDisplay_9: -576094076049007677
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

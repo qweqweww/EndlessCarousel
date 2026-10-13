@@ -50,19 +50,19 @@ MonoBehaviour:
     choices: []
   - speakerName: C
     text: "\u2026\u2026"
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: 8dc8459779a07b141a804f6f6a8d01c4, type: 3}
     choices: []
   - speakerName: D
     text: "\u2026\u2026\uC774\uAC70."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: B
     text: "\uB2E4\uC12F \uBC88\uC9F8\uC608\uC694."
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
     choices: []
   - speakerName: A
     text: "\uC785\uC7A5 \uAE30\uB85D \uC5C6\uC74C."
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
     choices: []
   - speakerName: 
     text: "\uBAA8\uB450\uAC00 X\uB97C \uBCF4\uC558\uB2E4. X\uB294 \uC7A5\uBD80\uB97C

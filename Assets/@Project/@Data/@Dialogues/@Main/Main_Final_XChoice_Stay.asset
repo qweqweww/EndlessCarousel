@@ -34,19 +34,19 @@ MonoBehaviour:
     choices: []
   - speakerName: C
     text: "\uC9D1\uC774\uB77C. \uC88B\uB124."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: 3350833a0bb0a2f44af924f3d24e6d6f, type: 3}
     choices: []
   - speakerName: A
     text: "\u2026\u2026\uADF8\uB798."
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
     choices: []
   - speakerName: B
     text: "\uB124."
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
     choices: []
   - speakerName: D
     text: "\u2026\u2026\uADF8\uB7FC \uB410\uC5B4."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   nextDialogue: {fileID: 0}
   skipNextIfFlag: 

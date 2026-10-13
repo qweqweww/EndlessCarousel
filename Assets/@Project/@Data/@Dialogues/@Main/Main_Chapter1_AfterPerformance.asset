@@ -45,19 +45,19 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: "\u2026\u2026\uBAB0\uB77C."
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
     choices: []
   - speakerName: A
     text: "\uADFC\uB370."
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
     choices: []
   - speakerName: A
     text: "\u2026\u2026"
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
     choices: []
   - speakerName: A
     text: "\uD2C0\uB838\uB294\uB370, \uC544\uBB34 \uC77C\uB3C4 \uC5C6\uB124."
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 78e2c16278be20748807d3facc559a28, type: 3}
     choices: []
   - speakerName: X
     text: "\uADF8\uB7EC\uB124."
@@ -65,11 +65,11 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: "\u2026\u2026\uC774\uC0C1\uD558\uB2E4."
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
     choices: []
   - speakerName: A
     text: "\u2026\u2026\uC624\uB79C\uB9CC\uC774\uB124."
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: f1c749ec53789e24284806aa1c95dc04, type: 3}
     choices: []
   - speakerName: X
     text: "\uBB50\uAC00?"
@@ -77,7 +77,7 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: "\uADF8\uB0E5 \uCE58\uB294 \uAC70."
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: f1c749ec53789e24284806aa1c95dc04, type: 3}
     choices: []
   - speakerName: 
     text: "A\uB294 \uCC9C\uCC9C\uD788 \uAC74\uBC18\uC5D0\uC11C \uC190\uC744 \uB5D0\uB2E4."
@@ -85,39 +85,39 @@ MonoBehaviour:
     choices: []
   - speakerName: B
     text: "A \uC528."
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
     choices: []
   - speakerName: B
     text: "\uC544\uAE4C\uBCF4\uB2E4\u2026 \uD3B8\uD574 \uBCF4\uC600\uC5B4\uC694."
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: 29ab07840ba16ca46aa3431f1e7938ca, type: 3}
     choices: []
   - speakerName: A
     text: "\u2026\u2026"
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 203a15641f386d44f9c87e170550501f, type: 3}
     choices: []
   - speakerName: A
     text: "\uB108\uB294?"
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 203a15641f386d44f9c87e170550501f, type: 3}
     choices: []
   - speakerName: B
     text: "\uB124?"
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: 3239e825068e553449dade0b3ea760df, type: 3}
     choices: []
   - speakerName: A
     text: "\uD558\uACE0 \uC2F6\uC740 \uAC70."
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 3829046e21eb2014aac420be0e636761, type: 3}
     choices: []
   - speakerName: B
     text: "\uC800\uB294\u2026"
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
     choices: []
   - speakerName: B
     text: "\u2026\u2026"
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
     choices: []
   - speakerName: B
     text: "\uC798 \uBAA8\uB974\uACA0\uC5B4\uC694."
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
     choices: []
   - speakerName: 
     text: "B\uB294 \uADF8\uB807\uAC8C \uB9D0\uD558\uACE0, \uC11C\uB458\uB7EC \uACE0\uAC1C\uB97C
@@ -126,39 +126,39 @@ MonoBehaviour:
     choices: []
   - speakerName: C
     text: "\uADF8\uB798\uB3C4 \uC798 \uCE58\uB358\uB370."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: 3350833a0bb0a2f44af924f3d24e6d6f, type: 3}
     choices: []
   - speakerName: A
     text: "\uD3C9\uAC00\uD558\uC9C0 \uB9C8."
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: a9466375a7b305f4190784b069a8dcda, type: 3}
     choices: []
   - speakerName: C
     text: "\uC544."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: 7a937c782a3b6674ba04cefe228423d3, type: 3}
     choices: []
   - speakerName: C
     text: "\uADF8\uAC83\uB3C4 \uD3C9\uAC00\uC778\uAC00."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: A
     text: "\u2026\u2026\uADF8\uB7EC\uB124."
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
     choices: []
   - speakerName: D
     text: "\uB2E4\uC74C\uC5D0 \uB610 \uCE58\uBA74 \uB418\uACA0\uB124."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: A
     text: "\u2026\u2026\uC65C \uB2E4\uC74C\uC774 \uC788\uC5B4."
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 78e2c16278be20748807d3facc559a28, type: 3}
     choices: []
   - speakerName: D
     text: "\uC788\uC744 \uC218\uB3C4 \uC788\uC9C0."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: A
     text: "\u2026\u2026"
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
     choices: []
   - speakerName: 
     text: "D\uB294 \uB300\uB2F5\uC744 \uAE30\uB2E4\uB9AC\uC9C0 \uC54A\uACE0 \uBA3C\uC800
@@ -168,7 +168,7 @@ MonoBehaviour:
   - speakerName: C
     text: "\uAC00\uC790. \uC5EC\uAE30 \uB108\uBB34 \uC870\uC6A9\uD574\uC11C \uADC0\uAC00
       \uC774\uC0C1\uD574."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: 
     text: "B\uC640 C\uAC00 D\uC758 \uB4A4\uB97C \uB530\uB790\uB2E4."
@@ -199,7 +199,7 @@ MonoBehaviour:
     choices: []
   - speakerName: A
     text: "\uC544\uBB34\uAC83\uB3C4 \uC544\uB2C8\uC57C."
-    portrait: {fileID: 21300000, guid: 9601c58ca14311247acb6db199a17d5f, type: 3}
+    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
     choices: []
   - speakerName: 
     text: "A\uAC00 \uBA3C\uC800 \uBC16\uC73C\uB85C \uB098\uAC14\uB2E4."

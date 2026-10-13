@@ -19,7 +19,7 @@ MonoBehaviour:
     choices: []
   - speakerName: C
     text: "\uBCC4\uB85C \uC548 \uC774\uC0C1\uD574?"
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: X
     text: "\uAE30\uC5B5\uB3C4 \uC774\uC0C1\uD55C\uB370 \uBB50."
@@ -27,7 +27,7 @@ MonoBehaviour:
     choices: []
   - speakerName: C
     text: "\uADF8\uAC74 \uADF8\uB807\uB124."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   nextDialogue: {fileID: 11400000, guid: 72610912c36559e469774b009bb908ac, type: 2}
   skipNextIfFlag: 

@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 1085165536332255443}
   - component: {fileID: 2167609167589174453}
   - component: {fileID: 6570765059948875199}
+  - component: {fileID: 6659216966848925706}
   m_Layer: 0
   m_Name: Portrait
   m_TagString: Untagged
@@ -233,6 +234,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6659216966848925706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114723174638343884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
+  m_EffectColor: {r: 0.05, g: 0.04, b: 0.06, a: 0.7}
+  m_EffectDistance: {x: 3, y: -3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2136881469700135453
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,7 +429,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1085165536332255443}
   - {fileID: 4270329963023892571}
@@ -524,6 +540,37 @@ MonoBehaviour:
   dialogueText: {fileID: 1867780053199136755}
   portraitImage: {fileID: 6570765059948875199}
   nextIndicator: {fileID: 8410894316279000620}
+  portraitAdjustments:
+  - sprites:
+    - {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
+    - {fileID: 21300000, guid: 3829046e21eb2014aac420be0e636761, type: 3}
+    - {fileID: 21300000, guid: f1c749ec53789e24284806aa1c95dc04, type: 3}
+    - {fileID: 21300000, guid: a9466375a7b305f4190784b069a8dcda, type: 3}
+    - {fileID: 21300000, guid: 203a15641f386d44f9c87e170550501f, type: 3}
+    - {fileID: 21300000, guid: 78e2c16278be20748807d3facc559a28, type: 3}
+    - {fileID: 21300000, guid: 5bf593b62d1d28147802cc9cc8533a90, type: 3}
+    scale: 1.3
+    offset: {x: 0, y: -287.51}
+  - sprites:
+    - {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
+    - {fileID: 21300000, guid: 09c7d92bb325cdd4f973bcb83e751243, type: 3}
+    - {fileID: 21300000, guid: 29ab07840ba16ca46aa3431f1e7938ca, type: 3}
+    - {fileID: 21300000, guid: e1bc640862bc8cd45a448544692f1383, type: 3}
+    - {fileID: 21300000, guid: a6c52585ce5407947bdd62f5f1dd0d5c, type: 3}
+    - {fileID: 21300000, guid: 3239e825068e553449dade0b3ea760df, type: 3}
+    - {fileID: 21300000, guid: f58f64fac19eb7145ae9c407270a3497, type: 3}
+    scale: 1.47
+    offset: {x: 0, y: -427.35}
+  - sprites:
+    - {fileID: 21300000, guid: 8dc8459779a07b141a804f6f6a8d01c4, type: 3}
+    - {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
+    - {fileID: 21300000, guid: 3350833a0bb0a2f44af924f3d24e6d6f, type: 3}
+    - {fileID: 21300000, guid: 9ece6a671d1d3c84c8454c2b6acd175f, type: 3}
+    - {fileID: 21300000, guid: 52f78e9f4aa2a2245959f4aff1b0fcca, type: 3}
+    - {fileID: 21300000, guid: 7a937c782a3b6674ba04cefe228423d3, type: 3}
+    - {fileID: 21300000, guid: 8c5fe1d8e0493904d9a9c148a436c224, type: 3}
+    scale: 1.35
+    offset: {x: 0, y: -360}
   advanceButton: {fileID: 3675361068543679502}
   choiceParent: {fileID: 4130812931137183305}
   choiceButtonPrefab: {fileID: 1979557633796741202, guid: fde53f8eeb66e8d4eb94c2124db929d6, type: 3}

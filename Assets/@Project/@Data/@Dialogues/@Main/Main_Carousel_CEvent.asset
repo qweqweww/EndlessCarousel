@@ -19,7 +19,7 @@ MonoBehaviour:
     choices: []
   - speakerName: C
     text: "\uC751?"
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: X
     text: "\uC544\uAE4C\uBD80\uD130 \uC800\uCABD \uBCF4\uACE0 \uC788\uC796\uC544."
@@ -27,11 +27,11 @@ MonoBehaviour:
     choices: []
   - speakerName: C
     text: "\uC544."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: C
     text: "\uADF8\uB0E5... \uC880 \uC774\uC0C1\uD574\uC11C."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: X
     text: "\uBB50\uAC00?"
@@ -39,12 +39,12 @@ MonoBehaviour:
     choices: []
   - speakerName: C
     text: "\uC5EC\uAE30 \uCC98\uC74C \uBCF4\uB294 \uACF3 \uB9DE\uB294\uB370."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: C
     text: "\uC800 \uAE38 \uBCF4\uACE0 \uC788\uC73C\uB2C8\uAE4C \uAD1C\uD788 \uB6F0\uC5B4\uAC00\uACE0
       \uC2F6\uB124."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: X
     text: "\uB6F0\uC5B4\uAC00\uACE0 \uC2F6\uB2E4\uACE0?"
@@ -52,11 +52,11 @@ MonoBehaviour:
     choices: []
   - speakerName: C
     text: "\uC751."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: C
     text: "\uBB54 \uC18C\uB9B0\uC9C0 \uBAA8\uB974\uACA0\uC9C0?"
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: 3350833a0bb0a2f44af924f3d24e6d6f, type: 3}
     choices:
     - text: "\uC870\uAE08."
       next: {fileID: 11400000, guid: 0d37bbb2687fa3d419dccfdb20b6856b, type: 2}

@@ -20,15 +20,15 @@ MonoBehaviour:
     choices: []
   - speakerName: D
     text: "\u2026\u2026\uC654\uB0D0. \uC815\uD588\uC5B4."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: D
     text: "\uB098\uAC00\uBA74 \uC5B8\uB2C8\uB294 \uB610 \uC5C6\uC796\uC544."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 256f72b9db763414f835c1f7e1cbd70c, type: 3}
     choices: []
   - speakerName: D
     text: "\uC774\uBC88\uC5D0\uB294 \uC9C4\uC9DC\uB85C."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 256f72b9db763414f835c1f7e1cbd70c, type: 3}
     choices: []
   - speakerName: 
     text: "D\uB294 \uD55C\uCC38 \uB9D0\uC774 \uC5C6\uC5C8\uB2E4."
@@ -36,37 +36,37 @@ MonoBehaviour:
     choices: []
   - speakerName: D
     text: "\uC5B8\uB2C8\uD55C\uD14C \uBB3C\uC5B4\uBD24\uC796\uC544. \uADF8\uB54C."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: D
     text: "\uB0B4\uAC00 \uC2EB\uC73C\uBA74 \uB0B4\uAC00 \uD5E4\uC5B4\uC9C0\uB294
       \uAC70\uB77C\uACE0. \uADF8\uAC78 \uC65C \uB124\uAC00 \uB4E4\uACE0 \uC788\uB0D0\uACE0."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: D
     text: "\uADF8\uAC8C \uC9C4\uC9DC \uC5B8\uB2C8 \uB300\uB2F5\uC778\uC9C0\uB294
       \uBAB0\uB77C. \uB0B4\uAC00 \uB4E3\uACE0 \uC2F6\uC740 \uB9D0\uC774\uC5C8\uC744
       \uC218\uB3C4 \uC788\uACE0."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 256f72b9db763414f835c1f7e1cbd70c, type: 3}
     choices: []
   - speakerName: D
     text: "\u2026\u2026\uADF8\uB798\uB3C4."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: D
     text: "\uB0B4\uC77C\uC774 \uC5B4\uB5BB\uAC8C \uB418\uB294\uC9C0\uB294 \uD55C
       \uBC88 \uBCF4\uACE0 \uC2F6\uC5B4."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: D
     text: "\uC5B8\uB2C8 \uC5C6\uB294 \uB2E4\uC74C \uB0A0. \uD55C \uBC88\uB3C4 \uC81C\uB300\uB85C
       \uC548 \uC0B4\uC544 \uBD24\uAC70\uB4E0. \uADF8\uB0A0 \uC774\uD6C4\uB85C."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: D
     text: "\uADF8\uB9AC\uACE0\u2026 \uD63C\uC790\uB294 \uC544\uB2C8\uC796\uC544.
       \uC774\uC81C."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: bf7395adac3d293499952692b509ac0e, type: 3}
     choices: []
   - speakerName: X
     text: "\uC751."
@@ -74,12 +74,12 @@ MonoBehaviour:
     choices: []
   - speakerName: D
     text: "\u2026\u2026\uB410\uC5B4. \uADF8 \uC5BC\uAD74 \uD558\uC9C0 \uB9C8."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: bf7395adac3d293499952692b509ac0e, type: 3}
     choices: []
   - speakerName: D
     text: "\uC5B8\uB2C8\uD55C\uD14C\uB294 \uC778\uC0AC\uD558\uACE0 \uC654\uC5B4.
       \uAE40\uBCF6 \uB9DB\uC788\uC5C8\uB2E4\uACE0. \uC9F0\uB2E4\uACE0."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 87236f2975df09c46a26e7bb24f15f01, type: 3}
     choices: []
   nextDialogue: {fileID: 0}
   skipNextIfFlag: 

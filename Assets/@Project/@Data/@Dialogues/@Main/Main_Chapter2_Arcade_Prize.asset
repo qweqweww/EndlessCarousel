@@ -26,32 +26,32 @@ MonoBehaviour:
   - speakerName: C
     text: "\uC774\uAC70 \uCE5C\uAD6C\uB07C\uB9AC \uD558\uB098\uC529 \uB098\uB220
       \uAC16\uB294 \uAC70\uC57C."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: B
     text: "\uB458\uC774\uC11C\uB9CC\u2026 \uB098\uB220 \uAC16\uB294 \uAC70\uC608\uC694?
       \uB2E4\uB978 \uC0AC\uB78C\uB4E4\uC740\uC694?"
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: 09c7d92bb325cdd4f973bcb83e751243, type: 3}
     choices: []
   - speakerName: C
     text: "\uADF8\uAC8C \uC88B\uC740 \uAC70\uC9C0. \uB458\uB9CC\uC758 \uAC70\uB2C8\uAE4C."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
     choices: []
   - speakerName: B
     text: "\uB458\uB9CC\uC758 \uAC70\u2026."
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: f58f64fac19eb7145ae9c407270a3497, type: 3}
     choices: []
   - speakerName: D
     text: "\uC720\uCE58\uD558\uB2E4."
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
     choices: []
   - speakerName: C
     text: "D\uAC00 \uC81C\uC77C \uAC16\uACE0 \uC2F6\uC5B4 \uD558\uB294 \uD45C\uC815\uC778\uB370."
-    portrait: {fileID: 21300000, guid: bcaf5c12b7af5204a9ca7f34c2f6d0b6, type: 3}
+    portrait: {fileID: 21300000, guid: 3350833a0bb0a2f44af924f3d24e6d6f, type: 3}
     choices: []
   - speakerName: D
     text: "\uC544\uB2C8\uAC70\uB4E0!"
-    portrait: {fileID: 21300000, guid: a527c22c19f74ae46bf161a3f4fba21a, type: 3}
+    portrait: {fileID: 21300000, guid: 21bd4aa4290022744b657525a11a3354, type: 3}
     choices: []
   - speakerName: 
     text: "B\uB294 \uD0A4\uB9C1\uC744 \uC624\uB798 \uBC14\uB77C\uBCF4\uC558\uB2E4."

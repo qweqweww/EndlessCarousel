@@ -15,12 +15,12 @@ MonoBehaviour:
   lines:
   - speakerName: B
     text: "X \uC528. \uC800\u2026 \uB2E4\uB140\uC62C\uAC8C\uC694."
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: 09c7d92bb325cdd4f973bcb83e751243, type: 3}
     choices: []
   - speakerName: B
     text: "\uC544, \uB2E4\uB140\uC628\uB2E4\uB294 \uB9D0 \uC4F0\uBA74 \uC548 \uB418\uB098.
       \uADF8\uB798\uB3C4\u2026 \uB2E4\uB140\uC62C\uAC8C\uC694."
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: 29ab07840ba16ca46aa3431f1e7938ca, type: 3}
     choices: []
   - speakerName: X
     text: "\uC751. \uB2E4\uB140\uC640."

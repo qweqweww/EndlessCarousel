@@ -13,6 +13,9 @@ public class DialoguePanel : MonoBehaviour
     [SerializeField] private Image portraitImage;
     [SerializeField] private GameObject nextIndicator;
 
+    [Tooltip("특정 캐릭터 이미지만 초상화 칸에서 크기/위치를 보정한다. 목록에 없는 이미지는 Portrait의 원래 값 그대로")]
+    [SerializeField] private List<PortraitAdjustment> portraitAdjustments = new List<PortraitAdjustment>();
+
     [Tooltip("화면 전체를 덮는 버튼. 클릭하면 다음 대사로 넘어가고, 뒤쪽 UI 클릭을 막는다")]
     [SerializeField] private Button advanceButton;
 
@@ -60,6 +63,26 @@ public class DialoguePanel : MonoBehaviour
     // 전체 화면 CG가 떠 있는 동안 초상화만 숨긴다 (대사 데이터의 Portrait는 그대로 둔다)
     private bool portraitSuppressed;
 
+    private Vector2 portraitBasePosition;
+    private Vector3 portraitBaseScale;
+
+    // 같은 묶음의 이미지(예: 한 캐릭터의 모든 표정)는 항상 같은 크기/위치로 보인다
+    private void ApplyPortraitAdjustment(Sprite sprite)
+    {
+        RectTransform rect = portraitImage.rectTransform;
+        foreach (PortraitAdjustment adjustment in portraitAdjustments)
+        {
+            if (sprite != null && adjustment.sprites.Contains(sprite))
+            {
+                rect.localScale = portraitBaseScale * adjustment.scale;
+                rect.anchoredPosition = portraitBasePosition + adjustment.offset;
+                return;
+            }
+        }
+        rect.localScale = portraitBaseScale;
+        rect.anchoredPosition = portraitBasePosition;
+    }
+
     public void SetPortraitSuppressed(bool suppressed)
     {
         portraitSuppressed = suppressed;
@@ -70,6 +93,8 @@ public class DialoguePanel : MonoBehaviour
     private void Awake()
     {
         advanceButton.onClick.AddListener(Next);
+        portraitBasePosition = portraitImage.rectTransform.anchoredPosition;
+        portraitBaseScale = portraitImage.rectTransform.localScale;
         if (nextIndicator != null)
         {
             indicatorRect = (RectTransform)nextIndicator.transform;
@@ -229,6 +254,7 @@ public class DialoguePanel : MonoBehaviour
         speakerNameText.text = line.speakerName;
 
         portraitImage.sprite = line.portrait;
+        ApplyPortraitAdjustment(line.portrait);
         portraitImage.gameObject.SetActive(line.portrait != null && !portraitSuppressed);
 
         ClearChoices();
@@ -317,4 +343,17 @@ public class DialoguePanel : MonoBehaviour
             Destroy(button.gameObject);
         choiceButtons.Clear();
     }
+}
+
+[System.Serializable]
+public class PortraitAdjustment
+{
+    [Tooltip("같은 보정을 적용할 이미지들 (예: 한 캐릭터의 모든 표정)")]
+    public List<Sprite> sprites = new List<Sprite>();
+
+    [Tooltip("Portrait 원래 Scale에 곱하는 배율 (가로/세로 같은 비율)")]
+    public float scale = 1f;
+
+    [Tooltip("Portrait 원래 위치에서 옮길 거리 (px)")]
+    public Vector2 offset;
 }

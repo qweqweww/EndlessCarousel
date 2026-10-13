@@ -19,12 +19,12 @@ MonoBehaviour:
     choices: []
   - speakerName: B
     text: "\uD3C9\uBC94\uD55C \uAC70\u2026."
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: a045b68230aa5944584404a4682be24a, type: 3}
     choices: []
   - speakerName: B
     text: "\uD3C9\uBC94\uD55C \uAC8C \uC774\uB807\uAC8C \uC2DC\uB044\uB7FD\uACE0
       \uC7AC\uBC0C\uB294 \uAC70\uC600\uAD6C\uB098."
-    portrait: {fileID: 21300000, guid: 441a73f85b437df4db47c2b015aaf9ca, type: 3}
+    portrait: {fileID: 21300000, guid: 29ab07840ba16ca46aa3431f1e7938ca, type: 3}
     choices: []
   - speakerName: 
     text: "B\uAC00 \uC791\uAC8C \uC6C3\uC5C8\uB2E4."
