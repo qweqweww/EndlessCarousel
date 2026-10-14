@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Main_PerformanceHall
   m_EditorClassIdentifier: Assembly-CSharp::LocationData
   displayName: "\uACF5\uC5F0\uC7A5"
-  background: {fileID: 21300000, guid: dba5cdb636dfbbd4a9e6f6420a97b30f, type: 3}
+  background: {fileID: 21300000, guid: 91599b7d177c9484f82d4b544e3dd0c7, type: 3}
   unlockChapter: 1
   exits:
   - label: "< \uB85C\uBE44\uB85C"
@@ -28,6 +28,7 @@ MonoBehaviour:
     screenPosition: {x: 0.5, y: 0.55}
     size: {x: 380, y: 260}
     dialogue: {fileID: 11400000, guid: e795d883d2dfc224f8515b225e0a1d9d, type: 2}
+    previewImage: {fileID: 0}
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Chapter1_HallEntered
@@ -36,13 +37,14 @@ MonoBehaviour:
     limitMaxChapter: 0
     maxChapter: 6
     setFlagOnComplete: Chapter1_PianoChecked
-  - displayName: "\uC2EC\uC0AC\uC704\uC6D0\uC11D"
+  - displayName: "\uBA54\uD2B8\uB85C\uB188"
     inspectText: 
     inspectImage: {fileID: 0}
     canInspect: 1
     screenPosition: {x: 0.24, y: 0.36}
     size: {x: 300, y: 150}
     dialogue: {fileID: 11400000, guid: fb0c35e5c07d0434a8e21825497dfc8c, type: 2}
+    previewImage: {fileID: 0}
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Chapter1_HallEntered
@@ -58,6 +60,7 @@ MonoBehaviour:
     screenPosition: {x: 0.78, y: 0.32}
     size: {x: 300, y: 170}
     dialogue: {fileID: 11400000, guid: f0ecb0cb75f2a2849bf6e385f049bb85, type: 2}
+    previewImage: {fileID: 0}
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Chapter1_HallEntered

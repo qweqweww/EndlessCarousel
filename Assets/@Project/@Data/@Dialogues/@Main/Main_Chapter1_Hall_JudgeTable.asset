@@ -14,38 +14,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - speakerName: 
-    text: "\uBB34\uB300 \uC55E\uC5D0 \uAE34 \uCC45\uC0C1\uC774 \uB193\uC5EC \uC788\uB2E4.
-      \uC774\uB984\uD45C \uC5C6\uB294 \uC758\uC790 \uC138 \uAC1C."
+    text: "\uD53C\uC544\uB178 \uC704\uC5D0 \uC624\uB798\uB41C \uBA54\uD2B8\uB85C\uB188\uC774
+      \uB193\uC5EC \uC788\uB2E4."
     portrait: {fileID: 0}
+    previewImage: {fileID: 0}
     choices: []
   - speakerName: 
-    text: "\uCC45\uC0C1 \uC704\uC5D0 \uCC44\uC810\uD45C\uAC00 \uB193\uC5EC \uC788\uB2E4.
-      \uCE78\uC740 \uC804\uBD80 \uBE44\uC5B4 \uC788\uB2E4."
+    text: "\uBA48\uCD98 \uCD94\uAC00 \uC815\uC911\uC559\uC5D0\uC11C \uAC00\uB290\uB2E4\uB780
+      \uADF8\uB9BC\uC790\uB97C \uB4DC\uB9AC\uC6B0\uACE0 \uC788\uB2E4."
     portrait: {fileID: 0}
+    previewImage: {fileID: 0}
     choices: []
   - speakerName: C
-    text: "\uC2EC\uC0AC\uC704\uC6D0\uC11D\uC778\uAC00?"
+    text: "\uC774\uB7F0 \uAC70, \uC5F0\uC2B5\uD560 \uB54C \uACC4\uC18D \uCF1C\uB193\uB294
+      \uAC70\uC57C?"
     portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: A
+    text: "\uD544\uC694\uD560 \uB54C\uB9CC."
+    portrait: {fileID: 21300000, guid: 3829046e21eb2014aac420be0e636761, type: 3}
+    previewImage: {fileID: 0}
     choices: []
   - speakerName: D
-    text: "\uC5EC\uAE30\uC11C \uB300\uD68C\uB77C\uB3C4 \uD588\uB098 \uBCF4\uB124."
+    text: "\uB108\uB294 \uAF64 \uC790\uC8FC \uC37C\uC744 \uAC83 \uAC19\uC740\uB370."
     portrait: {fileID: 21300000, guid: 2e9b1842956010b41994ab8856c49044, type: 3}
+    previewImage: {fileID: 0}
     choices: []
   - speakerName: A
     text: "\u2026\u2026"
     portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
+    previewImage: {fileID: 0}
     choices: []
   - speakerName: X
-    text: A?
+    text: "\uB9DE\uC544?"
     portrait: {fileID: 0}
+    previewImage: {fileID: 0}
     choices: []
   - speakerName: A
-    text: "\uC810\uC218 \uCE78."
+    text: "\uD2C0\uB9B0 \uCC44\uB85C \uB118\uC5B4\uAC00\uB294 \uAC8C \uB354 \uC2E0\uACBD
+      \uC4F0\uC600\uC73C\uB2C8\uAE4C."
     portrait: {fileID: 21300000, guid: 3829046e21eb2014aac420be0e636761, type: 3}
-    choices: []
-  - speakerName: A
-    text: "\uBE44\uC5B4 \uC788\uB124."
-    portrait: {fileID: 21300000, guid: 3829046e21eb2014aac420be0e636761, type: 3}
+    previewImage: {fileID: 0}
     choices: []
   nextDialogue: {fileID: 0}
   skipNextIfFlag: 

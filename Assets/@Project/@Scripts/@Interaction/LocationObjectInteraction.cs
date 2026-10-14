@@ -5,7 +5,7 @@ using UnityEngine.UI;
 // 장소에 배치된 오브젝트 그림을 직접 클릭해 조사한다. 화면 표시/마우스 반응만 담당하고,
 // 조사 내용과 조건은 LocationData의 LocationHotspot(Display Name으로 연결)을 그대로 사용한다.
 [RequireComponent(typeof(Image))]
-public class LocationObjectInteraction : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+public class LocationObjectInteraction : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, ICanvasRaycastFilter
 {
     [SerializeField] private LocationManager locationManager;
 
@@ -15,6 +15,9 @@ public class LocationObjectInteraction : MonoBehaviour, IPointerEnterHandler, IP
     [Tooltip("이 값보다 불투명한 픽셀만 클릭된다 (텍스처 Read/Write 필요)")]
     [Range(0f, 1f)]
     [SerializeField] private float alphaHitThreshold = 0.1f;
+
+    [Tooltip("작은 오브젝트용. 그림의 불투명 부분에서 이 거리(px, 1920x1080 기준)까지 떨어진 곳도 마우스에 반응한다. 0이면 불투명 픽셀에서만 반응")]
+    [SerializeField] private float hitPadding = 0f;
 
     [Header("Soft Glow (원본 뒤의 형제 Image 3개)")]
     [SerializeField] private Image glowInner;
@@ -32,6 +35,9 @@ public class LocationObjectInteraction : MonoBehaviour, IPointerEnterHandler, IP
 
     [SerializeField] private float fadeDuration = 0.2f;
 
+    [Tooltip("빛 그림을 만들 때 줄이는 가로 크기 (px). 화면 폭 전체처럼 아주 넓은 오브젝트는 값을 키우면 빛 번짐 폭이 다른 오브젝트와 비슷해진다")]
+    [SerializeField] private int glowTextureWidth = 160;
+
     [Header("유도 깜빡임 (선택, 한 번만 자동 재생)")]
     [Tooltip("이 플래그가 켜지는 순간 Glow가 자동으로 몇 번 깜빡인다. 비워두면 사용하지 않음")]
     [SerializeField] private string hintAfterFlag;
@@ -41,9 +47,8 @@ public class LocationObjectInteraction : MonoBehaviour, IPointerEnterHandler, IP
     [SerializeField] private float hintDuration = 1.8f;
     [Range(0f, 1f)] [SerializeField] private float hintStrength = 0.8f;
 
-    // 흐린 외곽 그림 생성: 원본 크기와 상관없이 가로 약 GlowTextureWidth 픽셀로 줄인 뒤 흐리게 한다.
+    // 흐린 외곽 그림 생성: 원본 크기와 상관없이 가로 약 glowTextureWidth 픽셀로 줄인 뒤 흐리게 한다.
     // 화면에 표시되는 크기 대비 흐림 폭이 일정해진다. (반경이 클수록 더 넓게 퍼짐)
-    private const int GlowTextureWidth = 160;
     private const int GlowBlurRadius = 3;
     private const int GlowBlurPasses = 3;
 
@@ -51,15 +56,26 @@ public class LocationObjectInteraction : MonoBehaviour, IPointerEnterHandler, IP
     private float targetAmount;
     private float hintTime = -1f; // 0 이상이면 유도 깜빡임 재생 중
 
+    // Hit Padding용: 불투명 영역을 padding만큼 넓힌 판정 그림 (Sprite 픽셀 단위, 사방에 hitMaskPad 여백 포함)
+    private bool[] hitMask;
+    private int hitMaskWidth, hitMaskHeight, hitMaskPad;
+
     public string HotspotName => hotspotName;
 
     private void Awake()
     {
         Image image = GetComponent<Image>();
         image.alphaHitTestMinimumThreshold = alphaHitThreshold;
+        if (hitPadding > 0f)
+        {
+            // Image의 알파 판정은 그림 밖을 항상 거부하므로 끄고, 넓힌 사각형 안에서 hitMask로 직접 판정한다
+            image.alphaHitTestMinimumThreshold = 0f;
+            image.raycastPadding = -Vector4.one * hitPadding;
+            BuildHitMask(image);
+        }
 
         Vector2 padding;
-        Sprite glowSprite = CreateSoftSilhouette(image.sprite, out padding);
+        Sprite glowSprite = CreateSoftSilhouette(image.sprite, Mathf.Max(1, glowTextureWidth), out padding);
         SetupGlow(glowInner, glowSprite, innerScale, padding);
         SetupGlow(glowMiddle, glowSprite, middleScale, padding);
         SetupGlow(glowOuter, glowSprite, outerScale, padding);
@@ -140,6 +156,56 @@ public class LocationObjectInteraction : MonoBehaviour, IPointerEnterHandler, IP
         locationManager.InspectByName(hotspotName);
     }
 
+    // Hit Padding이 0이면 항상 통과 (Image의 알파 판정만 사용)
+    public bool IsRaycastLocationValid(Vector2 screenPoint, Camera eventCamera)
+    {
+        if (hitMask == null)
+            return true;
+        RectTransform rect = (RectTransform)transform;
+        Vector2 local;
+        if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(rect, screenPoint, eventCamera, out local))
+            return false;
+        Rect r = rect.rect;
+        int x = Mathf.FloorToInt((local.x - r.xMin) / r.width * (hitMaskWidth - hitMaskPad * 2)) + hitMaskPad;
+        int y = Mathf.FloorToInt((local.y - r.yMin) / r.height * (hitMaskHeight - hitMaskPad * 2)) + hitMaskPad;
+        return x >= 0 && y >= 0 && x < hitMaskWidth && y < hitMaskHeight && hitMask[y * hitMaskWidth + x];
+    }
+
+    // 불투명 픽셀을 사방으로 hitPadding만큼 넓힌다 (가로 → 세로 순서의 최대값 필터)
+    private void BuildHitMask(Image image)
+    {
+        Sprite sprite = image.sprite;
+        Rect spriteRect = sprite.rect;
+        Color32[] pixels = sprite.texture.GetPixels32();
+        int texWidth = sprite.texture.width;
+        int srcW = (int)spriteRect.width, srcH = (int)spriteRect.height;
+        float spritePixelsPerUnit = srcW / Mathf.Max(1f, ((RectTransform)transform).rect.width);
+        int pad = Mathf.CeilToInt(hitPadding * spritePixelsPerUnit);
+        int w = srcW + pad * 2, h = srcH + pad * 2;
+        byte threshold = (byte)(alphaHitThreshold * 255f);
+
+        var solid = new bool[w * h];
+        for (int y = 0; y < srcH; y++)
+            for (int x = 0; x < srcW; x++)
+                solid[(y + pad) * w + x + pad] = pixels[((int)spriteRect.y + y) * texWidth + (int)spriteRect.x + x].a > threshold;
+
+        var wide = new bool[w * h];
+        for (int y = 0; y < h; y++)
+            for (int x = 0; x < w; x++)
+                for (int k = Mathf.Max(0, x - pad); k <= Mathf.Min(w - 1, x + pad) && !wide[y * w + x]; k++)
+                    wide[y * w + x] = solid[y * w + k];
+
+        hitMask = new bool[w * h];
+        for (int y = 0; y < h; y++)
+            for (int x = 0; x < w; x++)
+                for (int k = Mathf.Max(0, y - pad); k <= Mathf.Min(h - 1, y + pad) && !hitMask[y * w + x]; k++)
+                    hitMask[y * w + x] = wide[k * w + x];
+
+        hitMaskWidth = w;
+        hitMaskHeight = h;
+        hitMaskPad = pad;
+    }
+
     // padding: 빛 그림에 추가된 여백 (원본 크기 대비 비율). 그만큼 넓혀서 원본과 정확히 겹치게 한다.
     private static void SetupGlow(Image glow, Sprite sprite, float scale, Vector2 padding)
     {
@@ -180,7 +246,7 @@ public class LocationObjectInteraction : MonoBehaviour, IPointerEnterHandler, IP
 
     // 원본과 같은 모양의 흰색 그림(알파만 사용)을 작게 줄여 흐리게 만든다. 늘려서 표시되면 부드럽게 퍼진다.
     // 흐림이 잘리지 않도록 가장자리에 여백을 두고, 그 비율을 padding으로 돌려준다.
-    private static Sprite CreateSoftSilhouette(Sprite source, out Vector2 padding)
+    private static Sprite CreateSoftSilhouette(Sprite source, int targetWidth, out Vector2 padding)
     {
         // textureRect는 Tight 메시일 때 투명 여백이 잘린 영역이라 Image 전체 Rect와 어긋난다. 전체 Sprite 영역을 사용한다.
         Rect rect = source.rect;
@@ -188,7 +254,7 @@ public class LocationObjectInteraction : MonoBehaviour, IPointerEnterHandler, IP
         int texWidth = source.texture.width;
         int x0 = (int)rect.x, y0 = (int)rect.y, srcW = (int)rect.width, srcH = (int)rect.height;
 
-        int step = Mathf.Max(1, Mathf.RoundToInt((float)srcW / GlowTextureWidth));
+        int step = Mathf.Max(1, Mathf.RoundToInt((float)srcW / targetWidth));
         int innerW = Mathf.Max(1, srcW / step), innerH = Mathf.Max(1, srcH / step);
         int pad = GlowBlurRadius * GlowBlurPasses;
         int w = innerW + pad * 2, h = innerH + pad * 2;

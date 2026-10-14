@@ -103,6 +103,9 @@ public class LocationHotspot
     [Tooltip("지정하면 조사창 대신 이 대화를 시작한다 (캐릭터 등). 비워두면 조사창을 연다")]
     public DialogueData dialogue;
 
+    [Tooltip("지정하면 클릭 시 이 이미지를 먼저 화면 중앙에 크게 보여주고, 닫은 뒤에 대화/기억/조사창을 시작한다")]
+    public Sprite previewImage;
+
     [Tooltip("지정하면 조사창/대화 대신 이 기억 이벤트를 시작한다 (Dialogue보다 우선)")]
     public MemoryEventData memoryEvent;
 

@@ -19,6 +19,9 @@ public class LocationManager : MonoBehaviour
     [SerializeField] private Button hotspotPrefab;
     [SerializeField] private InspectPanel inspectPanel;
 
+    [Tooltip("Hotspot의 Preview Image를 크게 보여주는 창 (닫힌 뒤에 원래 조사 동작을 이어간다)")]
+    [SerializeField] private InspectImagePanel inspectImagePanel;
+
     [Header("대화")]
     [SerializeField] private DialoguePanel dialoguePanel;
 
@@ -34,6 +37,9 @@ public class LocationManager : MonoBehaviour
     [Header("화면 전환 (Auto Event의 Fade On Complete용)")]
     [SerializeField] private ScreenFader screenFader;
     [SerializeField] private float fadeHoldDuration = 0.8f;
+
+    [Header("장소 BGM (비워두면 BGM 없음)")]
+    [SerializeField] private BGMManager bgmManager;
 
     [System.Serializable]
     private class LocationObjectGroup
@@ -82,7 +88,7 @@ public class LocationManager : MonoBehaviour
         MoveTo(startLocation);
     }
 
-    // 대화창이나 챕터 제목이 뜨면 이동 버튼을 없애고, 둘 다 사라지면 현재 조건으로 다시 만든다 (같은 프레임 렌더링 전에 반영)
+    // 대화창 / 챕터 제목 / 확대 이미지가 뜨면 이동 버튼을 없애고, 모두 사라지면 현재 조건으로 다시 만든다 (같은 프레임 렌더링 전에 반영)
     private void LateUpdate()
     {
         bool hide = ShouldHideExits();
@@ -96,7 +102,8 @@ public class LocationManager : MonoBehaviour
     private bool ShouldHideExits()
     {
         return (dialoguePanel != null && dialoguePanel.IsPlaying)
-            || (chapterTitleCard != null && chapterTitleCard.IsShowing);
+            || (chapterTitleCard != null && chapterTitleCard.IsShowing)
+            || (inspectImagePanel != null && inspectImagePanel.IsOpen);
     }
 
     public void MoveTo(LocationData location)
@@ -108,6 +115,8 @@ public class LocationManager : MonoBehaviour
         }
 
         CurrentLocation = location;
+        if (bgmManager != null)
+            bgmManager.PlayForLocation(location);
         backgroundImage.sprite = location.Background;
         if (locationNameText != null)
             locationNameText.text = location.DisplayName;
@@ -275,7 +284,18 @@ public class LocationManager : MonoBehaviour
         return button;
     }
 
+    // Preview Image가 있으면 먼저 크게 보여주고, 창이 닫힌 뒤에 원래 조사 동작을 시작한다 (완료 플래그도 그 뒤에 켜진다)
     private void Inspect(LocationHotspot hotspot)
+    {
+        if (hotspot.previewImage != null && inspectImagePanel != null && !hotspot.startsEnding)
+        {
+            inspectImagePanel.Show(hotspot.previewImage, () => StartInspect(hotspot));
+            return;
+        }
+        StartInspect(hotspot);
+    }
+
+    private void StartInspect(LocationHotspot hotspot)
     {
         // 대화 도중 켜진 플래그로 조건이 맞은 Auto Event도 여기서 이어서 실행된다
         System.Action onComplete = () =>
@@ -324,6 +344,7 @@ public class LocationManager : MonoBehaviour
     {
         return (dialoguePanel != null && dialoguePanel.IsPlaying)
             || (inspectPanel != null && inspectPanel.IsOpen)
+            || (inspectImagePanel != null && inspectImagePanel.IsOpen)
             || (memoryPanel != null && memoryPanel.IsPlaying);
     }
 

@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: Main_HallLobby
   m_EditorClassIdentifier: Assembly-CSharp::LocationData
   displayName: "\uACF5\uC5F0\uC7A5 \uB85C\uBE44"
-  background: {fileID: 21300000, guid: 307973cc7726cac48b51b715bac84966, type: 3}
+  background: {fileID: 21300000, guid: cb881b7f9845ba34abf6d696aefd1465, type: 3}
   unlockChapter: 1
   exits:
   - label: "< \uC911\uC559 \uAD11\uC7A5\uC73C\uB85C"
     target: {fileID: 11400000, guid: 0d9ec9556bf200d40986c60c7bd4fe9a, type: 2}
-    screenPosition: {x: 0.15, y: 0.15}
+    screenPosition: {x: 0.42, y: 0.07}
     requiredFlag: 
   - label: "\uACF5\uC5F0\uC7A5 \uC548\uC73C\uB85C >"
     target: {fileID: 11400000, guid: 4ca13dc6eb9447047b4771e9fffa0149, type: 2}
-    screenPosition: {x: 0.85, y: 0.15}
+    screenPosition: {x: 0.5, y: 0.26}
     requiredFlag: Chapter1_XMemoryQuestioned
   hotspots:
   - displayName: "\uB3C5\uC8FC\uD68C \uD3EC\uC2A4\uD130"
@@ -32,6 +32,7 @@ MonoBehaviour:
     screenPosition: {x: 0.18, y: 0.62}
     size: {x: 220, y: 260}
     dialogue: {fileID: 11400000, guid: 4ef85ebad029b4d4f801f5b06747f1d2, type: 2}
+    previewImage: {fileID: 0}
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Chapter1_LobbyEntered
@@ -47,6 +48,7 @@ MonoBehaviour:
     screenPosition: {x: 0.42, y: 0.58}
     size: {x: 220, y: 170}
     dialogue: {fileID: 11400000, guid: 991e293eeb7169a438c7fa4279198ab4, type: 2}
+    previewImage: {fileID: 0}
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Chapter1_LobbyEntered
@@ -62,6 +64,7 @@ MonoBehaviour:
     screenPosition: {x: 0.64, y: 0.46}
     size: {x: 220, y: 210}
     dialogue: {fileID: 11400000, guid: 1533afb85af8fc54d871a92760a9146a, type: 2}
+    previewImage: {fileID: 0}
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Chapter1_LobbyEntered
@@ -77,6 +80,7 @@ MonoBehaviour:
     screenPosition: {x: 0.82, y: 0.36}
     size: {x: 200, y: 130}
     dialogue: {fileID: 11400000, guid: 4969f41831ebb6d4588e27baffc62bfd, type: 2}
+    previewImage: {fileID: 0}
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Chapter1_LobbyEntered
@@ -92,6 +96,7 @@ MonoBehaviour:
     screenPosition: {x: 0.26, y: 0.6}
     size: {x: 280, y: 220}
     dialogue: {fileID: 11400000, guid: a85c573ae623fe748a8a7affc384f954, type: 2}
+    previewImage: {fileID: 0}
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Chapter1_Phase1Complete
@@ -107,6 +112,7 @@ MonoBehaviour:
     screenPosition: {x: 0.7, y: 0.42}
     size: {x: 220, y: 190}
     dialogue: {fileID: 11400000, guid: bfbddb70fb4c9614baa58f927db7c7ce, type: 2}
+    previewImage: {fileID: 0}
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Chapter1_Phase1Complete
@@ -122,6 +128,7 @@ MonoBehaviour:
     screenPosition: {x: 0.48, y: 0.3}
     size: {x: 170, y: 110}
     dialogue: {fileID: 11400000, guid: 8061c6c52063c9d41b115143a357bc68, type: 2}
+    previewImage: {fileID: 0}
     memoryEvent: {fileID: 0}
     startsEnding: 0
     requiredFlag: Chapter1_Phase1Complete
@@ -137,6 +144,7 @@ MonoBehaviour:
     screenPosition: {x: 0.5, y: 0.55}
     size: {x: 180, y: 240}
     dialogue: {fileID: 0}
+    previewImage: {fileID: 0}
     memoryEvent: {fileID: 11400000, guid: 5ff0542d7cdbbf74a930fb59b61eb0ee, type: 2}
     startsEnding: 0
     requiredFlag: Chapter1_Phase2Complete
@@ -152,6 +160,7 @@ MonoBehaviour:
     completeFlag: Chapter1_LobbyEntered
     changeChapter: 0
     targetChapter: 0
+    fadeOnComplete: 0
   - dialogue: {fileID: 0}
     memoryEvent: {fileID: 11400000, guid: 9761116cabde8f141ac4f72801ff4728, type: 2}
     requiredFlags:
@@ -160,6 +169,7 @@ MonoBehaviour:
     completeFlag: Chapter1_Memory1Complete
     changeChapter: 0
     targetChapter: 0
+    fadeOnComplete: 0
   - dialogue: {fileID: 11400000, guid: 2ab8e395c8809b84b8950ff0f4526c76, type: 2}
     memoryEvent: {fileID: 0}
     requiredFlags:
@@ -167,6 +177,7 @@ MonoBehaviour:
     completeFlag: Chapter1_Phase1Complete
     changeChapter: 0
     targetChapter: 0
+    fadeOnComplete: 0
   - dialogue: {fileID: 0}
     memoryEvent: {fileID: 11400000, guid: e7c6aeca45dbded4b890f94915837c70, type: 2}
     requiredFlags:
@@ -175,6 +186,7 @@ MonoBehaviour:
     completeFlag: Chapter1_Memory2Complete
     changeChapter: 0
     targetChapter: 0
+    fadeOnComplete: 0
   - dialogue: {fileID: 11400000, guid: 73e20e3c77044a4428aa55457070ddb0, type: 2}
     memoryEvent: {fileID: 0}
     requiredFlags:
@@ -182,6 +194,7 @@ MonoBehaviour:
     completeFlag: Chapter1_Phase2Complete
     changeChapter: 0
     targetChapter: 0
+    fadeOnComplete: 0
   - dialogue: {fileID: 11400000, guid: e948436055eff834188e2a8f9f0b9a6a, type: 2}
     memoryEvent: {fileID: 0}
     requiredFlags:
@@ -189,6 +202,7 @@ MonoBehaviour:
     completeFlag: Chapter1_FamilyTalked
     changeChapter: 0
     targetChapter: 0
+    fadeOnComplete: 0
   - dialogue: {fileID: 11400000, guid: e1d3086e9512f7647b293fab2e237d85, type: 2}
     memoryEvent: {fileID: 0}
     requiredFlags:
@@ -196,3 +210,4 @@ MonoBehaviour:
     completeFlag: Chapter1_XMemoryQuestioned
     changeChapter: 0
     targetChapter: 0
+    fadeOnComplete: 0

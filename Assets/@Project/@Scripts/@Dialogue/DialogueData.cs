@@ -29,6 +29,9 @@ public class DialogueLine
     [Tooltip("이 대사에서 보여줄 캐릭터 이미지. 표정마다 다른 Sprite를 지정한다. 비워두면 이미지 없이 표시")]
     public Sprite portrait;
 
+    [Tooltip("이 대사가 나오는 동안 화면 중앙에 크게 띄울 이미지 (사진 등). 연속된 줄에 같은 이미지를 넣으면 계속 떠 있고, 이미지가 없는 줄이 나오면 자동으로 사라진다")]
+    public Sprite previewImage;
+
     [Tooltip("비워두면 클릭으로 다음 줄 진행. 항목이 있으면 이 대사를 보여준 뒤 선택지를 띄운다")]
     public List<DialogueChoice> choices = new List<DialogueChoice>();
 }

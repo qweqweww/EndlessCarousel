@@ -19,6 +19,12 @@ public class DialoguePanel : MonoBehaviour
     [Tooltip("화면 전체를 덮는 버튼. 클릭하면 다음 대사로 넘어가고, 뒤쪽 UI 클릭을 막는다")]
     [SerializeField] private Button advanceButton;
 
+    [Tooltip("대사의 Preview Image를 띄울 패널 (대화창보다 뒤쪽에 있어야 대화창이 가려지지 않는다)")]
+    [SerializeField] private InspectImagePanel previewPanel;
+
+    [Tooltip("Preview Image가 있던 줄에서 없는 줄로 넘어갈 때, 이미지가 다 사라진 뒤 다음 대사를 띄우기 전에 기다리는 시간 (초). 다른 줄 전환에는 적용되지 않는다")]
+    [SerializeField] private float previewExitDialogueDelay = 0.35f;
+
     [Header("선택지")]
     [SerializeField] private RectTransform choiceParent;
     [SerializeField] private Button choiceButtonPrefab;
@@ -47,6 +53,7 @@ public class DialoguePanel : MonoBehaviour
     private int lineIndex;
     private System.Action onFinished;
     private Coroutine typing;
+    private Coroutine previewExit; // 이미지가 사라지고 다음 줄을 기다리는 중 (이 동안 클릭은 무시한다)
 
     // ▼ 상태. 위치를 움직이는 주체는 상태마다 하나뿐이다 (Idle = Update, ClickAnimation = 클릭 코루틴)
     private enum IndicatorState { Hidden, Idle, ClickAnimation }
@@ -107,6 +114,7 @@ public class DialoguePanel : MonoBehaviour
     {
         // 비활성화되면 코루틴이 멈추므로 상태를 처음으로 되돌린다
         typing = null;
+        previewExit = null;
         indicatorClick = null;
         SetIndicatorState(IndicatorState.Hidden);
     }
@@ -195,7 +203,7 @@ public class DialoguePanel : MonoBehaviour
     // 출력 중이면 문장을 즉시 완성하고, 다 나온 상태면 바로 다음 대사로 넘어간다 (강제 대기 없음)
     public void Next()
     {
-        if (currentDialogue == null)
+        if (currentDialogue == null || previewExit != null)
             return;
 
         if (typing != null)
@@ -214,8 +222,13 @@ public class DialoguePanel : MonoBehaviour
     public void Close()
     {
         ClearChoices();
+        if (previewExit != null)
+            StopCoroutine(previewExit);
+        previewExit = null;
         currentDialogue = null;
         onFinished = null;
+        if (previewPanel != null)
+            previewPanel.Hide();
         gameObject.SetActive(false);
     }
 
@@ -244,7 +257,30 @@ public class DialoguePanel : MonoBehaviour
 
         currentDialogue = dialogue;
         lineIndex = index;
-        ShowLine(dialogue.Lines[index]);
+        DialogueLine line = dialogue.Lines[index];
+        if (line.previewImage == null && previewPanel != null && previewPanel.IsOpen)
+            previewExit = StartCoroutine(ShowLineAfterPreviewExit(line));
+        else
+            ShowLine(line);
+    }
+
+    // 이전 줄의 글자/이름/초상화를 지운 채 이미지가 다 사라지고 잠깐 쉰 뒤에 다음 줄을 보여준다
+    private IEnumerator ShowLineAfterPreviewExit(DialogueLine line)
+    {
+        nameBox.SetActive(false);
+        portraitImage.gameObject.SetActive(false);
+        dialogueText.text = string.Empty;
+        if (indicatorState != IndicatorState.ClickAnimation)
+            SetIndicatorState(IndicatorState.Hidden);
+
+        previewPanel.Hide();
+        while (previewPanel.IsOpen)
+            yield return null;
+        for (float t = 0f; t < previewExitDialogueDelay; t += Time.unscaledDeltaTime)
+            yield return null;
+
+        previewExit = null;
+        ShowLine(line);
     }
 
     private void ShowLine(DialogueLine line)
@@ -256,6 +292,15 @@ public class DialoguePanel : MonoBehaviour
         portraitImage.sprite = line.portrait;
         ApplyPortraitAdjustment(line.portrait);
         portraitImage.gameObject.SetActive(line.portrait != null && !portraitSuppressed);
+
+        // 이미지가 있는 줄에서는 띄우고(같은 이미지면 그대로 유지), 없는 줄이 나오면 대화를 막지 않고 사라지게 한다
+        if (previewPanel != null)
+        {
+            if (line.previewImage != null)
+                previewPanel.ShowOverlay(line.previewImage);
+            else
+                previewPanel.Hide();
+        }
 
         ClearChoices();
 
