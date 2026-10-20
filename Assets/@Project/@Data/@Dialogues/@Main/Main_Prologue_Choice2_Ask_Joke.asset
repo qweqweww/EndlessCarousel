@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
+  m_Name: Main_Prologue_Choice2_Ask_Joke
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: 
+    text: "\uC7A0\uC2DC \uC8FC\uBCC0\uC744 \uB458\uB7EC\uBD24\uB2E4."
+    portrait: {fileID: 0}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uBCA4\uCE58 \uC190\uC7A1\uC774\uC5D0 \uBB36\uC778 \uD48D\uC120 \uD558\uB098\uAC00
+      \uB208\uC5D0 \uB4E4\uC5B4\uC654\uB2E4."
+    portrait: {fileID: 0}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: X
+    text: "\u2026\u2026\uADF8\uB7FC, \uD48D\uC120\uC774\uB77C\uACE0 \uBD88\uB7EC\uC8FC\uC138\uC694."
+    portrait: {fileID: 0}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\uB124, \uC54C\uACA0\uC2B5\uB2C8\uB2E4."
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\uD48D\uC120 \uC528."
+    portrait: {fileID: 21300000, guid: 3350833a0bb0a2f44af924f3d24e6d6f, type: 3}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\u2026\u2026\uC9C4\uC9DC \uC774\uB984\uC774\uC5D0\uC694?"
+    portrait: {fileID: 21300000, guid: 573c992b11a9e1a4e85e8bf6c16595d2, type: 3}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: X
+    text: "\uB124."
+    portrait: {fileID: 0}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\u2026\u2026\uC9C4\uC9DC\uC694?"
+    portrait: {fileID: 21300000, guid: 450c4bef8511b444b8094cf7719cd3eb, type: 3}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: X
+    text: "\uB18D\uB2F4\uC774\uC5D0\uC694."
+    portrait: {fileID: 0}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: X
+    text: "X\uC785\uB2C8\uB2E4."
+    portrait: {fileID: 0}
+    previewImage: {fileID: 0}
+    choices: []
+  nextDialogue: {fileID: 11400000, guid: 67ad285a482db32489ab3e206f22da9b, type: 2}
+  skipNextIfFlag: 

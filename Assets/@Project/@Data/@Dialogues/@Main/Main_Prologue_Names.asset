@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03aabcd643edeb4d89315746360808b, type: 3}
+  m_Name: Main_Prologue_Names
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: 
+    text: "\u2026\u2026"
+    portrait: {fileID: 0}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uC11C\uB85C \uBA87 \uBC88\uC529 \uC2DC\uC120\uC744 \uC0B4\uD3C8\uB2E4."
+    portrait: {fileID: 0}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: '?'
+    text: "\u2026\u2026\uC77C\uB2E8, \uC800\uD76C \uD1B5\uC131\uBA85\uBD80\uD130
+      \uD560\uAE4C\uC694?"
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: '?'
+    text: "\uC11C\uB85C \uACC4\uC18D \uBAA8\uB974\uB294 \uCC44\uB85C \uC788\uC744
+      \uC218\uB3C4 \uC5C6\uC73C\uB2C8\uAE4C\uC694."
+    portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: C
+    text: "\uC81C \uC774\uB984\uC740 C\uC785\uB2C8\uB2E4. \uC798 \uBD80\uD0C1\uB4DC\uB824\uC694."
+    portrait: {fileID: 21300000, guid: 3350833a0bb0a2f44af924f3d24e6d6f, type: 3}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "C\uAC00 \uBA3C\uC800 \uC6C3\uC73C\uBA70 \uB9D0\uC744 \uAEBC\uB0C8\uB2E4."
+    portrait: {fileID: 0}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uC7A0\uAE50\uC758 \uCE68\uBB35 \uB05D\uC5D0, \uADF8 \uC606\uC5D0 \uC788\uB358
+      \uC0AC\uB78C\uC774 \uC870\uC2EC\uC2A4\uB7FD\uAC8C \uC785\uC744 \uC5F4\uC5C8\uB2E4."
+    portrait: {fileID: 0}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: B
+    text: "\uC5B4... \uC800\uB294 B\uC608\uC694."
+    portrait: {fileID: 21300000, guid: 09c7d92bb325cdd4f973bcb83e751243, type: 3}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: B
+    text: "\uC790, \uC798 \uBD80\uD0C1\uB4DC\uB824\uC694."
+    portrait: {fileID: 21300000, guid: a6c52585ce5407947bdd62f5f1dd0d5c, type: 3}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: D
+    text: "\u2026\u2026D\uC785\uB2C8\uB2E4."
+    portrait: {fileID: 21300000, guid: 573c992b11a9e1a4e85e8bf6c16595d2, type: 3}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "D\uC758 \uC2DC\uC120\uC774 \uC544\uC9C1 \uC785\uC744 \uC5F4\uC9C0 \uC54A\uC740
+      \uB450 \uC0AC\uB78C\uC5D0\uAC8C \uCC28\uB840\uB85C \uD5A5\uD588\uB2E4."
+    portrait: {fileID: 0}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: A
+    text: "A\uC785\uB2C8\uB2E4."
+    portrait: {fileID: 21300000, guid: 034b6cc566d963d4786c674e2f8a3647, type: 3}
+    previewImage: {fileID: 0}
+    choices: []
+  - speakerName: 
+    text: "\uB124 \uC0AC\uB78C\uC758 \uC18C\uAC1C\uAC00 \uB05D\uB098\uC790 \uC790\uC5F0\uC2A4\uB7FD\uAC8C
+      \uC2DC\uC120\uC774 \uC774\uCABD\uC73C\uB85C \uBAA8\uC600\uB2E4."
+    portrait: {fileID: 0}
+    previewImage: {fileID: 0}
+    choices:
+    - text: "\uC815\uC911\uD558\uAC8C \uC790\uAE30\uC18C\uAC1C\uD55C\uB2E4."
+      next: {fileID: 11400000, guid: c430c35dc89a8b64d8fccaa4912555a8, type: 2}
+      choiceId: Prologue_Name_Polite
+      recordAsFlag: 1
+    - text: "\uC774\uB984\uB9CC \uAC04\uB2E8\uD788 \uBC1D\uD78C\uB2E4."
+      next: {fileID: 11400000, guid: ab4b0dd1f905fc145bc5922f092cc56a, type: 2}
+      choiceId: Prologue_Name_Brief
+      recordAsFlag: 1
+    - text: "\uC774\uB984\uC744 \uB9D0\uD574\uC57C \uD558\uB294 \uC774\uC720\uB97C
+        \uBB3B\uB294\uB2E4."
+      next: {fileID: 11400000, guid: 99c07def936192d4984209daf3434d15, type: 2}
+      choiceId: Prologue_Name_Ask
+      recordAsFlag: 1
+  nextDialogue: {fileID: 0}
+  skipNextIfFlag: 

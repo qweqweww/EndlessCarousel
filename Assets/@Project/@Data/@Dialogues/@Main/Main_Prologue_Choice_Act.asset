@@ -14,24 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - speakerName: X
-    text: "\uC77C\uB2E8 \uC9C1\uC811 \uB458\uB7EC\uBCF4\uC790."
+    text: "\uC77C\uB2E8 \uC9C1\uC811 \uB458\uB7EC\uBD10\uC694."
     portrait: {fileID: 0}
+    previewImage: {fileID: 0}
     choices: []
   - speakerName: A
-    text: "\uADF8\uB798."
+    text: "\uADF8\uB7EC\uC8E0."
     portrait: {fileID: 21300000, guid: 3829046e21eb2014aac420be0e636761, type: 3}
+    previewImage: {fileID: 0}
     choices: []
   - speakerName: C
-    text: "\uB098\uB3C4 \uCC2C\uC131."
+    text: "\uC800\uB3C4 \uCC2C\uC131\uC774\uC5D0\uC694."
     portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
+    previewImage: {fileID: 0}
     choices: []
   - speakerName: C
-    text: "\uC5EC\uAE30\uC11C \uBCF4\uACE0\uB9CC \uC788\uC5B4\uC120 \uBAA8\uB974\uB2C8\uAE4C."
+    text: "\uC5EC\uAE30\uC11C \uBCF4\uACE0\uB9CC \uC788\uC5B4\uC120 \uBAA8\uB974\uB2C8\uAE4C\uC694."
     portrait: {fileID: 21300000, guid: c8dafde970db87447946901de2fbe24e, type: 3}
+    previewImage: {fileID: 0}
     choices: []
   - speakerName: B
     text: "\uC5B4... \uB124. \uADF8\uAC8C \uC88B\uC744 \uAC83 \uAC19\uC544\uC694."
     portrait: {fileID: 21300000, guid: 09c7d92bb325cdd4f973bcb83e751243, type: 3}
+    previewImage: {fileID: 0}
     choices: []
   nextDialogue: {fileID: 11400000, guid: 51ea81bfb47fd4841936dc2f2cc72507, type: 2}
   skipNextIfFlag: 
